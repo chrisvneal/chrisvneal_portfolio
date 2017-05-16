@@ -33,13 +33,19 @@ figure {
   overflow: hidden;
 }
 
-/* Section Styling
------------------------------ */
+/* General Section Styling
+-------------------------------------------------------- */
+header,
+footer,
+section {
+  padding: 20px 0;
+}
+
 header {
   background: lightgray;
 }
 
-.skills {
+.intro-skills {
   background: pink;
 }
 
@@ -55,25 +61,22 @@ footer {
   background: #ededed;
 }
 
-header, footer, section {
-  padding: 20px 0;
-}
-
-a.link-viewall {
+/* navigation */
+.link-viewall {
   margin-bottom: 10px;
   display: inline-block;
 }
 
-/* Recent Projects styling
----------------------------------- */
+/* Recent Projects Section Styling
+-------------------------------------------------------- */
+#recent_projthumbs figure {
+  margin-bottom: 20px;
+}
+
 [id^="rec_projthumb_"] {
   width: 400px;
   height: 360px;
   float: left;
-}
-
-#recent_projthumbs figure {
-  margin-bottom: 20px;
 }
 
 #projthumbs-leftside,
@@ -82,6 +85,8 @@ a.link-viewall {
   float: left;
 }
 
+/* Recent Blog Post Section Styling
+---------------------------------- */
 #recent_blogthumbs figure {
   margin-bottom: 20px;
   width: 420px;

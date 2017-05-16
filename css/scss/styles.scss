@@ -57,13 +57,19 @@ figure {
 
 
 
-/* Section Styling
------------------------------ */
+/* General Section Styling
+-------------------------------------------------------- */
+header, 
+footer, 
+section {	
+	padding: 20px 0;
+}
+
 header {
 	background: $header_back;
 }
 
-.skills {
+.intro-skills {
 	background: pink;
 }
 
@@ -79,14 +85,8 @@ footer {
 	background: $footer_back;
 }
 
-header, footer, section {	
-	padding: 20px 0;
-}
-
-
-
-
-a.link-viewall {
+/* navigation */
+.link-viewall {
 	margin-bottom: 10px;
 	display: inline-block;
 }
@@ -98,8 +98,32 @@ a.link-viewall {
 
 
 
-/* Recent Projects styling
----------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Recent Projects Section Styling
+-------------------------------------------------------- */
+#recent_projthumbs figure {
+	margin-bottom: 20px;
+}
+
+
+
+
 [id^="rec_projthumb_"] {
 	// border: 1px solid black;
 	width: 400px;
@@ -112,25 +136,14 @@ a.link-viewall {
 	// margin-right: 0;
 }
 
-
-#recent_projthumbs figure {
-	margin-bottom: 20px;
-}
-
-
-
-
-
 #projthumbs-leftside, 
 #projthumbs-rightside {
 	width: 650px;
 	float: left;
 }
 
-#blogthumbs-leftside {
-	// border-right: 1px solid red;
-}
-
+/* Recent Blog Post Section Styling
+---------------------------------- */
 #recent_blogthumbs figure {
 	margin-bottom: 20px;
 	width: 420px;

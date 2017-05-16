@@ -1,3 +1,14 @@
+@import "partials/_general_styles";
+
+
+// Colors
+$header_back: lightgray; // Header background
+$footer_back: lightgray; // Footer background
+
+
+
+
+
 /* General Styling
 ----------------------------- */
 body {
@@ -9,10 +20,12 @@ body {
 	min-width: 900px;
 	max-width: 1300px;
 	margin: 0 auto;
-	// border: 2px dashed black;
+	// outline: 2px dashed black;
 }
 
-
+p, h1, h2, h3, h4 {
+	margin: 0 0 10px;
+}
 
 
 
@@ -23,7 +36,7 @@ body {
 /* Section Styling
 ----------------------------- */
 header {
-	background: red;
+	background: $header_back;
 }
 
 .skills {
@@ -39,5 +52,5 @@ header {
 }
 
 footer {
-	background: red;
+	background: $footer_back;
 }

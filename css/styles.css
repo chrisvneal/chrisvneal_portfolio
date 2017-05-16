@@ -11,10 +11,14 @@ body {
   margin: 0 auto;
 }
 
+p, h1, h2, h3, h4 {
+  margin: 0 0 10px;
+}
+
 /* Section Styling
 ----------------------------- */
 header {
-  background: red;
+  background: lightgray;
 }
 
 .skills {
@@ -30,7 +34,7 @@ header {
 }
 
 footer {
-  background: red;
+  background: lightgray;
 }
 
 /*# sourceMappingURL=styles.css.map */

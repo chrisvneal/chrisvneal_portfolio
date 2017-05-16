@@ -40,7 +40,7 @@ header {
 }
 
 .skills {
-  background: lightblue;
+  background: pink;
 }
 
 .recent_projects {
@@ -70,22 +70,28 @@ a.link-viewall {
   width: 400px;
   height: 360px;
   float: left;
-  margin-right: 50px;
 }
 
-[id^="rec_projthumb_"]:last-child {
-  margin-right: 0;
+#recent_projthumbs figure {
+  margin-bottom: 20px;
 }
 
-#blogthumbs-leftside,
-#blogthumbs-rightside {
+#projthumbs-leftside,
+#projthumbs-rightside {
   width: 650px;
   float: left;
 }
 
 #recent_blogthumbs figure {
   margin-bottom: 20px;
-  width: 642.50px;
+  width: 420px;
+  height: 360px;
+  float: left;
+  margin-right: 20px;
+}
+
+#recent_blogthumbs figure:last-child {
+  margin-right: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -2,7 +2,9 @@
 
 
 // Colors
-$header_back: lightgray; // Header background
+
+$gray-light: lightgray;
+$header_back: $gray-light; // Header background
 $footer_back: lighten($header_back, 10%); // Footer background
 
 
@@ -74,6 +76,10 @@ footer {
 	background: $footer_back;
 }
 
+header, footer, section {	
+	padding: 20px 0;
+}
+
 
 
 
@@ -93,4 +99,8 @@ footer {
 
 [id^="rec_projthumb_"]:last-child {
 	margin-right: 0;
+}
+
+#recent_projthumbs {
+	margin-top: 10px;
 }

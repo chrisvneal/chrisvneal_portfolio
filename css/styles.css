@@ -54,6 +54,10 @@ footer {
   background: #ededed;
 }
 
+header, footer, section {
+  padding: 20px 0;
+}
+
 /* Recent Projects styling
 ---------------------------------- */
 [id^="rec_projthumb_"] {
@@ -65,6 +69,10 @@ footer {
 
 [id^="rec_projthumb_"]:last-child {
   margin-right: 0;
+}
+
+#recent_projthumbs {
+  margin-top: 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */

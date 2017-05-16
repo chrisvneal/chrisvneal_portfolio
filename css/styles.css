@@ -1,14 +1,16 @@
 /* General Styling
 ----------------------------- */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
   margin: 0;
   font-family: Helvetica, Arial, sans-serif;
-}
-
-.container {
-  min-width: 900px;
-  max-width: 1300px;
-  margin: 0 auto;
 }
 
 p, h1, h2, h3, h4 {
@@ -17,6 +19,17 @@ p, h1, h2, h3, h4 {
 
 figure {
   margin: 0;
+}
+
+/* personal classes */
+.container {
+  min-width: 900px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+#recent_projthumbs {
+  overflow: hidden;
 }
 
 /* Section Styling
@@ -41,8 +54,17 @@ footer {
   background: #ededed;
 }
 
-#recent_projthumbs figure[id^="rec_projthumb_"] {
-  border: 5px solid black;
+/* Recent Projects styling
+---------------------------------- */
+[id^="rec_projthumb_"] {
+  width: 400px;
+  height: 360px;
+  float: left;
+  margin-right: 50px;
+}
+
+[id^="rec_projthumb_"]:last-child {
+  margin-right: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */

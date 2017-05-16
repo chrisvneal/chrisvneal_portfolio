@@ -42,9 +42,12 @@ figure {
 	// outline: 2px dashed black;
 }
 
-#recent_projthumbs {
+#recent_projthumbs,
+#recent_blogthumbs {
 	overflow: hidden;
 }
+
+
 
 
 
@@ -109,6 +112,16 @@ a.link-viewall {
 	margin-right: 0;
 }
 
-#recent_projthumbs {
-	// margin-top: 10px;
+
+
+
+
+#blogthumbs-leftside, 
+#blogthumbs-rightside {
+	width: 650px;
+	float: left;
+}
+
+#blogthumbs-leftside {
+	border-right: 1px solid red;
 }

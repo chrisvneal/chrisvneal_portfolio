@@ -3,7 +3,7 @@
 
 // Colors
 $header_back: lightgray; // Header background
-$footer_back: lightgray; // Footer background
+$footer_back: lighten($header_back, 10%); // Footer background
 
 
 

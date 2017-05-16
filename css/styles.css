@@ -83,8 +83,9 @@ a.link-viewall {
   float: left;
 }
 
-#blogthumbs-leftside {
-  border-right: 1px solid red;
+#recent_blogthumbs figure {
+  margin-bottom: 20px;
+  width: 642.50px;
 }
 
 /*# sourceMappingURL=styles.css.map */

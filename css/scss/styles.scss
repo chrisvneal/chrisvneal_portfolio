@@ -27,6 +27,10 @@ p, h1, h2, h3, h4 {
 	margin: 0 0 10px;
 }
 
+figure {
+	margin: 0;
+}
+
 
 
 
@@ -48,9 +52,21 @@ header {
 }
 
 .recent_blog {
-	background: lightgray;
+	background: lightblue;
 }
 
 footer {
 	background: $footer_back;
+}
+
+
+
+
+
+
+
+
+
+#recent_projthumbs figure[id^="rec_projthumb_"] {
+	border: 5px solid black;
 }

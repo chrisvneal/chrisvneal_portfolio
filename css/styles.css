@@ -1,0 +1,21 @@
+header {
+  background: red;
+}
+
+.skills {
+  background: lightblue;
+}
+
+.recent_projects {
+  background: yellow;
+}
+
+.recent_blog {
+  background: lightgray;
+}
+
+footer {
+  background: red;
+}
+
+/*# sourceMappingURL=styles.css.map */

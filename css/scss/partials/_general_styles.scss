@@ -1,0 +1,29 @@
+/* General Styling (basic elements)
+----------------------------- */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+p, h1, h2, h3, h4 {
+	margin: 0 0 10px;
+}
+
+figure {
+	margin: 0;
+}
+
+/* personal classes */
+.container {
+	max-width: 1300px;
+	min-width: 900px;
+	margin: 0 auto;
+}

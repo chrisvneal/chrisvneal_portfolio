@@ -1,4 +1,4 @@
-/* General Styling
+/* General Styling (basic elements)
 ----------------------------- */
 html {
   box-sizing: border-box;
@@ -23,8 +23,8 @@ figure {
 
 /* personal classes */
 .container {
-  min-width: 900px;
   max-width: 1300px;
+  min-width: 900px;
   margin: 0 auto;
 }
 

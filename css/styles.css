@@ -73,18 +73,15 @@ footer {
   overflow: hidden;
 }
 
-.project-card {
-  width: 642px;
-  height: 350px;
-  float: left;
-  border-top: 2px solid black;
-  margin-bottom: 10px;
-}
-
 #projthumbs-leftside,
 #projthumbs-rightside {
   width: 650px;
   float: left;
+}
+
+.project-card {
+  width: 100%;
+  outline: 2px dashed red;
 }
 
 /* Recent Blog Post Section Styling

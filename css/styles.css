@@ -69,13 +69,14 @@ footer {
 
 /* Recent Projects Section Styling
 -------------------------------------------------------- */
-#recent_projthumbs figure {
-  margin-bottom: 20px;
+#recent-projthumbs {
+  overflow: hidden;
 }
 
-[id^="rec_projthumb_"] {
-  width: 400px;
-  height: 360px;
+.project-card {
+  margin: 10px 0;
+  width: 642px;
+  height: 350px;
   float: left;
 }
 
@@ -86,7 +87,7 @@ footer {
 }
 
 /* Recent Blog Post Section Styling
----------------------------------- */
+-------------------------------------------------------- */
 #recent_blogthumbs figure {
   margin-bottom: 20px;
   width: 420px;

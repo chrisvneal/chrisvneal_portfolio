@@ -117,24 +117,22 @@ footer {
 
 /* Recent Projects Section Styling
 -------------------------------------------------------- */
-#recent_projthumbs figure {
-	margin-bottom: 20px;
+
+#recent-projthumbs {
+	overflow: hidden;
 }
 
-
-
-
-[id^="rec_projthumb_"] {
-	// border: 1px solid black;
-	width: 400px;
-	height: 360px;
+.project-card {
+	margin: 10px 0;
+	width: 642px;
+	height: 350px;
 	float: left;
-	// margin-right: 50px;
 }
 
-[id^="rec_projthumb_"]:last-child {
-	// margin-right: 0;
-}
+
+
+
+
 
 #projthumbs-leftside, 
 #projthumbs-rightside {
@@ -142,8 +140,9 @@ footer {
 	float: left;
 }
 
+
 /* Recent Blog Post Section Styling
----------------------------------- */
+-------------------------------------------------------- */
 #recent_blogthumbs figure {
 	margin-bottom: 20px;
 	width: 420px;

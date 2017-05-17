@@ -43,6 +43,18 @@ figure {
 }
 
 
+#recent_projects header,
+#recent_blog header {
+	// margin-bottom: 40px;
+	background: inherit;
+
+}
+
+
+
+
+
+
 
 
 
@@ -70,11 +82,11 @@ header {
 	background: pink;
 }
 
-.recent_projects {
+#recent_projects {
 	background: yellow;
 }
 
-.recent_blog {
+#recent_blog {
 	background: lightblue;
 }
 
@@ -84,9 +96,17 @@ footer {
 
 /* navigation */
 .link-viewall {
-	margin-bottom: 50px;
+	margin: 0 10px;
 	display: inline-block;
 }
+
+
+.section-title {
+	display: inline-block;
+}
+
+
+
 
 
 

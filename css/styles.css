@@ -28,6 +28,11 @@ figure {
   margin: 0 auto;
 }
 
+#recent_projects header,
+#recent_blog header {
+  background: inherit;
+}
+
 /* General Section Styling
 -------------------------------------------------------- */
 header,
@@ -44,11 +49,11 @@ header {
   background: pink;
 }
 
-.recent_projects {
+#recent_projects {
   background: yellow;
 }
 
-.recent_blog {
+#recent_blog {
   background: lightblue;
 }
 
@@ -58,7 +63,11 @@ footer {
 
 /* navigation */
 .link-viewall {
-  margin-bottom: 50px;
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.section-title {
   display: inline-block;
 }
 

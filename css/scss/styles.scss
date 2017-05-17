@@ -42,10 +42,7 @@ figure {
 	// outline: 2px dashed black;
 }
 
-#recent_projthumbs,
-#recent_blogthumbs {
-	overflow: hidden;
-}
+
 
 
 
@@ -85,6 +82,11 @@ footer {
 	background: $footer_back;
 }
 
+#recent_projthumbs,
+#recent_blogthumbs {
+	overflow: hidden;
+}
+
 /* navigation */
 .link-viewall {
 	margin-bottom: 10px;
@@ -118,10 +120,6 @@ footer {
 /* Recent Projects Section Styling
 -------------------------------------------------------- */
 
-#recent-projthumbs {
-	overflow: hidden;
-	// outline: 2px dashed red;
-}
 
 #projthumbs-leftside, 
 #projthumbs-rightside {
@@ -134,13 +132,19 @@ footer {
 
 
 .project-card {
-	// margin: 10px 0;
 	width: 100%;
-	// height: 350px;
-	// float: left;
-	// border-top: 2px solid black;
-	// margin-bottom: 10px;
-	outline: 2px dashed red;
+	margin-bottom: 15px;
+	border: 1px dashed blue;
+
+	figure {
+		// width: 90%;
+		// display: inline-block;
+		// margin: 0 auto;
+		img {
+			width: 640px;
+			margin: 0 auto;
+		}
+	}
 }
 
 

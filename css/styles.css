@@ -56,15 +56,19 @@ footer {
   background: #ededed;
 }
 
+/* navigation */
+.link-viewall {
+  margin-bottom: 50px;
+  display: inline-block;
+}
+
 #recent_projthumbs,
 #recent_blogthumbs {
   overflow: hidden;
 }
 
-/* navigation */
-.link-viewall {
-  margin-bottom: 10px;
-  display: inline-block;
+#recent-projthumbs {
+  border: 1px solid black;
 }
 
 /* Recent Projects Section Styling
@@ -75,14 +79,20 @@ footer {
   float: left;
 }
 
+/* project cards */
 .project-card {
   width: 100%;
   margin-bottom: 15px;
-  border: 1px dashed blue;
+}
+.project-card h3 {
+  margin-bottom: 30px;
+}
+.project-card figure {
+  width: 90%;
+  margin: 0 auto;
 }
 .project-card figure img {
-  width: 640px;
-  margin: 0 auto;
+  width: 100%;
 }
 
 /* Recent Blog Post Section Styling

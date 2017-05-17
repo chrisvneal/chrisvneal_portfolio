@@ -82,16 +82,36 @@ footer {
 	background: $footer_back;
 }
 
+/* navigation */
+.link-viewall {
+	margin-bottom: 50px;
+	display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 #recent_projthumbs,
 #recent_blogthumbs {
 	overflow: hidden;
 }
 
-/* navigation */
-.link-viewall {
-	margin-bottom: 10px;
-	display: inline-block;
+#recent-projthumbs {
+	border: 1px solid black;
+	// overflow: hidden;
 }
+
+
+
+
 
 
 
@@ -129,20 +149,25 @@ footer {
 
 
 
-
+/* project cards */
 
 .project-card {
 	width: 100%;
 	margin-bottom: 15px;
-	border: 1px dashed blue;
+	// border: 1px dashed blue;
+
+	h3 {
+		margin-bottom: 30px;
+	}
 
 	figure {
-		// width: 90%;
+		width: 90%;
 		// display: inline-block;
-		// margin: 0 auto;
+		margin: 0 auto;
+		// outline: 1px dashed blue;
+
 		img {
-			width: 640px;
-			margin: 0 auto;
+			width: 100%;
 		}
 	}
 }

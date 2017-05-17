@@ -11,11 +11,33 @@ $footer_back: lighten($header_back, 10%); // Footer background
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* General Styling
 ----------------------------- */
 html {
   box-sizing: border-box;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -43,12 +65,7 @@ figure {
 }
 
 
-#recent_projects header,
-#recent_blog header {
-	// margin-bottom: 40px;
-	background: inherit;
 
-}
 
 
 
@@ -60,155 +77,4 @@ figure {
 
 
 
-
-
-
-
-
-
-/* General Section Styling
--------------------------------------------------------- */
-header, 
-footer, 
-section {	
-	padding: 20px 0;
-}
-
-header {
-	background: $header_back;
-}
-
-.intro-skills {
-	background: pink;
-}
-
-#recent_projects {
-	background: yellow;
-}
-
-#recent_blog {
-	background: lightblue;
-}
-
-footer {
-	background: $footer_back;
-}
-
-/* navigation */
-.link-viewall {
-	margin: 0 10px;
-	display: inline-block;
-}
-
-
-.section-title {
-	display: inline-block;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#recent_projthumbs,
-#recent_blogthumbs {
-	overflow: hidden;
-}
-
-#recent-projthumbs {
-	border: 1px solid black;
-	// overflow: hidden;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Recent Projects Section Styling
--------------------------------------------------------- */
-
-
-#projthumbs-leftside, 
-#projthumbs-rightside {
-	width: 650px;
-	float: left;
-}
-
-
-
-/* project cards */
-
-.project-card {
-	width: 100%;
-	margin-bottom: 15px;
-	// border: 1px dashed blue;
-
-	h3 {
-		margin-bottom: 30px;
-	}
-
-	figure {
-		width: 90%;
-		// display: inline-block;
-		margin: 0 auto;
-		// outline: 1px dashed blue;
-
-		img {
-			width: 100%;
-		}
-	}
-}
-
-
-
-
-
-
-/* Recent Blog Post Section Styling
--------------------------------------------------------- */
-#recent_blogthumbs figure {
-	margin-bottom: 20px;
-	width: 420px;
-	height: 360px;
-	// border: 1px dashed red;
-	float: left;
-	margin-right: 20px;
-}
-
-
-#recent_blogthumbs figure:last-child {
-	margin-right: 0;
-}
+@import "partials/_section_styling"

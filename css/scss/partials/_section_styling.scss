@@ -1,0 +1,111 @@
+/* General Section Styling
+--------------------------------------------------------
+-------------------------------------------------------- */
+header, 
+footer, 
+section {	
+	padding: 20px 0;
+}
+
+header {
+	background: $header_back;
+}
+
+footer {
+	background: $footer_back;
+}
+
+/* navigation */
+.link-viewall {
+	margin: 0 10px;
+	display: inline-block;
+}
+
+/* Home Page Section Styling
+-------------------------------------------------------- 
+-------------------------------------------------------- */
+
+.section-title {
+	display: inline-block;
+}
+
+/* Intro & Skills Section Styling
+-------------------------------------------------------- 
+-------------------------------------------------------- */
+
+.intro-skills {
+	background: pink;
+}
+
+/* Recent Project & Blog Post Section Styling
+-------------------------------------------------------- 
+-------------------------------------------------------- */
+
+#recent_projects header,
+#recent_blog header {
+	margin-bottom: 40px;
+	background: inherit;
+}
+
+#recent_projthumbs,
+#recent_blogthumbs {
+	overflow: hidden;
+}
+
+/* Recent Projects Section
+--------------------------------- */
+#recent_projects {
+	background: yellow;
+}
+
+
+#projthumbs-leftside, 
+#projthumbs-rightside {
+	width: 650px;
+	float: left;
+}
+
+#recent-projthumbs {
+	border: 1px solid black;
+}
+
+/* project card styling */
+
+.project-card {
+	width: 100%;
+	margin-bottom: 15px;
+
+	h3 {
+		margin-bottom: 30px;
+	}
+
+	figure {
+		width: 90%;
+		margin: 0 auto;
+
+		img {
+			width: 100%;
+			max-width: 100%;
+		}
+	}
+}
+
+/* Recent blog Posts Section
+--------------------------------- */
+#recent_blog {
+	background: lightblue;
+}
+
+#recent_blogthumbs figure {
+	margin-bottom: 20px;
+	width: 420px;
+	height: 360px;
+	// border: 1px dashed red;
+	float: left;
+	margin-right: 20px;
+}
+
+
+#recent_blogthumbs figure:last-child {
+	margin-right: 0;
+}

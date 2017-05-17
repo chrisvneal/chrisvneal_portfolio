@@ -1,80 +1,10 @@
-@import "partials/_general_styles";
-
-
 // Colors
 
 $gray-light: lightgray;
 $header_back: $gray-light; // Header background
 $footer_back: lighten($header_back, 10%); // Footer background
 
+@import "partials/_general_styles"; // General element styling
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* General Styling
------------------------------ */
-html {
-  box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-body {
-	margin: 0;
-	font-family: Helvetica, Arial, sans-serif;
-}
-
-p, h1, h2, h3, h4 {
-	margin: 0 0 10px;
-}
-
-figure {
-	margin: 0;
-}
-
-/* personal classes */
-
-.container {	
-	min-width: 900px;
-	max-width: 1300px;
-	margin: 0 auto;
-	// outline: 2px dashed black;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@import "partials/_section_styling"
+@import "partials/_section_styling" // Styles Intro & Skills, Recent Projects, Recene Blog Posts sections

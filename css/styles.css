@@ -1,4 +1,4 @@
-/* General Styling
+/* General Styling (basic elements)
 ----------------------------- */
 html {
   box-sizing: border-box;
@@ -13,6 +13,10 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
+p {
+  line-height: 2;
+}
+
 p, h1, h2, h3, h4 {
   margin: 0 0 10px;
 }
@@ -23,12 +27,13 @@ figure {
 
 /* personal classes */
 .container {
-  min-width: 900px;
   max-width: 1300px;
+  min-width: 900px;
   margin: 0 auto;
 }
 
 /* General Section Styling
+--------------------------------------------------------
 -------------------------------------------------------- */
 header,
 footer,
@@ -40,26 +45,37 @@ header {
   background: lightgray;
 }
 
-.intro-skills {
-  background: pink;
-}
-
-.recent_projects {
-  background: yellow;
-}
-
-.recent_blog {
-  background: lightblue;
-}
-
 footer {
   background: #ededed;
 }
 
 /* navigation */
 .link-viewall {
-  margin-bottom: 50px;
+  margin: 0 10px;
   display: inline-block;
+}
+
+/* Home Page Section Styling
+-------------------------------------------------------- 
+-------------------------------------------------------- */
+.section-title {
+  display: inline-block;
+}
+
+/* Intro & Skills Section Styling
+-------------------------------------------------------- 
+-------------------------------------------------------- */
+.intro-skills {
+  background: pink;
+}
+
+/* Recent Project & Blog Post Section Styling
+-------------------------------------------------------- 
+-------------------------------------------------------- */
+#recent_projects header,
+#recent_blog header {
+  margin-bottom: 40px;
+  background: inherit;
 }
 
 #recent_projthumbs,
@@ -67,19 +83,23 @@ footer {
   overflow: hidden;
 }
 
-#recent-projthumbs {
-  border: 1px solid black;
+/* Recent Projects Section
+--------------------------------- */
+#recent_projects {
+  background: yellow;
 }
 
-/* Recent Projects Section Styling
--------------------------------------------------------- */
 #projthumbs-leftside,
 #projthumbs-rightside {
   width: 650px;
   float: left;
 }
 
-/* project cards */
+#recent-projthumbs {
+  border: 1px solid black;
+}
+
+/* project card styling */
 .project-card {
   width: 100%;
   margin-bottom: 15px;
@@ -93,10 +113,15 @@ footer {
 }
 .project-card figure img {
   width: 100%;
+  max-width: 100%;
 }
 
-/* Recent Blog Post Section Styling
--------------------------------------------------------- */
+/* Recent blog Posts Section
+--------------------------------- */
+#recent_blog {
+  background: lightblue;
+}
+
 #recent_blogthumbs figure {
   margin-bottom: 20px;
   width: 420px;

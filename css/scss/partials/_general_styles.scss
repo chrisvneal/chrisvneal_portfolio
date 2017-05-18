@@ -33,3 +33,64 @@ figure {
 a:link {
 	text-decoration: none;
 }
+
+
+
+
+
+
+
+#header, footer{	
+	padding: 20px 0;
+}
+
+#header {
+	background: $header_back;
+}
+
+#footer {
+	background: $footer_back;
+}
+
+/* navigation */
+.link-viewall {
+	margin: 0 10px;
+	display: inline-block;
+}
+
+/* Home Page Section Styling
+-------------------------------------------------------- 
+-------------------------------------------------------- */
+
+
+
+/* Header Styling
+-------------------------------------------------------- 
+-------------------------------------------------------- */
+#header p, nav {
+	display: inline-block;
+}
+
+#header p {
+	margin-bottom: 0;
+}
+
+
+nav {
+	float: right;
+
+	ul {
+		padding: 0;
+		margin: 0;
+		list-style-type: none;
+
+		li {
+			display: inline-block;
+			margin-right: 2.2em;
+
+			&:last-of-type {
+				margin-right: 0;
+			}
+		}
+	}
+}

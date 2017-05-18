@@ -32,20 +32,15 @@ a:link {
   text-decoration: none;
 }
 
-/* General Section Styling
---------------------------------------------------------
--------------------------------------------------------- */
-header,
-footer,
-section {
+#header, footer {
   padding: 20px 0;
 }
 
-header {
+#header {
   background: lightgray;
 }
 
-footer {
+#footer {
   background: #ededed;
 }
 
@@ -58,18 +53,14 @@ footer {
 /* Home Page Section Styling
 -------------------------------------------------------- 
 -------------------------------------------------------- */
-.section-title {
-  display: inline-block;
-}
-
 /* Header Styling
 -------------------------------------------------------- 
 -------------------------------------------------------- */
-[role=banner] p, nav {
+#header p, nav {
   display: inline-block;
 }
 
-[role=banner] p {
+#header p {
   margin-bottom: 0;
 }
 
@@ -89,9 +80,19 @@ nav ul li:last-of-type {
   margin-right: 0;
 }
 
-/* Intro & Skills Section Styling
--------------------------------------------------------- 
+/* Section Styling
+--------------------------------------------------------
 -------------------------------------------------------- */
+section {
+  padding: 20px 0;
+}
+
+.section-title {
+  display: inline-block;
+}
+
+/* intro & skills section styling
+----------------------------------------- */
 .intro-skills {
   background: pink;
 }
@@ -99,9 +100,6 @@ nav ul li:last-of-type {
   line-height: 2.3;
 }
 
-/* Recent Project & Blog Post Section Styling
--------------------------------------------------------- 
--------------------------------------------------------- */
 #recent_projects header,
 #recent_blog header {
   margin-bottom: 40px;
@@ -114,7 +112,7 @@ nav ul li:last-of-type {
 }
 
 /* recent projects section
--------------------------------------------------------------- */
+----------------------------------------- */
 #recent_projects {
   background: yellow;
 }
@@ -142,7 +140,7 @@ nav ul li:last-of-type {
 }
 
 /* recent blog posts section
--------------------------------------------------------------- */
+----------------------------------------- */
 #recent_blog {
   background: lightblue;
 }

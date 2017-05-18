@@ -1,71 +1,16 @@
-/* General Section Styling
+/* Section Styling
 --------------------------------------------------------
--------------------------------------------------------- */
-header, 
-footer, 
+-------------------------------------------------------- */ 
 section {	
 	padding: 20px 0;
 }
-
-header {
-	background: $header_back;
-}
-
-footer {
-	background: $footer_back;
-}
-
-/* navigation */
-.link-viewall {
-	margin: 0 10px;
-	display: inline-block;
-}
-
-/* Home Page Section Styling
--------------------------------------------------------- 
--------------------------------------------------------- */
 
 .section-title {
 	display: inline-block;
 }
 
-/* Header Styling
--------------------------------------------------------- 
--------------------------------------------------------- */
-[role=banner] p, nav {
-	display: inline-block;
-}
-
-[role=banner] p {
-	margin-bottom: 0;
-}
-
-
-nav {
-	float: right;
-
-	ul {
-		padding: 0;
-		margin: 0;
-		list-style-type: none;
-
-		li {
-			display: inline-block;
-			margin-right: 2.2em;
-
-			&:last-of-type {
-				margin-right: 0;
-			}
-		}
-	}
-}
-
-
-
-
-/* Intro & Skills Section Styling
--------------------------------------------------------- 
--------------------------------------------------------- */
+/* intro & skills section styling
+----------------------------------------- */
 .intro-skills {
 	background: pink;
 
@@ -74,9 +19,6 @@ nav {
 	}
 }
 
-/* Recent Project & Blog Post Section Styling
--------------------------------------------------------- 
--------------------------------------------------------- */
 #recent_projects header,
 #recent_blog header {
 	margin-bottom: 40px;
@@ -89,7 +31,7 @@ nav {
 }
 
 /* recent projects section
--------------------------------------------------------------- */
+----------------------------------------- */
 #recent_projects {
 	background: yellow;
 }
@@ -120,7 +62,7 @@ nav {
 }
 
 /* recent blog posts section
--------------------------------------------------------------- */
+----------------------------------------- */
 #recent_blog {
 	background: lightblue;
 }

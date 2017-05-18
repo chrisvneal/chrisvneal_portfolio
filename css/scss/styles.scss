@@ -1,9 +1,7 @@
-// Colors
-$gray-light: lightgray;
-$header_back: $gray-light; // Header background
-$footer_back: lighten($header_back, 10%); // Footer background
+@import "partials/_variables"; // contains variables, functions, etc..
 
-@import "partials/_general_styles"; // General element styling
+@import "partials/_author_credits"; // Contains credentials and personal info about author of website
 
+@import "partials/_global_styles"; // global element styling!
 
 @import "partials/_section_styling" // Styles Intro & Skills, Recent Projects, Recene Blog Posts sections

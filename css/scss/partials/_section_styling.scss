@@ -1,6 +1,4 @@
-/* Section Styling
---------------------------------------------------------
--------------------------------------------------------- */ 
+/*********** general section styling **************/
 section {	
 	padding: 20px 0;
 }
@@ -9,8 +7,7 @@ section {
 	display: inline-block;
 }
 
-/* intro & skills section styling
------------------------------------------ */
+/***** intro & skills section ******/
 .intro-skills {
 	background: pink;
 
@@ -30,8 +27,7 @@ section {
 	overflow: hidden;
 }
 
-/* recent projects section
------------------------------------------ */
+/***** recent projects section ******/
 #recent_projects {
 	background: yellow;
 }
@@ -42,7 +38,7 @@ section {
 	float: left;
 }
 
-/* project card styling */
+/***** recrent project card styling ******/
 .project-card {
 	width: 100%;
 	margin-bottom: 15px;
@@ -61,8 +57,7 @@ section {
 	}
 }
 
-/* recent blog posts section
------------------------------------------ */
+/***** recent blog posts section ******/
 #recent_blog {
 	background: lightblue;
 }

@@ -38,6 +38,26 @@ footer {
 
 nav {
 	float: right;
+
+	ul {
+		padding: 0;
+		margin: 0;
+		list-style-type: none;
+
+		li {
+			display: inline-block;
+			margin-right: 2.2em;
+
+			&:last-of-type {
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+
+a:link {
+	text-decoration: none;
 }
 
 /* Intro & Skills Section Styling

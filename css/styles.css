@@ -32,20 +32,6 @@ figure {
   margin: 0 auto;
 }
 
-ul {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-}
-ul li {
-  display: inline-block;
-}
-
-/* Main Navigation */
-a:link {
-  text-decoration: none;
-}
-
 /* General Section Styling
 --------------------------------------------------------
 -------------------------------------------------------- */
@@ -85,6 +71,22 @@ footer {
 
 nav {
   float: right;
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+nav ul li {
+  display: inline-block;
+  margin-right: 2.2em;
+}
+nav ul li:last-of-type {
+  margin-right: 0;
+}
+
+a:link {
+  text-decoration: none;
 }
 
 /* Intro & Skills Section Styling

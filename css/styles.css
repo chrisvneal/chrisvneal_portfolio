@@ -13,10 +13,6 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
-.intro-skills p {
-  line-height: 2;
-}
-
 p, h1, h2, h3, h4 {
   margin: 0 0 10px;
 }
@@ -99,6 +95,9 @@ nav ul li:last-of-type {
 .intro-skills {
   background: pink;
 }
+.intro-skills p {
+  line-height: 2.3;
+}
 
 /* Recent Project & Blog Post Section Styling
 -------------------------------------------------------- 
@@ -114,8 +113,8 @@ nav ul li:last-of-type {
   overflow: hidden;
 }
 
-/* Recent Projects Section
---------------------------------- */
+/* recent projects section
+-------------------------------------------------------------- */
 #recent_projects {
   background: yellow;
 }
@@ -124,10 +123,6 @@ nav ul li:last-of-type {
 #projthumbs-rightside {
   width: 650px;
   float: left;
-}
-
-#recent-projthumbs {
-  border: 1px solid black;
 }
 
 /* project card styling */
@@ -144,24 +139,22 @@ nav ul li:last-of-type {
 }
 .project-card figure img {
   width: 100%;
-  max-width: 100%;
 }
 
-/* Recent blog Posts Section
---------------------------------- */
+/* recent blog posts section
+-------------------------------------------------------------- */
 #recent_blog {
   background: lightblue;
 }
 
 #recent_blogthumbs figure {
-  margin-bottom: 20px;
+  float: left;
   width: 420px;
   height: 360px;
-  float: left;
-  margin-right: 20px;
+  margin: 0 20px 20px 0;
 }
 
-#recent_blogthumbs figure:last-child {
+#recent_blogthumbs figure:last-of-type {
   margin-right: 0;
 }
 

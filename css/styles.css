@@ -1,5 +1,11 @@
-/* General Styling (basic elements)
------------------------------ */
+/*
+* Website Developer: Christopher Neal
+* Year Created: 2017, May
+*
+* Description: Author's web development portfolio*
+*
+*/
+/*********** global styling (basic elements) ***********/
 html {
   box-sizing: border-box;
 }
@@ -21,17 +27,13 @@ figure {
   margin: 0;
 }
 
-/* personal classes */
 .container {
   max-width: 1300px;
   min-width: 900px;
   margin: 0 auto;
 }
 
-a:link {
-  text-decoration: none;
-}
-
+/*********** main header and footer styling ***********/
 #header, footer {
   padding: 20px 0;
 }
@@ -44,26 +46,16 @@ a:link {
   background: #ededed;
 }
 
-/* navigation */
-.link-viewall {
-  margin: 0 10px;
-  display: inline-block;
-}
-
-/* Home Page Section Styling
--------------------------------------------------------- 
--------------------------------------------------------- */
-/* Header Styling
--------------------------------------------------------- 
--------------------------------------------------------- */
-#header p, nav {
-  display: inline-block;
-}
-
 #header p {
   margin-bottom: 0;
 }
 
+#header p, nav {
+  display: inline-block;
+}
+
+/************* main navigation & links ****************/
+/* main nav */
 nav {
   float: right;
 }
@@ -80,9 +72,17 @@ nav ul li:last-of-type {
   margin-right: 0;
 }
 
-/* Section Styling
---------------------------------------------------------
--------------------------------------------------------- */
+/* links */
+a:link {
+  text-decoration: none;
+}
+
+.link-viewall {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+/*********** general section styling **************/
 section {
   padding: 20px 0;
 }
@@ -91,8 +91,7 @@ section {
   display: inline-block;
 }
 
-/* intro & skills section styling
------------------------------------------ */
+/***** intro & skills section ******/
 .intro-skills {
   background: pink;
 }
@@ -111,8 +110,7 @@ section {
   overflow: hidden;
 }
 
-/* recent projects section
------------------------------------------ */
+/***** recent projects section ******/
 #recent_projects {
   background: yellow;
 }
@@ -123,7 +121,7 @@ section {
   float: left;
 }
 
-/* project card styling */
+/***** recent project card styling ******/
 .project-card {
   width: 100%;
   margin-bottom: 15px;
@@ -139,8 +137,7 @@ section {
   width: 100%;
 }
 
-/* recent blog posts section
------------------------------------------ */
+/***** recent blog posts section ******/
 #recent_blog {
   background: lightblue;
 }

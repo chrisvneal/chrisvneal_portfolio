@@ -1,5 +1,4 @@
-/* General Styling (basic elements)
------------------------------ */
+/*********** global styling (basic elements) ***********/
 html {
   box-sizing: border-box;
 }
@@ -14,7 +13,6 @@ body {
 }
 
 
-
 p, h1, h2, h3, h4 {
 	margin: 0 0 10px;
 }
@@ -23,23 +21,13 @@ figure {
 	margin: 0;
 }
 
-/* personal classes */
 .container {
 	max-width: 1300px;
 	min-width: 900px;
 	margin: 0 auto;
 }
 
-a:link {
-	text-decoration: none;
-}
-
-
-
-
-
-
-
+/*********** main header and footer styling ***********/
 #header, footer{	
 	padding: 20px 0;
 }
@@ -52,30 +40,16 @@ a:link {
 	background: $footer_back;
 }
 
-/* navigation */
-.link-viewall {
-	margin: 0 10px;
-	display: inline-block;
-}
-
-/* Home Page Section Styling
--------------------------------------------------------- 
--------------------------------------------------------- */
-
-
-
-/* Header Styling
--------------------------------------------------------- 
--------------------------------------------------------- */
-#header p, nav {
-	display: inline-block;
-}
-
 #header p {
 	margin-bottom: 0;
 }
 
+#header p, nav {
+	display: inline-block;
+}
 
+/************* main navigation & links ****************/
+/* main nav */
 nav {
 	float: right;
 
@@ -93,4 +67,15 @@ nav {
 			}
 		}
 	}
+}
+
+/* links */
+
+a:link {
+	text-decoration: none;
+}
+
+.link-viewall {
+	margin: 0 10px;
+	display: inline-block;
 }

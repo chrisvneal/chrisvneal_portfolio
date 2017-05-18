@@ -32,9 +32,14 @@ footer {
 /* Header Styling
 -------------------------------------------------------- 
 -------------------------------------------------------- */
-[role=banner] .title, nav {
+[role=banner] p, nav {
 	display: inline-block;
 }
+
+[role=banner] p {
+	margin-bottom: 0;
+}
+
 
 nav {
 	float: right;
@@ -56,9 +61,7 @@ nav {
 }
 
 
-a:link {
-	text-decoration: none;
-}
+
 
 /* Intro & Skills Section Styling
 -------------------------------------------------------- 

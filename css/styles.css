@@ -32,6 +32,10 @@ figure {
   margin: 0 auto;
 }
 
+a:link {
+  text-decoration: none;
+}
+
 /* General Section Styling
 --------------------------------------------------------
 -------------------------------------------------------- */
@@ -65,8 +69,12 @@ footer {
 /* Header Styling
 -------------------------------------------------------- 
 -------------------------------------------------------- */
-[role=banner] .title, nav {
+[role=banner] p, nav {
   display: inline-block;
+}
+
+[role=banner] p {
+  margin-bottom: 0;
 }
 
 nav {
@@ -83,10 +91,6 @@ nav ul li {
 }
 nav ul li:last-of-type {
   margin-right: 0;
-}
-
-a:link {
-  text-decoration: none;
 }
 
 /* Intro & Skills Section Styling

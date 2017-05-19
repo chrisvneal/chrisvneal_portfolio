@@ -42,6 +42,8 @@ figure {
 	background: url('../img/header_back.jpg') no-repeat;
 	// background-position: 100px 100px;
 	// background-size: 1600px 180px;
+
+	font-family: Nunito, $font-stack;
 }
 
 #footer {
@@ -50,6 +52,7 @@ figure {
 
 #header p {
 	margin-bottom: 0;
+	color: $header-link-color;
 }
 
 #header p, nav {
@@ -78,10 +81,18 @@ nav {
 }
 
 /* links */
-
-a:link {
+a {
 	text-decoration: none;
+}
+
+#header a {	
+	color: $header-link-color;
 	text-transform: uppercase;
+}
+
+.active {
+		// text-decoration: underline;
+		// border-bottom: 2px solid $header-link-color;
 }
 
 .link-viewall {

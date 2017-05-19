@@ -43,6 +43,7 @@ figure {
   background: lightgray;
   padding: 15px 0 20px;
   background: url("../img/header_back.jpg") no-repeat;
+  font-family: Nunito, Helvetica, Arial, sans-serif;
 }
 
 #footer {
@@ -51,6 +52,7 @@ figure {
 
 #header p {
   margin-bottom: 0;
+  color: #fff;
 }
 
 #header p, nav {
@@ -76,8 +78,12 @@ nav ul li:last-of-type {
 }
 
 /* links */
-a:link {
+a {
   text-decoration: none;
+}
+
+#header a {
+  color: #fff;
   text-transform: uppercase;
 }
 

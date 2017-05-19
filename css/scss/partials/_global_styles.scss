@@ -7,8 +7,9 @@ html {
   box-sizing: inherit;
 }
 
-body {
-	margin: 0;
+body {	
+	max-width: 1600px;
+	margin: 0 auto;
 	font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -23,17 +24,18 @@ figure {
 
 .container {
 	max-width: 1300px;
-	min-width: 900px;
+	// min-width: 900px;
 	margin: 0 auto;
 }
 
 /*********** main header and footer styling ***********/
-#header, footer{	
+#header, #footer{	
 	padding: 20px 0;
 }
 
 #header {
 	background: $header_back;
+	padding-bottom: 100px;
 }
 
 #footer {
@@ -73,6 +75,7 @@ nav {
 
 a:link {
 	text-decoration: none;
+	text-transform: uppercase;
 }
 
 .link-viewall {

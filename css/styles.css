@@ -82,6 +82,9 @@ nav ul li:last-of-type {
 a {
   text-decoration: none;
 }
+a:hover:not(#site-name) {
+  opacity: .60;
+}
 
 #header a {
   color: #fff;

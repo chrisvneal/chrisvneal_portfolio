@@ -1,4 +1,8 @@
 // Colors
-$gray-light: lightgray;
-$header_back: $gray-light; // Header background
-$footer_back: lighten($header_back, 10%); // Footer background
+$header-link-color: #fff; //white
+
+// Fonts
+$font-stack: Helvetica, Arial, sans-serif;
+
+// Misc
+$section-padding: 40px 0;

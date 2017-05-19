@@ -7,8 +7,9 @@ html {
   box-sizing: inherit;
 }
 
-body {
-	margin: 0;
+body {	
+	max-width: 1600px;
+	margin: 0 auto;
 	font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -23,28 +24,34 @@ figure {
 
 .container {
 	max-width: 1300px;
-	min-width: 900px;
+	// min-width: 900px;
+	width: 90%;
 	margin: 0 auto;
 }
 
 /*********** main header and footer styling ***********/
-#header, footer{	
-	padding: 20px 0;
+#header, #footer{	
+	padding: $section-padding;
 }
 
 #header {
-	background: $header_back;
+	background: url('../img/header_back.jpg') no-repeat;
+	padding-bottom: 20px;
+	font-family: Nunito, $font-stack;
 }
 
 #footer {
-	background: $footer_back;
+	background: lightgray;
 }
 
-#header p {
+.authorskills {
 	margin-bottom: 0;
+	color: $header-link-color;
+	letter-spacing: .10em;
 }
 
-#header p, nav {
+.authorskills, nav {
+	margin-top: 15px;
 	display: inline-block;
 }
 
@@ -70,9 +77,22 @@ nav {
 }
 
 /* links */
-
-a:link {
+a {
 	text-decoration: none;
+
+	&:hover:not(#site-name) {
+		opacity: .60;
+	}
+}
+
+#header a {	
+	color: $header-link-color;
+	text-transform: uppercase;
+}
+
+.active {
+		// text-decoration: underline;
+		// border-bottom: 2px solid $header-link-color;
 }
 
 .link-viewall {

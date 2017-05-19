@@ -15,7 +15,8 @@ html {
 }
 
 body {
-  margin: 0;
+  max-width: 1600px;
+  margin: 0 auto;
   font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -29,28 +30,33 @@ figure {
 
 .container {
   max-width: 1300px;
-  min-width: 900px;
+  width: 90%;
   margin: 0 auto;
 }
 
 /*********** main header and footer styling ***********/
-#header, footer {
-  padding: 20px 0;
+#header, #footer {
+  padding: 40px 0;
 }
 
 #header {
-  background: lightgray;
+  background: url("../img/header_back.jpg") no-repeat;
+  padding-bottom: 20px;
+  font-family: Nunito, Helvetica, Arial, sans-serif;
 }
 
 #footer {
-  background: #ededed;
+  background: lightgray;
 }
 
-#header p {
+.authorskills {
   margin-bottom: 0;
+  color: #fff;
+  letter-spacing: .10em;
 }
 
-#header p, nav {
+.authorskills, nav {
+  margin-top: 15px;
   display: inline-block;
 }
 
@@ -73,8 +79,16 @@ nav ul li:last-of-type {
 }
 
 /* links */
-a:link {
+a {
   text-decoration: none;
+}
+a:hover:not(#site-name) {
+  opacity: .60;
+}
+
+#header a {
+  color: #fff;
+  text-transform: uppercase;
 }
 
 .link-viewall {
@@ -84,7 +98,7 @@ a:link {
 
 /*********** general section styling **************/
 section {
-  padding: 20px 0;
+  padding: 40px 0;
 }
 
 .section-title {
@@ -121,7 +135,7 @@ section {
   float: left;
 }
 
-/***** recent project card styling ******/
+/***** recent 'project card' styling ******/
 .project-card {
   width: 100%;
   margin-bottom: 15px;

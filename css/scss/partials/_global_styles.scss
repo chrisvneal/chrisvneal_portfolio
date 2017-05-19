@@ -36,7 +36,7 @@ figure {
 
 #header {
 	background: $header_back;
-	padding: 30px 0 20px;
+	padding: $section-padding;
 	// padding-bottom: 100px;
 	// max-height: 180px;
 	background: url('../img/header_back.jpg') no-repeat;

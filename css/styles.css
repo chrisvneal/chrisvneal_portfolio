@@ -30,6 +30,7 @@ figure {
 
 .container {
   max-width: 1300px;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -40,7 +41,8 @@ figure {
 
 #header {
   background: lightgray;
-  padding-bottom: 100px;
+  padding-bottom: 95px;
+  max-height: 180px;
 }
 
 #footer {

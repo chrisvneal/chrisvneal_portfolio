@@ -30,14 +30,18 @@ figure {
 }
 
 /*********** main header and footer styling ***********/
-#header, #footer{	
+#footer{	
 	padding: 20px 0;
 }
 
 #header {
 	background: $header_back;
-	padding-bottom: 95px;
-	max-height: 180px;
+	padding: 15px 0 20px;
+	// padding-bottom: 100px;
+	// max-height: 180px;
+	background: url('../img/header_back.jpg') no-repeat;
+	// background-position: 100px 100px;
+	// background-size: 1600px 180px;
 }
 
 #footer {

@@ -35,14 +35,14 @@ figure {
 }
 
 /*********** main header and footer styling ***********/
-#header, #footer {
+#footer {
   padding: 20px 0;
 }
 
 #header {
   background: lightgray;
-  padding-bottom: 95px;
-  max-height: 180px;
+  padding: 15px 0 20px;
+  background: url("../img/header_back.jpg") no-repeat;
 }
 
 #footer {

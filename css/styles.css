@@ -41,6 +41,7 @@ figure {
 
 #header {
   background: url("../img/header_back.jpg") no-repeat;
+  padding-bottom: 20px;
   font-family: Nunito, Helvetica, Arial, sans-serif;
 }
 
@@ -48,13 +49,14 @@ figure {
   background: lightgray;
 }
 
-#header p {
+.authorskills {
   margin-bottom: 0;
   color: #fff;
   letter-spacing: .10em;
 }
 
-#header p, nav {
+.authorskills, nav {
+  margin-top: 15px;
   display: inline-block;
 }
 

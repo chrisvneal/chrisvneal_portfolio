@@ -41,7 +41,7 @@ figure {
 
 #header {
   background: lightgray;
-  padding: 15px 0 20px;
+  padding: 30px 0 20px;
   background: url("../img/header_back.jpg") no-repeat;
   font-family: Nunito, Helvetica, Arial, sans-serif;
 }
@@ -53,6 +53,7 @@ figure {
 #header p {
   margin-bottom: 0;
   color: #fff;
+  letter-spacing: .10em;
 }
 
 #header p, nav {

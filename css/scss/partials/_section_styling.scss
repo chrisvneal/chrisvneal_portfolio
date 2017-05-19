@@ -30,6 +30,7 @@ section {
 /***** recent projects section ******/
 #recent_projects {
 	background: yellow;
+	// outline: 1px dashed red;
 }
 
 #projthumbs-leftside, 
@@ -38,7 +39,7 @@ section {
 	float: left;
 }
 
-/***** recent project card styling ******/
+/***** recent 'project card' styling ******/
 .project-card {
 	width: 100%;
 	margin-bottom: 15px;

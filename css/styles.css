@@ -35,19 +35,17 @@ figure {
 }
 
 /*********** main header and footer styling ***********/
-#footer {
-  padding: 20px 0;
+#header, #footer {
+  padding: 40px 0;
 }
 
 #header {
-  background: lightgray;
-  padding: 40px 0;
   background: url("../img/header_back.jpg") no-repeat;
   font-family: Nunito, Helvetica, Arial, sans-serif;
 }
 
 #footer {
-  background: #ededed;
+  background: lightgray;
 }
 
 #header p {
@@ -135,7 +133,7 @@ section {
   float: left;
 }
 
-/***** recent project card styling ******/
+/***** recent 'project card' styling ******/
 .project-card {
   width: 100%;
   margin-bottom: 15px;

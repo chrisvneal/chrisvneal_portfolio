@@ -49,6 +49,9 @@ figure {
   background: #111;
   color: #5e5e5e;
 }
+#footer h3 {
+  margin-bottom: 25px;
+}
 
 .authorskills {
   margin-bottom: 0;
@@ -83,13 +86,9 @@ nav ul li:last-of-type {
 a {
   text-decoration: none;
 }
-a:hover:not(#site-name) {
-  opacity: .60;
-}
 
-#header a {
-  color: #fff;
-  text-transform: uppercase;
+a:hover:not(#sitename) {
+  opacity: .60;
 }
 
 .link-viewall {
@@ -97,10 +96,18 @@ a:hover:not(#site-name) {
   display: inline-block;
 }
 
+#header a {
+  color: #fff;
+  text-transform: uppercase;
+}
+
 #footer .sociallinks {
   padding: 0;
   margin: 0;
   list-style-type: none;
+}
+#footer .sociallinks a {
+  color: #5e5e5e;
 }
 #footer .sociallinks li {
   margin-bottom: 20px;

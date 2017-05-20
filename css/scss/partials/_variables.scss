@@ -1,6 +1,7 @@
 // Colors
 $header-link-color: #fff; //white
-$gray-dark: #111;
+$bground-dark: #111; // light shade of black
+$bground-textcolor: lighten($bground-dark, 30%);
 
 // Fonts
 $font-stack: Helvetica, Arial, sans-serif;

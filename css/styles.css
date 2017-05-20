@@ -97,6 +97,15 @@ a:hover:not(#site-name) {
   display: inline-block;
 }
 
+#footer .sociallinks {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+#footer .sociallinks li {
+  margin-bottom: 20px;
+}
+
 /*********** general section styling **************/
 section {
   padding: 40px 0;

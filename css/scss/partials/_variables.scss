@@ -8,3 +8,15 @@ $font-stack: Helvetica, Arial, sans-serif;
 
 // Misc
 $section-padding: 40px 0;
+
+/////////////// Mixins ///////////////
+@mixin links {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+@mixin navLinks {
+	@include links;
+	display: inline-block;
+}

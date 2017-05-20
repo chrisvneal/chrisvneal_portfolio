@@ -1,10 +1,10 @@
 // Colors
-$header-link-color: #fff; //white
 $text-gray: #5e5e5e; //mid-shade gray
 
 // Fonts
-$font-stack: Helvetica, Arial, sans-serif;
-$Nunito: Nunito, $font-stack;
+$sans-font-stack: Helvetica, Arial, sans-serif;
+$text-displayFont: Nunito, $sans-font-stack;
+$text-mainFont: Ubuntu, $sans-font-stack;
 
 // Misc
 $section-padding: 40px 0;

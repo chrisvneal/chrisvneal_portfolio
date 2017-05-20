@@ -17,7 +17,6 @@ html {
 body {
   max-width: 1600px;
   margin: 0 auto;
-  font-family: Helvetica, Arial, sans-serif;
 }
 
 p, h1, h2, h3, h4 {
@@ -67,6 +66,10 @@ a:hover:not(#sitename) {
 }
 
 /*********** main typography styling ***********/
+body {
+  font: 1.1em Ubuntu, Helvetica, Arial, sans-serif;
+}
+
 #header, #footer, .section-title {
   font-family: Nunito, Helvetica, Arial, sans-serif;
 }

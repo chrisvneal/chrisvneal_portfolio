@@ -1,6 +1,10 @@
 /*********** main typography styling ***********/
+body {
+	font: 1.1em $text-mainFont;
+}
+
 #header, #footer, .section-title {
-	font-family: $Nunito;	
+	font-family: $text-displayFont;	
 }
 
 #header a {
@@ -8,7 +12,7 @@
 }
 
 #header a, .authorskills {
-	color: $header-link-color;
+	color: #fff;
 }
 
 #footer {

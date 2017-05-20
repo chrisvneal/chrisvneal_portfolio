@@ -71,22 +71,6 @@ a:hover:not(#sitename) {
   text-transform: uppercase;
 }
 
-#footer .sociallinks {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-}
-#footer .sociallinks li {
-  margin-bottom: 20px;
-  font-size: 1.2em;
-}
-#footer .sociallinks a {
-  color: #5e5e5e;
-}
-#footer .sociallinks .username {
-  color: #919191;
-}
-
 /*********** main header and footer styling ***********/
 #header, #footer {
   padding: 40px 0;
@@ -110,15 +94,13 @@ a:hover:not(#sitename) {
 }
 
 #footer {
-  background: #111;
+  background: #fff;
   color: #5e5e5e;
-}
-#footer h3 {
-  margin-bottom: 25px;
-  font-size: 1.6em;
-}
-#footer .center {
   text-align: center;
+  margin-top: 40px;
+}
+#footer small {
+  font-size: 1em;
 }
 
 /*********** general section styling **************/

@@ -66,20 +66,3 @@ a:hover:not(#sitename) {
 	color: $header-link-color;
 	text-transform: uppercase;
 }
-
-#footer .sociallinks {
-		@include links;
-
-		li {
-			margin-bottom: 20px;
-			font-size: 1.2em;
-		}
-
-		a {
-			color: $bground-textcolor;			
-		}
-
-		.username {
-			color: lighten($bground-textcolor, 20%);
-		}		
-	}

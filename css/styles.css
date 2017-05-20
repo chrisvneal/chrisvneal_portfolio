@@ -37,6 +37,7 @@ figure {
 /*********** main header and footer styling ***********/
 #header, #footer {
   padding: 40px 0;
+  font-family: Nunito, Helvetica, Arial, sans-serif;
 }
 
 #header {
@@ -53,10 +54,6 @@ figure {
 .authorskills, nav {
   margin-top: 15px;
   display: inline-block;
-}
-
-#header, #footer h3, #footer .sociallinks {
-  font-family: Nunito, Helvetica, Arial, sans-serif;
 }
 
 #footer {
@@ -114,6 +111,7 @@ a:hover:not(#sitename) {
 }
 #footer .sociallinks li {
   margin-bottom: 20px;
+  font-size: 1.2em;
 }
 
 /*********** general section styling **************/

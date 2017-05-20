@@ -32,6 +32,7 @@ figure {
 /*********** main header and footer styling ***********/
 #header, #footer{	
 	padding: $section-padding;
+	font-family: Nunito, $font-stack;
 }
 
 #header {
@@ -48,10 +49,6 @@ figure {
 .authorskills, nav {
 	margin-top: 15px;
 	display: inline-block;
-}
-
-#header, #footer h3, #footer .sociallinks {
-	font-family: Nunito, $font-stack;
 }
 
 #footer {
@@ -110,5 +107,6 @@ a:hover:not(#sitename) {
 
 		li {
 			margin-bottom: 20px;
+			font-size: 1.2em;
 		}
 	}

@@ -1,3 +1,39 @@
+/*********** main header and footer styling ***********/
+#header, #footer{	
+	padding: $section-padding;
+	font-family: Nunito, $font-stack;
+}
+
+#header {
+	background: url('../img/header_back.jpg') no-repeat;
+	padding-bottom: 20px;
+}
+
+.authorskills {
+	margin-bottom: 0;
+	color: $header-link-color;
+	letter-spacing: .10em;
+}
+
+.authorskills, nav {
+	margin-top: 15px;
+	display: inline-block;
+}
+
+#footer {
+	background: $foot_bground-dark;
+	color: $bground-textcolor;
+
+	h3 {
+		margin-bottom: 25px;
+		font-size: 1.6em;
+	}
+
+	.center {
+		text-align: center;
+	}
+}
+
 /*********** general section styling **************/
 section {	
 	padding: $section-padding;

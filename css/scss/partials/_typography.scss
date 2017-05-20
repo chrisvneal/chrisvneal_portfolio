@@ -1,0 +1,30 @@
+/*********** main typography styling ***********/
+#header, #footer, .section-title {
+	font-family: $Nunito;	
+}
+
+#header a {
+	text-transform: uppercase;
+}
+
+#header a, .authorskills {
+	color: $header-link-color;
+}
+
+#footer {
+	color: $text-gray;
+
+	small {
+		font-size: 1em;
+	}
+}
+
+.authorskills {
+	letter-spacing: .10em;
+}
+
+
+
+
+
+

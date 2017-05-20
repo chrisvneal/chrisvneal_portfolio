@@ -66,15 +66,33 @@ a:hover:not(#sitename) {
   display: inline-block;
 }
 
+/*********** main typography styling ***********/
+#header, #footer, .section-title {
+  font-family: Nunito, Helvetica, Arial, sans-serif;
+}
+
 #header a {
-  color: #fff;
   text-transform: uppercase;
+}
+
+#header a, .authorskills {
+  color: #fff;
+}
+
+#footer {
+  color: #5e5e5e;
+}
+#footer small {
+  font-size: 1em;
+}
+
+.authorskills {
+  letter-spacing: .10em;
 }
 
 /*********** main header and footer styling ***********/
 #header, #footer {
   padding: 40px 0;
-  font-family: Nunito, Helvetica, Arial, sans-serif;
 }
 
 #header {
@@ -84,8 +102,6 @@ a:hover:not(#sitename) {
 
 .authorskills {
   margin-bottom: 0;
-  color: #fff;
-  letter-spacing: .10em;
 }
 
 .authorskills, nav {
@@ -95,12 +111,8 @@ a:hover:not(#sitename) {
 
 #footer {
   background: #fff;
-  color: #5e5e5e;
   text-align: center;
   margin-top: 40px;
-}
-#footer small {
-  font-size: 1em;
 }
 
 /*********** general section styling **************/

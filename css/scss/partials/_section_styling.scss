@@ -1,7 +1,8 @@
+@import "../partials/_typography";
+
 /*********** main header and footer styling ***********/
 #header, #footer{	
 	padding: $section-padding;
-	font-family: Nunito, $font-stack;
 }
 
 #header {
@@ -11,8 +12,6 @@
 
 .authorskills {
 	margin-bottom: 0;
-	color: $header-link-color;
-	letter-spacing: .10em;
 }
 
 .authorskills, nav {
@@ -22,13 +21,8 @@
 
 #footer {
 	background: #fff;
-	color: $text-gray;
 	text-align: center;
 	margin-top: 40px;
-
-	small {
-		font-size: 1em;
-	}
 }
 
 /*********** general section styling **************/
@@ -63,7 +57,6 @@ section {
 /***** recent projects section ******/
 #recent_projects {
 	background: yellow;
-	// outline: 1px dashed red;
 }
 
 #projthumbs-leftside, 

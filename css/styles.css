@@ -17,6 +17,7 @@ html {
 body {
   max-width: 1600px;
   margin: 0 auto;
+  padding-top: 157px;
 }
 
 p, h1, h2, h3, h4 {
@@ -93,6 +94,7 @@ body {
   letter-spacing: .10em;
 }
 
+/*********** main header & footer styling **************/
 #header, #footer {
   padding: 40px 0;
 }
@@ -100,6 +102,9 @@ body {
 #header {
   background: url("../img/header_back.jpg") no-repeat;
   padding-bottom: 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 
 .authorskills {

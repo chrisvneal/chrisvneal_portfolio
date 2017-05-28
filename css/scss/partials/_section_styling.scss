@@ -1,3 +1,4 @@
+/*********** main header & footer styling **************/
 #header, #footer{	
 	padding: $section-padding;
 }
@@ -5,6 +6,9 @@
 #header {
 	background: url('../img/header_back.jpg') no-repeat;
 	padding-bottom: 20px;
+	position: fixed;
+	width: 100%;
+	top: 0;
 }
 
 .authorskills {

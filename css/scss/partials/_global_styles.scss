@@ -68,3 +68,13 @@ a:hover:not(#sitename) {
 		opacity: .65;
 	}
 }
+
+#recent_blogthumbs a {
+	margin: 0 20px 20px 0;
+	display: inline-block;
+	float: left;
+}
+
+#recent_blogthumbs a:last-of-type {
+	margin-right: 0;
+}

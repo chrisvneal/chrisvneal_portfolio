@@ -60,9 +60,14 @@ a:hover:not(#sitename) {
 .link-viewall {
 	margin: 0 10px;
 	display: inline-block;
+	text-decoration: none;
+	padding-bottom: 3px;
+	border-bottom: 1px solid $link-color-normal;
 }
 
 #recent_projthumbs a {
+	text-decoration: none;
+
 	&:visited {
 		color: $link-color-visited;
 	}

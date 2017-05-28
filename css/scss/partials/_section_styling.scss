@@ -51,6 +51,10 @@ section {
 	background: inherit;
 }
 
+#recent_projects header {
+	margin-bottom: 56px; /* 56px + (pad + bord on .link-viewall = 4px) = 60px */
+}
+
 #recent_projthumbs,
 #recent_blogthumbs {
 	overflow: hidden;
@@ -73,7 +77,7 @@ section {
 	margin-bottom: 50px;
 
 	h3 {
-		margin-bottom: 30px;
+		margin-bottom: 50px;
 		text-align: center;
 		font-weight: normal;
 	}

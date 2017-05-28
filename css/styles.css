@@ -168,6 +168,7 @@ section {
 }
 .project-card figure img {
   width: 100%;
+  border-radius: 2px;
 }
 
 /***** recent blog posts section ******/

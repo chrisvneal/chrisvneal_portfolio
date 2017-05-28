@@ -63,8 +63,13 @@ a:hover:not(#sitename) {
 }
 
 #recent_projthumbs a {
-	color: $link-normal;
+	color: $link-color-normal;
+
+	&:visited {
+		color: $link-color-visited;
+	}
+
 	&:hover .project-card {
-		opacity: .65;
+		opacity: .60;
 	}
 }

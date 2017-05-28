@@ -146,10 +146,6 @@ section {
 }
 
 /***** recent projects section ******/
-#recent_projects {
-  background: yellow;
-}
-
 #projthumbs-leftside,
 #projthumbs-rightside {
   width: 650px;
@@ -159,10 +155,12 @@ section {
 /***** recent 'project card' styling ******/
 .project-card {
   width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 50px;
 }
 .project-card h3 {
   margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
 }
 .project-card figure {
   width: 90%;

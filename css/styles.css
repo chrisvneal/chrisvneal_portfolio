@@ -54,7 +54,6 @@ nav ul li:last-of-type {
 
 /* links */
 a {
-  text-decoration: none;
   color: #73D1F0;
 }
 
@@ -150,7 +149,7 @@ section {
 
 #recent_projects header,
 #recent_blog header {
-  margin-bottom: 40px;
+  margin-bottom: 60px;
   background: inherit;
 }
 

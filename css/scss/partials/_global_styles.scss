@@ -60,3 +60,7 @@ a:hover:not(#sitename) {
 	margin: 0 10px;
 	display: inline-block;
 }
+
+#recent_projthumbs a {
+	color: $link-normal;
+}

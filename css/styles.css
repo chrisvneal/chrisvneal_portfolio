@@ -65,6 +65,10 @@ a:hover:not(#sitename) {
   display: inline-block;
 }
 
+#recent_projthumbs a {
+  color: #73D1F0;
+}
+
 /*********** main typography styling ***********/
 body {
   font: 1.1em Ubuntu, Helvetica, Arial, sans-serif;

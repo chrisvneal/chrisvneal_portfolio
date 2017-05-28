@@ -68,6 +68,9 @@ a:hover:not(#sitename) {
 #recent_projthumbs a {
   color: #73D1F0;
 }
+#recent_projthumbs a:hover .project-card {
+  opacity: .65;
+}
 
 /*********** main typography styling ***********/
 body {

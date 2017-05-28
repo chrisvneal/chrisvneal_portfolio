@@ -55,6 +55,7 @@ nav ul li:last-of-type {
 /* links */
 a {
   text-decoration: none;
+  color: #73D1F0;
 }
 
 a:hover:not(#sitename) {
@@ -66,9 +67,6 @@ a:hover:not(#sitename) {
   display: inline-block;
 }
 
-#recent_projthumbs a {
-  color: #73D1F0;
-}
 #recent_projthumbs a:visited {
   color: #551a8b;
 }

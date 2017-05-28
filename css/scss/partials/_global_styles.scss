@@ -51,6 +51,7 @@ nav {
 /* links */
 a {
 	text-decoration: none;
+	color: $link-color-normal;
 }
 
 a:hover:not(#sitename) {
@@ -63,8 +64,6 @@ a:hover:not(#sitename) {
 }
 
 #recent_projthumbs a {
-	color: $link-color-normal;
-
 	&:visited {
 		color: $link-color-visited;
 	}

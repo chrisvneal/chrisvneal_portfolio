@@ -74,7 +74,7 @@ section {
 /***** recent 'project card' styling ******/
 .project-card {
 	width: 100%;
-	margin-bottom: 50px;
+	margin-bottom: 70px;
 
 	h3 {
 		margin-bottom: 50px;
@@ -95,8 +95,10 @@ section {
 
 /***** recent blog posts section ******/
 #recent_blog {
-	background: lightblue;
+	// background: lightblue;
+	background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQecU1sBZnUaKNlAOFH6aXhDrXEJBjsxfZzwNB8FJW2457eF2RZ);
 }
+
 
 #recent_blogthumbs figure {
 	width: 420px;

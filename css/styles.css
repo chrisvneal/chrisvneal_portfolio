@@ -36,6 +36,16 @@ figure {
   overflow: hidden;
 }
 
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
 /************* main navigation & links ****************/
 /* main nav */
 nav {
@@ -149,6 +159,10 @@ section {
 /***** intro & skills section ******/
 .intro-skills p {
   line-height: 2.3;
+}
+
+.intro-sections {
+  margin-bottom: 4px;
 }
 
 .intro-left {

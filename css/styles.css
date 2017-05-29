@@ -224,6 +224,7 @@ section:last-of-type {
 .project-card h3 {
   text-align: center;
   font-weight: normal;
+  margin-bottom: 50px;
 }
 .project-card figure {
   width: 90%;

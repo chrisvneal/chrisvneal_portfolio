@@ -83,6 +83,8 @@ a:hover:not(#site-name) {
 	text-transform: lowercase;
 }
 
+
+
 #recent_projthumbs a {
 	text-decoration: none;
 
@@ -93,4 +95,5 @@ a:hover:not(#site-name) {
 	&:hover .project-card {
 		opacity: .60;
 	}
+
 }

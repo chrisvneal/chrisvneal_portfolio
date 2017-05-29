@@ -170,6 +170,11 @@ section:last-of-type {
   border-radius: 3px;
 }
 
+#recent_projthumbs img {
+  width: 585px;
+  height: 372px;
+}
+
 /***** intro & skills section ******/
 .intro-skills {
   min-height: 350px;
@@ -186,6 +191,9 @@ section:last-of-type {
   width: 70%;
   float: left;
   padding-right: 10px;
+}
+.intro-left .languages-learned {
+  color: #ffae1a;
 }
 
 .intro-right {

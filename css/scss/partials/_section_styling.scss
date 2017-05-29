@@ -50,6 +50,11 @@ section:last-of-type {
 	border-radius: 3px;
 }
 
+#recent_projthumbs img {
+	width: 585px;
+	height: 372px;
+}
+
 /***** intro & skills section ******/
 .intro-skills {
 	// background: pink;
@@ -75,6 +80,10 @@ section:last-of-type {
 	width: 70%;
 	float: left;
 	padding-right: 10px;
+
+	.languages-learned {
+		color: lighten(orange, 5%);
+	}
 }
 
 .intro-right {

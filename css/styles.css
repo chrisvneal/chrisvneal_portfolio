@@ -33,6 +33,7 @@ figure {
   min-width: 994px;
   width: 90%;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 /************* main navigation & links ****************/
@@ -148,6 +149,16 @@ section {
 /***** intro & skills section ******/
 .intro-skills p {
   line-height: 2.3;
+}
+
+.intro-left {
+  width: 50%;
+  float: left;
+}
+
+.intro-right {
+  width: 50%;
+  float: right;
 }
 
 /***** recent projects and blog section ******/

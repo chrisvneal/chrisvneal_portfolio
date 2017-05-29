@@ -30,6 +30,11 @@
 /*********** general section styling **************/
 section {	
 	padding: $section-padding;
+	border-bottom: 2px solid $brand-color-dark;
+}
+
+section:last-of-type {
+	border: none;
 }
 
 .section-title {
@@ -37,10 +42,19 @@ section {
 	margin-bottom: 40px;
 }
 
+/* images */
+.intro-sections img, 
+.project-card img, 
+#recent_blogthumbs img {
+	width: 100%;
+	border-radius: 3px;
+}
+
 /***** intro & skills section ******/
 .intro-skills {
 	// background: pink;
 	// color: black;
+	min-height: 350px;
 
 	p {
 		line-height: 2.3;
@@ -48,13 +62,19 @@ section {
 }
 
 .intro-left, .intro-right {
-	outline: 1px dashed lightblue;
+	// outline: 1px dashed lightblue;
+}
+
+.intro-sections {
+	overflow: hidden;
+	// background: tan;
 }
 
 
 .intro-left {
 	width: 70%;
 	float: left;
+	padding-right: 10px;
 }
 
 .intro-right {
@@ -104,11 +124,6 @@ section {
 		width: 90%;
 		margin: 0 auto;		
 	}
-}
-
-.project-card img, #recent_blogthumbs img {
-	width: 100%;
-	border-radius: 3px;
 }
 
 /***** recent blog posts section ******/

@@ -17,7 +17,6 @@ html {
 body {
   max-width: 1600px;
   margin: 0 auto;
-  padding-top: 157px;
   color: #454545;
 }
 
@@ -59,6 +58,9 @@ a {
   color: #73D1F0;
   text-decoration: none;
 }
+a:visited {
+  color: #823274;
+}
 
 a:hover:not(#sitename) {
   opacity: .60;
@@ -74,9 +76,6 @@ a:hover:not(#sitename) {
 
 #recent_projthumbs a {
   text-decoration: none;
-}
-#recent_projthumbs a:visited {
-  color: #551a8b;
 }
 #recent_projthumbs a:hover .project-card {
   opacity: .60;
@@ -118,10 +117,7 @@ body {
 #header {
   background: url("../img/header_back.jpg") no-repeat;
   padding-bottom: 20px;
-  position: fixed;
   width: 100%;
-  top: 0;
-  z-index: 999;
 }
 
 .authorskills {
@@ -161,8 +157,7 @@ section {
 }
 
 #recent_projects header {
-  margin-bottom: 56px;
-  /* 56px + (pad + bord on .link-viewall = 4px) = 60px */
+  margin-bottom: 60px;
 }
 
 #recent_projthumbs,
@@ -198,10 +193,6 @@ section {
 }
 
 /***** recent blog posts section ******/
-#recent_blog {
-  background: lightblue;
-}
-
 #recent_blogthumbs figure {
   width: 420px;
   height: 360px;

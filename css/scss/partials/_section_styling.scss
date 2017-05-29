@@ -6,10 +6,10 @@
 #header {
 	background: url('../img/header_back.jpg') no-repeat;
 	padding-bottom: 20px;
-	position: fixed;
 	width: 100%;
-	top: 0;
-	z-index: 999;
+	// position: fixed;
+	// top: 0;
+	// z-index: 999;
 }
 
 .authorskills {
@@ -55,7 +55,7 @@ section {
 }
 
 #recent_projects header {
-	margin-bottom: 56px; /* 56px + (pad + bord on .link-viewall = 4px) = 60px */
+	margin-bottom: 60px;
 }
 
 #recent_projthumbs,
@@ -98,7 +98,7 @@ section {
 
 /***** recent blog posts section ******/
 #recent_blog {
-	background: lightblue;
+	// background: lightblue;
 }
 
 #recent_blogthumbs figure {

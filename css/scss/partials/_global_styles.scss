@@ -10,7 +10,7 @@ html {
 body {	
 	max-width: 1600px;
 	margin: 0 auto;
-	padding-top: 157px;
+	// padding-top: 157px;
 	color: $text-gray;
 }
 
@@ -53,6 +53,10 @@ nav {
 a {
 	color: $link-color-normal;
 	text-decoration: none;
+
+	&:visited {
+		color: $link-color-visited;
+	}
 }
 
 a:hover:not(#sitename) {
@@ -71,7 +75,7 @@ a:hover:not(#sitename) {
 	text-decoration: none;
 
 	&:visited {
-		color: $link-color-visited;
+		// color: $link-color-visited;
 	}
 
 	&:hover .project-card {

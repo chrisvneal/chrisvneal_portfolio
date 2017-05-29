@@ -51,7 +51,7 @@ section:last-of-type {
 }
 
 #recent_projthumbs img {
-	width: 585px;
+	width: 500px;
 	height: 372px;
 }
 
@@ -123,6 +123,13 @@ section:last-of-type {
 .project-card {
 	width: 100%;
 	margin-bottom: 50px;
+	text-align: center;
+	transition: opacity 200ms ease-in;
+
+	img {
+
+	box-shadow: 3px 5px 7px 3px lightgray;
+	}
 
 	h3 {
 		text-align: center;

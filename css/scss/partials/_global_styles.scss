@@ -65,6 +65,7 @@ nav {
 a {
 	color: $link-color-normal;
 	text-decoration: none;
+	transition: opacity 100ms ease-in;
 
 	&:visited {
 		color: $link-color-visited;

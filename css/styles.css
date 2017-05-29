@@ -69,6 +69,7 @@ nav ul li:last-of-type {
 a {
   color: #73D1F0;
   text-decoration: none;
+  transition: opacity 100ms ease-in;
 }
 a:visited {
   color: #823274;
@@ -171,7 +172,7 @@ section:last-of-type {
 }
 
 #recent_projthumbs img {
-  width: 585px;
+  width: 500px;
   height: 372px;
 }
 
@@ -228,6 +229,11 @@ section:last-of-type {
 .project-card {
   width: 100%;
   margin-bottom: 50px;
+  text-align: center;
+  transition: opacity 200ms ease-in;
+}
+.project-card img {
+  box-shadow: 3px 5px 7px 3px lightgray;
 }
 .project-card h3 {
   text-align: center;

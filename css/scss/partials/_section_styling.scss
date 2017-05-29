@@ -38,13 +38,16 @@ section {
 
 /***** intro & skills section ******/
 .intro-skills {
-	background: pink;
+	// background: pink;
+	// color: black;
 
 	p {
 		line-height: 2.3;
 	}
 }
 
+
+/***** recent projects and blog section ******/
 #recent_projects header,
 #recent_blog header {
 	margin-bottom: 60px;

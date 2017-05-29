@@ -30,6 +30,7 @@ figure {
 
 .container {
   max-width: 1300px;
+  min-width: 994px;
   width: 90%;
   margin: 0 auto;
 }
@@ -38,7 +39,7 @@ figure {
 /* main nav */
 nav {
   float: right;
-  ext-decoration: none;
+  text-decoration: none;
 }
 nav ul {
   padding: 0;
@@ -62,7 +63,7 @@ a:visited {
   color: #823274;
 }
 
-a:hover:not(#sitename) {
+a:hover:not(#site-name) {
   opacity: .60;
 }
 

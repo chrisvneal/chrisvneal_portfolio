@@ -38,6 +38,7 @@ figure {
 /* main nav */
 nav {
   float: right;
+  ext-decoration: none;
 }
 nav ul {
   padding: 0;
@@ -55,6 +56,7 @@ nav ul li:last-of-type {
 /* links */
 a {
   color: #73D1F0;
+  text-decoration: none;
 }
 
 a:hover:not(#sitename) {
@@ -62,11 +64,11 @@ a:hover:not(#sitename) {
 }
 
 .link-viewall {
-  margin: 0 10px;
+  margin: 0 0 0 20px;
   display: inline-block;
-  text-decoration: none;
   padding-bottom: 3px;
-  border-bottom: 1px solid #73D1F0;
+  font-size: .95em;
+  text-transform: lowercase;
 }
 
 #recent_projthumbs a {

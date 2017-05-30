@@ -31,6 +31,11 @@
 section {	
 	padding: $section-padding;
 	border-bottom: 2px solid $brand-color-dark;
+
+	header {
+		padding: 20px 0 30px 10px;
+		background-color: lightgray;
+	}
 }
 
 section:last-of-type {
@@ -96,7 +101,7 @@ section:last-of-type {
 #recent_projects header,
 #recent_blog header {
 	margin-bottom: 60px;
-	background: inherit;
+	// background: inherit;
 }
 
 #recent_projects header {
@@ -111,6 +116,10 @@ section:last-of-type {
 /***** recent projects section ******/
 #recent_projects {
 	// background: yellow;
+
+	header {
+		// background: red;
+	}
 }
 
 #projthumbs-leftside, 

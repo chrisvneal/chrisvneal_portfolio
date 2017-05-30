@@ -124,7 +124,7 @@ body {
 
 /*********** main header & footer styling **************/
 #header, #footer {
-  padding: 40px 0;
+  padding: 0 0 40px 0;
 }
 
 #header {
@@ -150,8 +150,12 @@ body {
 
 /*********** general section styling **************/
 section {
-  padding: 40px 0;
+  padding: 0 0 40px 0;
   border-bottom: 2px solid #523E0F;
+}
+section header {
+  padding: 20px 0 30px 10px;
+  background-color: lightgray;
 }
 
 section:last-of-type {
@@ -206,7 +210,6 @@ section:last-of-type {
 #recent_projects header,
 #recent_blog header {
   margin-bottom: 60px;
-  background: inherit;
 }
 
 #recent_projects header {

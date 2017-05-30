@@ -230,7 +230,7 @@ section:last-of-type {
   width: 100%;
   margin-bottom: 50px;
   text-align: center;
-  transition: opacity 200ms ease-in;
+  transition: opacity 100ms ease-in;
 }
 .project-card img {
   box-shadow: 3px 5px 7px 3px lightgray;

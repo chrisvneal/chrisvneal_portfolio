@@ -123,15 +123,21 @@ body {
 }
 
 /*********** main header & footer styling **************/
-#header, #footer {
-  padding: 0 0 40px 0;
-}
-
 #header {
   background: url("../img/header_back.jpg") no-repeat;
   padding-bottom: 20px;
   margin-bottom: 20px;
   width: 100%;
+}
+
+#footer {
+  background: #fff;
+  text-align: center;
+  margin-top: 40px;
+}
+
+#header, #footer {
+  padding: 0 0 40px 0;
 }
 
 .authorskills {
@@ -141,12 +147,6 @@ body {
 .authorskills, nav {
   margin-top: 15px;
   display: inline-block;
-}
-
-#footer {
-  background: #fff;
-  text-align: center;
-  margin-top: 40px;
 }
 
 /*********** general section styling **************/

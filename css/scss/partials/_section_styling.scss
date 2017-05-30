@@ -1,8 +1,4 @@
 /*********** main header & footer styling **************/
-#header, #footer{	
-	padding: $section-padding;
-}
-
 #header {
 	background: url('../img/header_back.jpg') no-repeat;
 	padding-bottom: 20px;
@@ -11,6 +7,17 @@
 	// position: fixed;
 	// top: 0;
 	// z-index: 999;
+}
+
+#footer {
+	background: #fff;
+	text-align: center;
+	margin-top: 40px;
+}
+
+
+#header, #footer{	
+	padding:  0 0 40px 0;
 }
 
 .authorskills {
@@ -22,15 +29,11 @@
 	display: inline-block;
 }
 
-#footer {
-	background: #fff;
-	text-align: center;
-	margin-top: 40px;
-}
+
 
 /*********** general section styling **************/
 section {	
-	padding: $section-padding;
+	padding:  0 0 40px 0;
 
 	header {
 		padding: 20px 0 30px 10px;

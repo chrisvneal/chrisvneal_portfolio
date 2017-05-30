@@ -130,6 +130,7 @@ body {
 #header {
   background: url("../img/header_back.jpg") no-repeat;
   padding-bottom: 20px;
+  margin-bottom: 20px;
   width: 100%;
 }
 
@@ -151,15 +152,15 @@ body {
 /*********** general section styling **************/
 section {
   padding: 0 0 40px 0;
-  border-bottom: 2px solid #523E0F;
 }
 section header {
   padding: 20px 0 30px 10px;
-  background-color: lightgray;
+  border-radius: 0 0 2px 2px;
 }
 
-section:last-of-type {
+section:first-of-type {
   border: none;
+  padding-top: 20px;
 }
 
 .section-title {
@@ -207,12 +208,16 @@ section:last-of-type {
 }
 
 /***** recent projects and blog section ******/
-#recent_projects header,
-#recent_blog header {
-  margin-bottom: 60px;
+#recent_projects {
+  border-top: 2px solid lightgray;
 }
 
-#recent_projects header {
+#recent_blog {
+  border-top: 2px solid lightblue;
+}
+
+#recent_projects header,
+#recent_blog header {
   margin-bottom: 60px;
 }
 
@@ -222,6 +227,11 @@ section:last-of-type {
 }
 
 /***** recent projects section ******/
+#recent_projects header {
+  margin-bottom: 60px;
+  background-color: lightgray;
+}
+
 #projthumbs-leftside,
 #projthumbs-rightside {
   width: 650px;
@@ -249,6 +259,10 @@ section:last-of-type {
 }
 
 /***** recent blog posts section ******/
+#recent_blog header {
+  background-color: lightblue;
+}
+
 #recent_blogthumbs figure {
   width: 420px;
   height: 360px;

@@ -99,16 +99,16 @@ body {
   font: 1.1em Ubuntu, Helvetica, Arial, sans-serif;
 }
 
-#header, #footer, .section-title {
-  font-family: Nunito, Helvetica, Arial, sans-serif;
-}
-
 #header a {
   text-transform: uppercase;
 }
 
 #header a, .authorskills {
   color: #fff;
+}
+
+.authorskills {
+  letter-spacing: .10em;
 }
 
 #footer {
@@ -118,8 +118,8 @@ body {
   font-size: 1em;
 }
 
-.authorskills {
-  letter-spacing: .10em;
+#header, #footer, .section-title {
+  font-family: Nunito, Helvetica, Arial, sans-serif;
 }
 
 /*********** main header & footer styling **************/
@@ -163,7 +163,7 @@ body {
   margin-bottom: 30px;
 }
 
-/* images */
+/*************** images *************/
 .intro-sections img,
 .project-card img,
 #recent_blogthumbs img {
@@ -171,7 +171,17 @@ body {
   border-radius: 3px;
 }
 
-/***** intro & skills section ******/
+#recent_projthumbs img {
+  width: 500px;
+  height: 372px;
+}
+
+/****** Main Section styling *********************************
+Intro & Skills
+Recent Projects
+Recent Blog
+*************************************************************/
+/***** intro & skills section ****************/
 .intro-skills {
   border: none;
   padding-top: 20px;
@@ -223,12 +233,7 @@ body {
   float: left;
 }
 
-#recent_projthumbs img {
-  width: 500px;
-  height: 372px;
-}
-
-/***** recent 'project card' styling ******/
+/* 'project card' styling */
 .project-card {
   width: 100%;
   margin-bottom: 50px;

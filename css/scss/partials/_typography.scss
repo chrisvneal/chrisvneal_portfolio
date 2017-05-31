@@ -3,16 +3,16 @@ body {
 	font: 1.1em $text-mainFont;
 }
 
-#header, #footer, .section-title {
-	font-family: $text-displayFont;	
-}
-
 #header a {
 	text-transform: uppercase;
 }
 
 #header a, .authorskills {
 	color: #fff;
+}
+
+.authorskills {
+	letter-spacing: .10em;
 }
 
 #footer {
@@ -23,6 +23,7 @@ body {
 	}
 }
 
-.authorskills {
-	letter-spacing: .10em;
+#header, #footer, .section-title {
+	font-family: $text-displayFont;	
 }
+

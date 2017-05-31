@@ -42,10 +42,7 @@ section {
 	}
 }
 
-section:first-of-type {
-	border: none;
-	padding-top: 20px;
-}
+
 
 .section-title {
 	display: inline-block;
@@ -65,31 +62,34 @@ section:first-of-type {
 	height: 372px;
 }
 
+
+
+
+
+
+
+
+
+
 /***** intro & skills section ******/
 .intro-skills {
-	// background: pink;
-	// color: black;
-	min-height: 350px;
+	border: none;
+	padding-top: 20px;
+	// min-height: 350px;
 
 	p {
 		line-height: 2.3;
 	}
 }
 
-.intro-left, .intro-right {
-	// outline: 1px dashed lightblue;
-}
-
 .intro-sections {
 	overflow: hidden;
-	// background: tan;
 }
-
 
 .intro-left {
 	width: 70%;
 	float: left;
-	padding-right: 10px;
+	padding-right: 50px;
 
 	.languages-learned {
 		color: lighten(orange, 5%);

@@ -158,11 +158,6 @@ section header {
   border-radius: 0 0 2px 2px;
 }
 
-section:first-of-type {
-  border: none;
-  padding-top: 20px;
-}
-
 .section-title {
   display: inline-block;
   margin-bottom: 30px;
@@ -183,7 +178,8 @@ section:first-of-type {
 
 /***** intro & skills section ******/
 .intro-skills {
-  min-height: 350px;
+  border: none;
+  padding-top: 20px;
 }
 .intro-skills p {
   line-height: 2.3;
@@ -196,7 +192,7 @@ section:first-of-type {
 .intro-left {
   width: 70%;
   float: left;
-  padding-right: 10px;
+  padding-right: 50px;
 }
 .intro-left .languages-learned {
   color: #ffae1a;

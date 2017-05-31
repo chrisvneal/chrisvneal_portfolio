@@ -103,14 +103,6 @@ section {
 
 
 /***** recent projects and blog section ******/
-#recent_projects {
-	border-top: 2px solid $recent_proj_sec-color;
-}
-
-#recent_blog {
-	border-top: 2px solid $recent_blog_sec-color;
-}
-
 #recent_projects header,
 #recent_blog header {
 	margin-bottom: 60px;
@@ -124,9 +116,12 @@ section {
 }
 
 /***** recent projects section ******/
-#recent_projects header {
-	margin-bottom: 60px;
-	background-color: $recent_proj_sec-color;
+#recent_projects {
+	border-top: 2px solid $recent_proj_sec-color;
+
+	header {
+	background-color: $recent_proj_sec-color;		
+	}
 }
 
 #projthumbs-leftside, 
@@ -142,11 +137,6 @@ section {
 	text-align: center;
 	transition: opacity 100ms ease-in;
 
-	img {
-
-	box-shadow: 3px 5px 7px 3px lightgray;
-	}
-
 	h3 {
 		text-align: center;
 		font-weight: normal;
@@ -157,24 +147,37 @@ section {
 		width: 90%;
 		margin: 0 auto;		
 	}
+
+	img {
+		box-shadow: 3px 5px 7px 3px lightgray;
+	}
 }
 
 /***** recent blog posts section ******/
-#recent_blog header {
-	background-color: $recent_blog_sec-color;
+#recent_blog {
+	border-top: 2px solid $recent_blog_sec-color;
+
+	header {
+		background-color: $recent_blog_sec-color;		
+	}
 }
 
-#recent_blogthumbs figure {
-	width: 420px;
-	height: 360px;
-}
+#recent_blogthumbs {
 
-#recent_blogthumbs a {
-	margin: 0 20px 20px 0;
-	display: inline-block;
-	float: left;
-}
+	figure {
+		width: 420px;
+		height: 360px;
+	}
 
-#recent_blogthumbs a:last-of-type {
-	margin-right: 0;
+	a {
+		margin: 0 20px 20px 0;
+		display: inline-block;
+		float: left;
+
+		&:last-of-type {
+			margin-right: 0;
+		}
+	}
+
+	
 }

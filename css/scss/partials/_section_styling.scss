@@ -15,7 +15,6 @@
 	margin-top: 40px;
 }
 
-
 #header, #footer{	
 	padding:  0 0 40px 0;
 }
@@ -29,10 +28,8 @@
 	display: inline-block;
 }
 
-
-
 /*********** general section styling **************/
-section {	
+.intro-skills, #recent_projects, #recent_blog {
 	padding:  0 0 40px 0;
 
 	header {
@@ -42,12 +39,11 @@ section {
 	}
 }
 
-
-
 .section-title {
 	display: inline-block;
 	margin-bottom: 30px;
 }
+
 
 /* images */
 .intro-sections img, 
@@ -56,18 +52,6 @@ section {
 	width: 100%;
 	border-radius: 3px;
 }
-
-#recent_projthumbs img {
-	width: 500px;
-	height: 372px;
-}
-
-
-
-
-
-
-
 
 
 
@@ -109,7 +93,6 @@ section {
 	// background: inherit;
 }
 
-
 #recent_projthumbs,
 #recent_blogthumbs {
 	overflow: hidden;
@@ -128,6 +111,11 @@ section {
 #projthumbs-rightside {
 	width: 650px;
 	float: left;
+}
+
+#recent_projthumbs img {
+	width: 500px;
+	height: 372px;
 }
 
 /***** recent 'project card' styling ******/

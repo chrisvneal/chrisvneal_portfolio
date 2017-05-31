@@ -150,10 +150,10 @@ body {
 }
 
 /*********** general section styling **************/
-section {
+.intro-skills, #recent_projects, #recent_blog {
   padding: 0 0 40px 0;
 }
-section header {
+.intro-skills header, #recent_projects header, #recent_blog header {
   padding: 20px 0 30px 10px;
   border-radius: 0 0 2px 2px;
 }
@@ -169,11 +169,6 @@ section header {
 #recent_blogthumbs img {
   width: 100%;
   border-radius: 3px;
-}
-
-#recent_projthumbs img {
-  width: 500px;
-  height: 372px;
 }
 
 /***** intro & skills section ******/
@@ -226,6 +221,11 @@ section header {
 #projthumbs-rightside {
   width: 650px;
   float: left;
+}
+
+#recent_projthumbs img {
+  width: 500px;
+  height: 372px;
 }
 
 /***** recent 'project card' styling ******/

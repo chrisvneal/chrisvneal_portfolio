@@ -7,7 +7,6 @@ $brand-color-dark: #523E0F; // brown
 $recent_proj_sec-color: lightgray;
 $recent_blog_sec-color: lightblue;
 
-
 // Fonts
 $sans-font-stack: Helvetica, Arial, sans-serif;
 $text-displayFont: Nunito, $sans-font-stack;
@@ -16,13 +15,9 @@ $text-mainFont: Ubuntu, $sans-font-stack;
 // Misc
 
 /////////////// Mixins ///////////////
-@mixin links {
+@mixin link-styles {
 	padding: 0;
 	margin: 0;
 	list-style-type: none;
 }
 
-@mixin navLinks {
-	@include links;
-	display: inline-block;
-}

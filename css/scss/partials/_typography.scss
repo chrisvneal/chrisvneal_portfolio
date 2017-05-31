@@ -1,4 +1,6 @@
-/*********** main typography styling ***********/
+/****** Main Typography styling *********************************
+
+*************************************************************/
 body {
 	font: 1.1em $text-mainFont;
 }
@@ -26,4 +28,3 @@ body {
 #header, #footer, .section-title {
 	font-family: $text-displayFont;	
 }
-

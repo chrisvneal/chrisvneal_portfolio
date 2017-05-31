@@ -1,4 +1,6 @@
-/*********** main header & footer styling **************/
+/****** Main Header & Footer styling *********************************
+
+*************************************************************/
 #header {
 	background: url('../img/header_back.jpg') no-repeat;
 	padding-bottom: 20px;
@@ -28,7 +30,24 @@
 	display: inline-block;
 }
 
-/*********** general section styling **************/
+/****** Images styling *********************************
+
+*************************************************************/
+.intro-sections img, 
+.project-card img, 
+#recent_blogthumbs img {
+	width: 100%;
+	border-radius: 3px;
+}
+
+#recent_projthumbs img {
+	width: 500px;
+	height: 372px;
+}
+
+/****** General Section styling *********************************
+
+*************************************************************/
 .intro-skills, #recent_projects, #recent_blog {
 	padding:  0 0 40px 0;
 
@@ -42,20 +61,6 @@
 .section-title {
 	display: inline-block;
 	margin-bottom: 30px;
-}
-
-
-/*************** images *************/
-.intro-sections img, 
-.project-card img, 
-#recent_blogthumbs img {
-	width: 100%;
-	border-radius: 3px;
-}
-
-#recent_projthumbs img {
-	width: 500px;
-	height: 372px;
 }
 
 /****** Main Section styling *********************************

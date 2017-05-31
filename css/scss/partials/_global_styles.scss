@@ -1,4 +1,6 @@
-/*********** global styling (basic elements) ***********/
+/****** Global styling (basic elements) *********************************
+
+*************************************************************/
 html {
   box-sizing: border-box;
 }
@@ -10,10 +12,8 @@ html {
 body {	
 	max-width: 1600px;
 	margin: 0 auto;
-	// padding-top: 157px;
 	color: $text-gray;
 }
-
 
 p, h1, h2, h3, h4 {
 	margin: 0 0 10px;
@@ -41,14 +41,16 @@ figure {
 	clear: both;
 }
 
-/************* main navigation & links ****************/
+/****** Main Navigation & Links styling *********************************
+
+*************************************************************/
 /* main nav */
 nav {
 	float: right;
 	text-decoration: none;
 
 	ul {
-		@include links;
+		@include link-styles;
 
 		li {
 			display: inline-block;
@@ -84,8 +86,6 @@ a:hover:not(#site-name) {
 	text-transform: lowercase;
 }
 
-
-
 #recent_projthumbs a {
 	text-decoration: none;
 
@@ -96,5 +96,4 @@ a:hover:not(#site-name) {
 	&:hover .project-card {
 		opacity: .60;
 	}
-
 }

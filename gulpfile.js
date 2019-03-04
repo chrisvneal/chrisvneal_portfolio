@@ -10,7 +10,14 @@ const browserSync = require('browser-sync').create();
 const scss_folder = './src/scss/**/*.scss';
 const src_html = './src/**/*.html';
 
-
+// refresh the browser 
+gulp.task('browserSync', function() {
+  browserSync.init({
+    server: {
+      baseDir: 'dist'
+    }
+  })
+})
 
 // convert scss to css (dist)
 
@@ -31,7 +38,7 @@ gulp.task('html', function() {
 
 // convert images and copy to img folder 
 
-// refresh the browser 
+
 
 
 

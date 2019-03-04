@@ -1,0 +1,22 @@
+{
+  "name": "chrisvneal_portfolio",
+  "version": "1.0.0",
+  "description": "Personal web portfolio & blog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrisvneal/chrisvneal_portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chrisvneal/chrisvneal_portfolio/issues"
+  },
+  "homepage": "https://github.com/chrisvneal/chrisvneal_portfolio#readme",
+  "dependencies": {
+    "gulp-cli": "^2.0.1"
+  }
+}

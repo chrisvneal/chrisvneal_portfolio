@@ -5,6 +5,7 @@ const gulp = require('gulp');
 const sass = require('gulp-sass');
 sass.compiler = require('node-sass');
 const sourcemaps = require('gulp-sourcemaps');
+const browserSync = require('browser-sync').create();
 
 const scss_folder = './src/scss/**/*.scss';
 const src_html = './src/**/*.html';
@@ -31,11 +32,6 @@ gulp.task('html', function() {
 // convert images and copy to img folder 
 
 // refresh the browser 
-
-
-
-
-
 
 
 

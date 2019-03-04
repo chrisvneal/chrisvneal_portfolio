@@ -4,21 +4,25 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
 sass.compiler = require('node-sass');
+const sourcemaps = require('gulp-sourcemaps');
 
 const scss_folder = './src/scss/**/*.scss';
 const src_html = './src/**/*.html';
 
 
 
-// convert sass to css 
+// convert scss to css (dist)
 
 gulp.task('scss', function() {
   return gulp.src(scss_folder)
+    .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
+    .pipe(sourcemaps.write('./maps'))
     .pipe(gulp.dest('dist/css'))
 });
 
-// copy html files to dist 
+// copy html files to dist folder
+
 gulp.task('html', function() {
   return gulp.src(src_html)
     .pipe(gulp.dest('dist'))
@@ -45,7 +49,6 @@ gulp.task('watch', function() {
 
   // watch html files for changes
   gulp.watch(src_html, gulp.series('html'));
-
 });
 
 

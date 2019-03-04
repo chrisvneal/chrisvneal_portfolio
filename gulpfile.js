@@ -6,12 +6,10 @@ const sass = require('gulp-sass');
 sass.compiler = require('node-sass');
 const sourcemaps = require('gulp-sourcemaps');
 const browserSync = require('browser-sync').create();
-
 const scss_folder = './src/scss/**/*.scss';
 const src_html = './src/*.html';
 
-// refresh the browser
-
+// spin up a web server via browserSync
 function browser_sync() {
   browserSync.init({
     server: {
@@ -21,9 +19,6 @@ function browser_sync() {
 }
 
 // convert scss to css (dist)
-
-
-
 function scss() {
   return gulp.src(scss_folder)
     .pipe(sourcemaps.init())
@@ -38,8 +33,6 @@ function scss() {
 
 
 // copy html files to dist folder
-
-
 function html() {
   return gulp.src(src_html)
     .pipe(gulp.dest('dist'))
@@ -57,7 +50,7 @@ function html() {
 
 // watch sass, javascript, and html changes
 
-gulp.task('watch', gulp.series(html, scss, browser_sync, function() {
+gulp.task('watch', gulp.parallel(html, scss, browser_sync, function() {
   
   // watch scss files for changes
   gulp.watch(scss_folder, scss);
@@ -65,21 +58,3 @@ gulp.task('watch', gulp.series(html, scss, browser_sync, function() {
   // watch html files for changes
   gulp.watch(src_html, html);
 }));
-
-
-
-
-
-
-
-
-
-
-
-exports.scss = scss;
-exports.html = html;
-
-
-
-
-

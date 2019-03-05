@@ -8,8 +8,10 @@ const sourcemaps = require('gulp-sourcemaps');
 const browserSync = require('browser-sync').create();
 const scss_folder = './src/scss/**/*.scss';
 const src_html = './src/*.html';
+
 const changed = require('gulp-changed');
 const imagemin = require('gulp-imagemin');
+const babel = require('gulp-babel');
 
 
 
@@ -28,6 +30,8 @@ function browser_sync() {
   })
 }
 
+
+
 // convert scss to css (dist)
 function scss() {
   return gulp.src(scss_folder)
@@ -44,6 +48,9 @@ function scss() {
   function js() {
     return gulp.src(src_js)
     .pipe(changed('./dist/js'))
+    .pipe(babel({
+      presets: ['@babel/env']
+    }))
       .pipe(gulp.dest('./dist/js'))
       .pipe(browserSync.reload({
         stream: true

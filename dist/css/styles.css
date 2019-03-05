@@ -9,36 +9,44 @@
 
 *************************************************************/
 html {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 *, *:before, *:after {
-  box-sizing: inherit; }
+  box-sizing: inherit;
+}
 
 body {
   max-width: 1600px;
   margin: 0 auto;
-  color: #454545; }
+  color: #454545;
+}
 
 p, h1, h2, h3, h4 {
-  margin: 0 0 10px; }
+  margin: 0 0 10px;
+}
 
 figure {
-  margin: 0; }
+  margin: 0;
+}
 
 .container {
   max-width: 1300px;
   min-width: 994px;
   width: 90%;
   margin: 0 auto;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 .clearfix:before,
 .clearfix:after {
   content: "";
-  display: table; }
+  display: table;
+}
 
 .clearfix:after {
-  clear: both; }
+  clear: both;
+}
 
 /****** Main Navigation & Links styling *********************************
 
@@ -46,62 +54,85 @@ figure {
 /* main nav */
 nav {
   float: right;
-  text-decoration: none; }
-  nav ul {
-    padding: 0;
-    margin: 0;
-    list-style-type: none; }
-    nav ul li {
-      display: inline-block;
-      margin-right: 2.2em; }
-      nav ul li:last-of-type {
-        margin-right: 0; }
+  text-decoration: none;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 2.2em;
+}
+
+nav ul li:last-of-type {
+  margin-right: 0;
+}
 
 /* links */
 a {
   color: #73D1F0;
   text-decoration: none;
-  transition: opacity 100ms ease-in; }
-  a:visited {
-    color: #823274; }
+  transition: opacity 100ms ease-in;
+}
+
+a:visited {
+  color: #823274;
+}
 
 a:hover:not(#site-name) {
-  opacity: .60; }
+  opacity: .60;
+}
 
 .link-viewall {
   margin: 0 0 0 20px;
   display: inline-block;
   padding-bottom: 3px;
   font-size: .95em;
-  text-transform: lowercase; }
+  text-transform: lowercase;
+}
 
 #recent_projthumbs a {
-  text-decoration: none; }
-  #recent_projthumbs a:hover .project-card {
-    opacity: .60; }
+  text-decoration: none;
+}
+
+#recent_projthumbs a:hover .project-card {
+  opacity: .60;
+}
 
 /****** Main Typography styling *********************************
 
 *************************************************************/
 body {
-  font: 1.1em Ubuntu, Helvetica, Arial, sans-serif; }
+  font: 1.1em Ubuntu, Helvetica, Arial, sans-serif;
+}
 
 #header a {
-  text-transform: uppercase; }
+  text-transform: uppercase;
+}
 
 #header a, .authorskills {
-  color: #fff; }
+  color: #fff;
+}
 
 .authorskills {
-  letter-spacing: .10em; }
+  letter-spacing: .10em;
+}
 
 #footer {
-  color: #454545; }
-  #footer small {
-    font-size: 1em; }
+  color: #454545;
+}
+
+#footer small {
+  font-size: 1em;
+}
 
 #header, #footer, .section-title {
-  font-family: Nunito, Helvetica, Arial, sans-serif; }
+  font-family: Nunito, Helvetica, Arial, sans-serif;
+}
 
 /****** Main Header & Footer styling *********************************
 
@@ -110,22 +141,27 @@ body {
   background: url("../img/header_back.jpg") no-repeat;
   padding-bottom: 20px;
   margin-bottom: 20px;
-  width: 100%; }
+  width: 100%;
+}
 
 #footer {
   background: #fff;
   text-align: center;
-  margin-top: 40px; }
+  margin-top: 40px;
+}
 
 #header, #footer {
-  padding: 0 0 40px 0; }
+  padding: 0 0 40px 0;
+}
 
 .authorskills {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+}
 
 .authorskills, nav {
   margin-top: 15px;
-  display: inline-block; }
+  display: inline-block;
+}
 
 /****** Images styling *********************************
 
@@ -134,24 +170,30 @@ body {
 .project-card img,
 #recent_blogthumbs img {
   width: 100%;
-  border-radius: 3px; }
+  border-radius: 3px;
+}
 
 #recent_projthumbs img {
   width: 500px;
-  height: 372px; }
+  height: 372px;
+}
 
 /****** General Section styling *********************************
 
 *************************************************************/
 .intro-skills, #recent_projects, #recent_blog {
-  padding: 0 0 40px 0; }
-  .intro-skills header, #recent_projects header, #recent_blog header {
-    padding: 20px 0 30px 10px;
-    border-radius: 0 0 2px 2px; }
+  padding: 0 0 40px 0;
+}
+
+.intro-skills header, #recent_projects header, #recent_blog header {
+  padding: 20px 0 30px 10px;
+  border-radius: 0 0 2px 2px;
+}
 
 .section-title {
   display: inline-block;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+}
 
 /****** Main Section styling *********************************
 Intro & Skills
@@ -161,75 +203,103 @@ Recent Blog
 /***** intro & skills section ****************/
 .intro-skills {
   border: none;
-  padding-top: 20px; }
-  .intro-skills p {
-    line-height: 2.3; }
+  padding-top: 20px;
+}
+
+.intro-skills p {
+  line-height: 2.3;
+}
 
 .intro-sections {
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 .intro-left {
   width: 70%;
   float: left;
-  padding-right: 50px; }
-  .intro-left .languages-learned {
-    color: #ffae1a; }
+  padding-right: 50px;
+}
+
+.intro-left .languages-learned {
+  color: #ffae1a;
+}
 
 .intro-right {
   width: 30%;
-  float: right; }
+  float: right;
+}
 
 /***** recent projects and blog section ******/
 #recent_projects header,
 #recent_blog header {
-  margin-bottom: 60px; }
+  margin-bottom: 60px;
+}
 
 #recent_projthumbs,
 #recent_blogthumbs {
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 /***** recent projects section ******/
 #recent_projects {
-  border-top: 2px solid lightgray; }
-  #recent_projects header {
-    background-color: lightgray; }
+  border-top: 2px solid lightgray;
+}
+
+#recent_projects header {
+  background-color: lightgray;
+}
 
 #projthumbs-leftside,
 #projthumbs-rightside {
   width: 650px;
-  float: left; }
+  float: left;
+}
 
 /* 'project card' styling */
 .project-card {
   width: 100%;
   margin-bottom: 50px;
   text-align: center;
-  transition: opacity 100ms ease-in; }
-  .project-card h3 {
-    text-align: center;
-    font-weight: normal;
-    margin-bottom: 50px; }
-  .project-card figure {
-    width: 90%;
-    margin: 0 auto; }
-  .project-card img {
-    box-shadow: 3px 5px 7px 3px lightgray; }
+  transition: opacity 100ms ease-in;
+}
+
+.project-card h3 {
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 50px;
+}
+
+.project-card figure {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.project-card img {
+  box-shadow: 3px 5px 7px 3px lightgray;
+}
 
 /***** recent blog posts section ******/
 #recent_blog {
-  border-top: 2px solid lightblue; }
-  #recent_blog header {
-    background-color: lightblue; }
+  border-top: 2px solid lightblue;
+}
+
+#recent_blog header {
+  background-color: lightblue;
+}
 
 #recent_blogthumbs figure {
   width: 420px;
-  height: 360px; }
+  height: 360px;
+}
 
 #recent_blogthumbs a {
   margin: 0 20px 20px 0;
   display: inline-block;
-  float: left; }
-  #recent_blogthumbs a:last-of-type {
-    margin-right: 0; }
+  float: left;
+}
+
+#recent_blogthumbs a:last-of-type {
+  margin-right: 0;
+}
 
 /*# sourceMappingURL=maps/styles.css.map */

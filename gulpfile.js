@@ -15,14 +15,15 @@ const imagemin = require('gulp-imagemin');
 
 
 const images_src = './src/img/**/*.+(png|jpg|gif)';
-const images_dist = './dist/img'
+const images_dist = './dist/img';
+const src_js = './src/js/**/*.js';
 
 
 // spin up a web server via browserSync
 function browser_sync() {
   browserSync.init({
     server: {
-      baseDir: 'dist'
+      baseDir: './dist'
     }
   })
 }
@@ -31,12 +32,22 @@ function browser_sync() {
 function scss() {
   return gulp.src(scss_folder)
     .pipe(sourcemaps.init())
-    .pipe(sass().on('error', sass.logError))
+    .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
     .pipe(sourcemaps.write('./maps'))
     .pipe(gulp.dest('dist/css'))
     .pipe(browserSync.reload({
       stream: true
     }))
+  }
+
+  // copy js files
+  function js() {
+    return gulp.src(src_js)
+    .pipe(changed('./dist/js'))
+      .pipe(gulp.dest('./dist/js'))
+      .pipe(browserSync.reload({
+        stream: true
+      }))
   }
 
 
@@ -63,11 +74,16 @@ function images() {
 
 // watch sass, javascript, and html changes
 
-gulp.task('watch', gulp.parallel(html, scss, images, browser_sync, function() {
+gulp.task('watch', gulp.parallel(html, scss, js, images, browser_sync, function() {
   
   // watch scss files for changes
   gulp.watch(scss_folder, scss);
 
   // watch html files for changes
   gulp.watch(src_html, html);
+
+  // watch html files for changes
+  gulp.watch(src_js, js);
 }));
+
+exports.js = js;

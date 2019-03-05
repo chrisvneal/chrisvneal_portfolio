@@ -14,7 +14,8 @@ const imagemin = require('gulp-imagemin');
 
 
 
-const images_src = './src/img/**/*.jpg';
+const images_src = './src/img/**/*.+(png|jpg|gif)';
+const images_dist = './dist/img'
 
 
 // spin up a web server via browserSync
@@ -43,6 +44,7 @@ function scss() {
 // copy html files to dist folder
 function html() {
   return gulp.src(src_html)
+  .pipe(changed('dist'))
     .pipe(gulp.dest('dist'))
     .pipe(browserSync.reload({
       stream: true
@@ -52,9 +54,9 @@ function html() {
 // convert images and copy to img folder 
 function images() {
   return gulp.src(images_src)
+  .pipe(changed(images_dist))
   .pipe(imagemin())
-  .pipe(changed('./img/**/*.jpg'))  
-  .pipe(gulp.dest('./dist/img'));
+  .pipe(gulp.dest(images_dist));
 }
 
 

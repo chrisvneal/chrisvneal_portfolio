@@ -8,6 +8,14 @@ const sourcemaps = require('gulp-sourcemaps');
 const browserSync = require('browser-sync').create();
 const scss_folder = './src/scss/**/*.scss';
 const src_html = './src/*.html';
+const changed = require('gulp-changed');
+const imagemin = require('gulp-imagemin');
+
+
+
+
+const images_src = './src/img/**/*.jpg';
+
 
 // spin up a web server via browserSync
 function browser_sync() {
@@ -42,15 +50,18 @@ function html() {
 }
 
 // convert images and copy to img folder 
-
-
-
+function images() {
+  return gulp.src(images_src)
+  .pipe(imagemin())
+  .pipe(changed('./img/**/*.jpg'))  
+  .pipe(gulp.dest('./dist/img'));
+}
 
 
 
 // watch sass, javascript, and html changes
 
-gulp.task('watch', gulp.parallel(html, scss, browser_sync, function() {
+gulp.task('watch', gulp.parallel(html, scss, images, browser_sync, function() {
   
   // watch scss files for changes
   gulp.watch(scss_folder, scss);

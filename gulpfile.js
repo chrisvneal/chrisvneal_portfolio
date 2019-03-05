@@ -11,15 +11,19 @@ const imagemin = require('gulp-imagemin');
 const babel = require('gulp-babel');
 
 // directories
-const scss_src = 'src/scss/**/*.scss';
-const html_src = 'src/*.html';
-const js_src = 'src/js/**/*.js';
-const images_src = 'src/img/**/*.+(png|jpg|gif)';
+const dir = {
+  // sources
+  scss_src: 'src/scss/**/*.scss',
+  html_src: 'src/*.html',
+  js_src: 'src/js/**/*.js',
+  images_src: 'src/img/**/*.+(png|jpg|gif)',
 
-const dist = 'dist';
-const css_dist = 'dist/css';
-const js_dist = 'dist/js';
-const images_dist = 'dist/img';
+  // destinations
+  dist: 'dist',
+  css_dist: 'dist/css',
+  js_dist: 'dist/js',
+  images_dist: 'dist/img'
+}
 
 /*********** Tasks ***********/
 /****************************/
@@ -28,16 +32,16 @@ const images_dist = 'dist/img';
 function browser_sync() {
   browserSync.init({
     server: {
-      baseDir: dist
+      baseDir: dir.dist
     }
   })
 }
 
 // copy html files to dist folder
 function html() {
-  return gulp.src(html_src)
-    .pipe(changed(dist))
-    .pipe(gulp.dest(dist))
+  return gulp.src(dir.html_src)
+    .pipe(changed(dir.dist))
+    .pipe(gulp.dest(dir.dist))
     .pipe(browserSync.reload({
       stream: true
     }))
@@ -45,11 +49,11 @@ function html() {
 
 // convert scss to css (dist)
 function scss() {
-  return gulp.src(scss_src)
+  return gulp.src(dir.scss_src)
     .pipe(sourcemaps.init())
     .pipe(sass({ outputStyle: 'expanded' }).on('error', sass.logError))
     .pipe(sourcemaps.write('./maps'))
-    .pipe(gulp.dest(css_dist))
+    .pipe(gulp.dest(dir.css_dist))
     .pipe(browserSync.reload({
       stream: true
     }))
@@ -57,12 +61,12 @@ function scss() {
 
 // copy js files
 function js() {
-  return gulp.src(js_src)
-    .pipe(changed(js_dist))
+  return gulp.src(dir.js_src)
+    .pipe(changed(dir.js_dist))
     .pipe(babel({
       presets: ['@babel/env']
     }))
-    .pipe(gulp.dest(js_dist))
+    .pipe(gulp.dest(dir.js_dist))
     .pipe(browserSync.reload({
       stream: true
     }))
@@ -70,21 +74,21 @@ function js() {
 
 // convert images and copy to img folder 
 function images() {
-  return gulp.src(images_src)
-    .pipe(changed(images_dist))
+  return gulp.src(dir.images_src)
+    .pipe(changed(dir.images_dist))
     .pipe(imagemin())
-    .pipe(gulp.dest(images_dist));
+    .pipe(gulp.dest(dir.images_dist));
 }
 
 // watch sass, javascript, and html changes
 gulp.task('watch', gulp.parallel(html, scss, js, images, browser_sync, function() {
 
   // watch scss files for changes
-  gulp.watch(scss_src, scss);
+  gulp.watch(dir.scss_src, scss);
 
   // watch html files for changes
-  gulp.watch(html_src, html);
+  gulp.watch(dir.html_src, html);
 
   // watch html files for changes
-  gulp.watch(js_src, js);
+  gulp.watch(dir.js_src, js);
 }));

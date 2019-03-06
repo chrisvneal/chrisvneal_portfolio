@@ -10,6 +10,7 @@ const changed = require('gulp-changed');
 const imagemin = require('gulp-imagemin');
 const babel = require('gulp-babel');
 const cleanCSS = require('gulp-clean-css');
+const autoprefix = require('gulp-autoprefixer');
 
 // directories
 const dir = {
@@ -51,8 +52,13 @@ function html() {
 // convert scss to css (dist)
 function scss() {
   return gulp.src(dir.scss_src)
+    
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
+    .pipe(autoprefix({
+      browsers: ['last 2 versions'],
+      cascade: false
+    }))
     .pipe(cleanCSS())
     .pipe(sourcemaps.write('./maps'))
     .pipe(gulp.dest(dir.css_dist))

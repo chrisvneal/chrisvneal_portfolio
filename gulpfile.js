@@ -9,6 +9,7 @@ const browserSync = require('browser-sync').create();
 const changed = require('gulp-changed');
 const imagemin = require('gulp-imagemin');
 const babel = require('gulp-babel');
+const cleanCSS = require('gulp-clean-css');
 
 // directories
 const dir = {
@@ -51,7 +52,8 @@ function html() {
 function scss() {
   return gulp.src(dir.scss_src)
     .pipe(sourcemaps.init())
-    .pipe(sass({ outputStyle: 'expanded' }).on('error', sass.logError))
+    .pipe(sass().on('error', sass.logError))
+    .pipe(cleanCSS())
     .pipe(sourcemaps.write('./maps'))
     .pipe(gulp.dest(dir.css_dist))
     .pipe(browserSync.reload({

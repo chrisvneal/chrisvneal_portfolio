@@ -100,3 +100,5 @@ gulp.task('watch', gulp.parallel(html, scss, js, images, browser_sync, function(
   // watch html files for changes
   gulp.watch(dir.js_src, js);
 }));
+
+gulp.task('default', gulp.series('watch'));

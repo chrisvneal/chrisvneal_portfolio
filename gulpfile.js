@@ -9,6 +9,8 @@ const browserSync = require('browser-sync').create();
 const changed = require('gulp-changed');
 const imagemin = require('gulp-imagemin');
 const babel = require('gulp-babel');
+const cleanCSS = require('gulp-clean-css');
+const autoprefix = require('gulp-autoprefixer');
 
 // directories
 const dir = {
@@ -50,8 +52,14 @@ function html() {
 // convert scss to css (dist)
 function scss() {
   return gulp.src(dir.scss_src)
+    
     .pipe(sourcemaps.init())
-    .pipe(sass({ outputStyle: 'expanded' }).on('error', sass.logError))
+    .pipe(sass().on('error', sass.logError))
+    .pipe(autoprefix({
+      browsers: ['last 2 versions'],
+      cascade: false
+    }))
+    .pipe(cleanCSS())
     .pipe(sourcemaps.write('./maps'))
     .pipe(gulp.dest(dir.css_dist))
     .pipe(browserSync.reload({
@@ -92,3 +100,5 @@ gulp.task('watch', gulp.parallel(html, scss, js, images, browser_sync, function(
   // watch html files for changes
   gulp.watch(dir.js_src, js);
 }));
+
+gulp.task('default', gulp.series('watch'));

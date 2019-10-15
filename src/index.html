@@ -1,158 +1,180 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-	<meta charset="utf-8">
-	<title>Home | chrisvneal.com</title>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">	
+  <meta charset="utf-8">
+  <title>Home | chrisvneal.com</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- Bootstrap CSS -->
+  <!-- Bootstrap CSS -->
 
-	<!-- CSS -->	
-	<link rel="stylesheet" href="css/styles.css">
-	<link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,900" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,400i,700" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,400i,700" rel="stylesheet">
 
-	<!-- HTML5 Shiv & Respond.js (allows IE browsers lower than vers. 9 to recognize HTML5 syntax) -->
-	<!--[if lt IE 9]>
+  <!-- HTML5 Shiv & Respond.js (allows IE browsers lower than vers. 9 to recognize HTML5 syntax) -->
+  <!--[if lt IE 9]>
 	    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 	    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   	<![endif]-->
 </head>
 
 <body>
-	<header role="banner" id="header">
-		<div class="container">
-			<h1><a href="index.html" id="site-name">chrisvneal.com</a></h1>
-			<p class="authorskills"><span class="title">Web Developer</span> | HTML5 | CSS3 | JavaScript/jQuery</p>
-			<nav role="navigation">
-				<ul>
-					<li><a href="index.html" class="active">Home</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="projects.html">Projects</a></li>
-					<li><a href="contact.html">Contact</a></li>
-					<li><a href="blog.html">Blog</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header> <!-- /main header -->
+  <header role="banner" id="header">
+    <div class="container">
+      <h1><a href="index.html" id="site-name">chrisvneal.com</a></h1>
+      <p class="authorskills"><span class="title">Web Developer</span> | HTML5 | CSS3 | JavaScript</p>
+      <nav role="navigation">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">Resume/Certs</a></li>
+          <li><a href="contact.html">Bio/Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- /main header -->
+
+  <main role="main">
+    <!-- INTRO, TITLE, SKILLS (BRIEF) SECTION -->
+    <section class="intro-skills">
+      <div class="container">
+        <h2 class="section-title">Intro, Title, Skills</h2>
+        <div class="intro-sections clearfix">
+          <div class="intro-left">
+            <p>My name is Chris Neal and I am starting my web development career on a pretty interesting path.</p>
+            <p>I am skilled at <span class="languages-learned">HTML5, CSS3, JavaScript, jQuery | AngularJS | React.js</span> and love learning new and emerging technologies.</p>
+            <p><a href="projects.html">Enjoy my portfolio of web projects</a> and feel free to <a href="contact.html">contact me</a> at any time!</p>
+          </div>
+          <div class="intro-right">
+            <img src="img/pineapple_top.png" alt="recent project thumb">
+          </div>
+        </div>
+      </div>
+    </section>
 
 
-	<main role="main">
-		<!-- INTRO, TITLE, SKILLS (BRIEF) SECTION -->
-		<section class="intro-skills">
-					<div class="container">
-						<h2 class="section-title">Intro, Title, Skills</h2>
-						<div class="intro-sections clearfix">
-							<div class="intro-left">
-								<p>My name is Chris Neal and I am starting my web development career on a pretty interesting path.</p>
-								<p>I am skilled at <span class="languages-learned">HTML5, CSS3, JavaScript, jQuery | AngularJS | React.js</span> and love learning new and emerging technologies.</p>								
-								<p><a href="projects.html">Enjoy my portfolio of web projects</a> and feel free to <a href="contact.html">contact me</a> at any time!</p>
-							</div>
-							<div class="intro-right">
-		    				<img src="img/pineapple_top.png" alt="recent project thumb">
-		    			</div>
-						</div>
-					</div>
-		</section>
-		
-		
-		<!-- RECENT PROJECT SECTION -->
-		<section id="recent_projects">
-			<div class="container">
-				<header>
-					<h2 class="section-title">Recent Projects</h2>
-					<a href="projects.html" class="link-viewall">View All Projects</a>
-				</header>
-		
-		    	<!-- Project Thumbnails -->
-		    	<div id="recent_projthumbs">
-		    		<!-- left side -->
-		    		<div id="projthumbs-leftside">
-		    			<a href="#"><div class="project-card">
-		    					<h3>Sample Project Title</h3>
-		    					<figure>
-		    						<img src="" alt="recent project thumb">
-		    						<figcaption></figcaption>
-		    					</figure>
-		    				</div></a>
-		    			
-		    			<a href="#"><div class="project-card">
-		    					<h3>Sample Project Title</h3>
-		    					<figure>
-		    						<img src="" alt="recent project thumb">
-		    						<figcaption></figcaption>
-		    					</figure>
-		    				</div></a>
-		    		</div> <!-- /#projthumbs-leftside -->
-		
-		    		<!-- right side -->
-		    		<div id="projthumbs-rightside">
-		    			<a href="#"><div class="project-card">
-		    					<h3>Sample Project Title</h3>
-		    					<figure>
-		    						<img src="" alt="recent project thumb">
-		    						<figcaption></figcaption>
-		    					</figure>
-		    				</div>
-		    			</a>
-		    			
-		    			<a href="#"><div class="project-card">
-		    					<h3>Sample Project Title</h3>
-		    					<figure>
-		    						<img src="" alt="recent project thumb">
-		    						<figcaption></figcaption>
-		    					</figure>
-		    				</div>
-		    			</a>
-		    		</div> <!-- /#projthumbs-leftside -->
-		    	</div> <!-- /#recent_projthumbs -->
-			</div> <!-- /.container -->
-		</section> <!-- /.recent_projects section -->
-		
-		<!-- RECENT BLOG/SOCIAL POSTS SECTION -->
-		<section id="recent_blog">
-			<div class="container">
-				<header>
-					<h2 class="section-title">Recent Blog Posts</h2>
-					<a href="projectss.html" class="link-viewall">View All Blog Posts</a>
-				</header>
-		
-		    	<!-- Project Thumbnails -->
-				<div id="recent_blogthumbs">
-					<a href="blog_1.html"><figure>
-							<img src="http://placehold.it/420x360" alt="recent blog">
-							<figcaption></figcaption>
-						</figure></a>
-					
-					<a href="blog_2.html"><figure>
-							<img src="http://placehold.it/420x360" alt="recent blog">
-							<figcaption></figcaption>
-						</figure></a>
-					
-					<a href="blog_3.html"><figure>
-							<img src="http://placehold.it/420x360" alt="recent blog">
-							<figcaption></figcaption>
-						</figure></a>
-				</div> <!-- /#recent_blogthumbs -->
-			</div> <!-- /.container -->
-		</section> <!-- /.recent_projects section -->
-	</main>
+    <!-- RECENT PROJECT SECTION -->
+    <section id="recent_projects">
+      <div class="container">
+        <header>
+          <h2 class="section-title">Recent Projects</h2>
+          <a href="projects.html" class="link-viewall">View All Projects</a>
+        </header>
 
-	<!-- FOOTER SECTION -->
-	<footer role="contentinfo" id="footer">
-		<div class="container">
-			<small>Christopher V Neal &copy; 2020 All Rights Reserved</small>
-		</div>
-	</footer>
+        <!-- Project Thumbnails -->
+        <div id="recent_projthumbs">
+          <!-- left side -->
+          <div id="projthumbs-leftside">
+            <a href="#">
+              <div class="project-card">
+                <h3>Sample Project Title</h3>
+                <figure>
+                  <img src="" alt="recent project thumb">
+                  <figcaption></figcaption>
+                </figure>
+              </div>
+            </a>
 
+            <a href="#">
+              <div class="project-card">
+                <h3>Sample Project Title</h3>
+                <figure>
+                  <img src="" alt="recent project thumb">
+                  <figcaption></figcaption>
+                </figure>
+              </div>
+            </a>
+          </div>
+          <!-- /#projthumbs-leftside -->
 
+          <!-- right side -->
+          <div id="projthumbs-rightside">
+            <a href="#">
+              <div class="project-card">
+                <h3>Sample Project Title</h3>
+                <figure>
+                  <img src="" alt="recent project thumb">
+                  <figcaption></figcaption>
+                </figure>
+              </div>
+            </a>
 
+            <a href="#">
+              <div class="project-card">
+                <h3>Sample Project Title</h3>
+                <figure>
+                  <img src="" alt="recent project thumb">
+                  <figcaption></figcaption>
+                </figure>
+              </div>
+            </a>
+          </div>
+          <!-- /#projthumbs-leftside -->
+        </div>
+        <!-- /#recent_projthumbs -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.recent_projects section -->
+
+    <!-- RECENT BLOG/SOCIAL POSTS SECTION -->
+    <section id="recent_blog">
+      <div class="container">
+        <header>
+          <h2 class="section-title">Recent Blog Posts</h2>
+          <a href="projectss.html" class="link-viewall">View All Blog Posts</a>
+        </header>
+
+        <!-- Project Thumbnails -->
+        <div id="recent_blogthumbs">
+          <a href="blog_1.html">
+            <figure>
+              <img src="http://placehold.it/420x360" alt="recent blog">
+              <figcaption></figcaption>
+            </figure>
+          </a>
+
+          <a href="blog_2.html">
+            <figure>
+              <img src="http://placehold.it/420x360" alt="recent blog">
+              <figcaption></figcaption>
+            </figure>
+          </a>
+
+          <a href="blog_3.html">
+            <figure>
+              <img src="http://placehold.it/420x360" alt="recent blog">
+              <figcaption></figcaption>
+            </figure>
+          </a>
+        </div>
+        <!-- /#recent_blogthumbs -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.recent_projects section -->
+  </main>
+
+  <!-- FOOTER SECTION -->
+  <footer role="contentinfo" id="footer">
+    <div class="container">
+      <small>Christopher V Neal &copy; 2020 All Rights Reserved</small>
+    </div>
+  </footer>
 
 
 
 
-<!-- JavaScript & jQuery/Bootstrap Libraries -->
+
+
+
+  <!-- JavaScript & jQuery/Bootstrap Libraries -->
 
 </body>
+
 </html>

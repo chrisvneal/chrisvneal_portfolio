@@ -56,7 +56,6 @@ function scss() {
     .pipe(sourcemaps.init())
     .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
     .pipe(autoprefix({
-      browsers: ['last 2 versions'],
       cascade: false
     }))
     .pipe(cleanCSS())

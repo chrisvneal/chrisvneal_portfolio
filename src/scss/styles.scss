@@ -4,3 +4,14 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+// Global styles
+img {
+  width: 100%;
+  max-width: 100%;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}

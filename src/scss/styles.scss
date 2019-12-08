@@ -1,1 +1,6 @@
 @import 'partials/css_reset';
+
+body {
+  display: flex;
+  flex-direction: column;
+}

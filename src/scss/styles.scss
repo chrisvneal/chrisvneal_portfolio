@@ -1,17 +1,47 @@
 @import 'partials/css_reset';
-
 body {
   display: flex;
   flex-direction: column;
 }
 
-// Global styles
+// ******  Global Styles  *******
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
 img {
-  width: 100%;
+  // width: 100%;
   max-width: 100%;
 }
 
 figure {
   margin: 0;
   padding: 0;
+}
+
+
+// testing sections via colors
+
+#header {
+  background: rgb(252, 252, 139);
+}
+
+#intro-skills {
+  background: #ffe1aa;
+}
+
+#recent_projects {
+  background: #ffacac;
+}
+
+#recent_blog {
+  background: #34f5c5;
+}
+
+footer {
+  background: #77ec77;
 }

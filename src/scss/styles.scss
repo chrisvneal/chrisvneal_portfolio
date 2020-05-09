@@ -1,19 +1,10 @@
 @import 'partials/css_reset';
+
 body {
-  display: flex;
-  flex-direction: column;
   font-family: Arial, sans-serif;
 }
 
 // ******  Global Styles  *******
-h1,
-h2,
-h3,
-h4,
-p {
-  margin: 0;
-}
-
 img {
   // width: 100%;
   max-width: 100%;

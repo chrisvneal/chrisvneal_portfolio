@@ -1,10 +1,14 @@
 @import 'partials/css_reset';
+// ******  Global Styles  *******
+* {
+  margin: 0;
+  padding: 0;
+}
 
 body {
   font-family: Arial, sans-serif;
 }
 
-// ******  Global Styles  *******
 img {
   // width: 100%;
   max-width: 100%;
@@ -15,9 +19,7 @@ figure {
   padding: 0;
 }
 
-
 // testing sections via colors
-
 #header {
   background: rgb(252, 252, 139);
 }
@@ -36,4 +38,9 @@ figure {
 
 footer {
   background: #77ec77;
+}
+
+
+main {
+  background: red;
 }

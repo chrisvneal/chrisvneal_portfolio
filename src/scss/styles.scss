@@ -1,1 +1,41 @@
 @import 'partials/css_reset';
+// ******  Global Styles  *******
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+img {
+  // width: 100%;
+  max-width: 100%;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+// testing sections via colors
+#header {
+  background: rgb(252, 252, 139);
+}
+
+#intro-skills {
+  background: #ffe1aa;
+}
+
+#recent_projects {
+  background: #ffacac;
+}
+
+#recent_blog {
+  background: #34f5c5;
+}
+
+footer {
+  background: #77ec77;
+}

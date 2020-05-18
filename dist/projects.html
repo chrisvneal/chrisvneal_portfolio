@@ -44,9 +44,9 @@
   <main role="main">
     <h1>Projects page</h1>
 
-    <section class="project_skills-filter">
+    <section id="tech_skills-filter">
       <h2>Tech filter</h2>
-      <ul class="project_skills">
+      <ul class="tech_skills">
         <li>HTML &amp; CSS <span>(Grid/Flexbox, RWD, SCSS)</span></li>
         <li>JavaScript</li>
         <li>React</li>
@@ -57,7 +57,7 @@
     </section>
 
     <!-- Project Display -->
-    <section class="projects">
+    <section id="projects">
       <h2>Projects</h2>
 
       <div class="project_cards">
@@ -139,45 +139,18 @@
           </div>
         </div>
         <!-- /. project-card -->
-
-
-
       </div>
       <!-- /. project-cards -->
 
     </section>
-    <!-- /. project-display -->
-
-
-    <!-- Current Project -->
-    <section class="current-project">
-      <h2>Current Project</h2>
-      <img src="http://placehold.it/250" alt="" class="current_project-image">
-
-
-      <header>
-        <h3 class="current_project-title">Current project title</h3>
-        <ul class="project-info">
-          <li>Tech: JavaScript, React, CSS</li>
-          <li><a href="#">Github link</a></li>
-        </ul>
-      </header>
-
-      <div class="current_project-body">
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro ratione labore quibusdam dignissimos non in temporibus ad, officia fuga nobis?</p>
-        <p>Asperiores, amet. Doloremque, nihil. Maiores ratione distinctio consequatur excepturi a, asperiores ullam aperiam culpa fugit temporibus fugiat soluta, velit itaque.</p>
-        <p>Quod perferendis, excepturi quae dolorem reprehenderit eos provident assumenda saepe animi velit quo omnis voluptas sunt mollitia ducimus id architecto.</p>
-      </div>
-
-    </section>
-    <!-- /. current-project -->
+    <!-- /. projects -->
 
 
     <!-- Selected project -->
-    <section class="selected_project-image">
+    <section id="selected_project">
       <h2>Selected project</h2>
       <figure>
-        <img src="http://placehold.it/400" alt="" class="selected_project-image">
+        <img src="http://placehold.it/200" alt="" class="selected_project-image">
         <figcaption>
           <h3 class="selected_project-title">Selected project title</h3>
           <ul class="project-info">
@@ -199,6 +172,30 @@
     </section>
     <!-- /. selected-project -->
 
+    <!-- Current Project -->
+    <section id="current-project">
+      <h2>Currently working on</h2>
+      <img src="http://placehold.it/350" alt="" class="current_project-image">
+
+
+      <header>
+        <h3 class="current_project-title">Current project title</h3>
+        <ul class="project-info">
+          <li>Tech: JavaScript, React, CSS</li>
+          <li><a href="#">Github link</a></li>
+        </ul>
+      </header>
+
+      <div class="current_project-body">
+        <h3>Current project details</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro ratione labore quibusdam dignissimos non in temporibus ad, officia fuga nobis?</p>
+        <p>Asperiores, amet. Doloremque, nihil. Maiores ratione distinctio consequatur excepturi a, asperiores ullam aperiam culpa fugit temporibus fugiat soluta, velit itaque.</p>
+        <p>Quod perferendis, excepturi quae dolorem reprehenderit eos provident assumenda saepe animi velit quo omnis voluptas sunt mollitia ducimus id architecto.</p>
+      </div>
+
+    </section>
+    <!-- /. current-project -->
+
   </main>
 
   <!-- FOOTER SECTION -->
@@ -211,10 +208,6 @@
     </div>
   </footer>
   <!-- / Footer section -->
-
-
-
-
 
 
 

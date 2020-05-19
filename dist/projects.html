@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 
   <!-- HTML5 Shiv & Respond.js (allows IE browsers lower than vers. 9 to recognize HTML5 syntax) -->
@@ -42,160 +43,167 @@
 
 
   <main role="main">
-    <h1>Projects page</h1>
-
-    <section id="tech_skills-filter">
-      <h2>Tech filter</h2>
-      <ul class="tech_skills">
-        <li>All</li>
-        <li>HTML &amp; CSS <span>(Grid/Flexbox, RWD, SCSS)</span></li>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>Node.js</li>
-        <li>Database-driven</li>
-        <li>PHP &amp; mySQL</li>
-      </ul>
-    </section>
-
-    <!-- Project Display -->
-    <section id="projects">
-      <h2>Projects</h2>
-
-      <div class="project_cards">
-
-        <div class="project-card">
-          <figure>
-            <img src="http://placehold.it/150" alt="recent project thumb" class="project_card-image">
-            <figcaption>
-
-              <h3 class="project_card-title">Sample Project Title 1</h3>
-              <ul class="project-info">
-                <li>Tech: JavaScript, React, CSS</li>
-                <li><a href="#">Github link</a></li>
-                <li><a href="#">Link to website</a></li>
-              </ul>
-            </figcaption>
-          </figure>
-          <div class="project_card-body">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, odio amet blanditiis assumenda quidem vel!</p>
-            <p>Fugit eos mollitia at amet modi, inventore id corrupti, quidem excepturi deleniti cum repellat facere?</p>
-          </div>
-        </div>
-        <!-- /. project-card -->
-
-        <div class="project-card">
-          <figure>
-            <img src="http://placehold.it/150" alt="recent project thumb" class="project_card-image">
-            <figcaption>
-              <h3 class="project_card-title">Sample Project Title 2</h3>
-              <ul class="project-info">
-                <li>Tech: Node.js, React</li>
-                <li><a href="#">Github link</a></li>
-                <li><a href="#">Link to website</a></li>
-              </ul>
-            </figcaption>
-          </figure>
-          <div class="project_card-body">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, odio amet blanditiis assumenda quidem vel!</p>
-            <p>Fugit eos mollitia at amet modi, inventore id corrupti, quidem excepturi deleniti cum repellat facere?</p>
-          </div>
-        </div>
-        <!-- /. project-card -->
-
-        <div class="project-card">
-          <figure>
-            <img src="http://placehold.it/150" alt="recent project thumb" class="project_card-image">
-            <figcaption>
-              <h3 class="project_card-title">Sample Project Title 3</h3>
-              <ul class="project-info">
-                <li>Tech: HTML, PHP</li>
-                <li><a href="#">Github link</a></li>
-                <li><a href="#">Link to website</a></li>
-              </ul>
-            </figcaption>
-          </figure>
-          <div class="project_card-body">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, odio amet blanditiis assumenda quidem vel!</p>
-            <p>Fugit eos mollitia at amet modi, inventore id corrupti, quidem excepturi deleniti cum repellat facere?</p>
-          </div>
-        </div>
-        <!-- /. project-card -->
-
-        <div class="project-card">
-          <figure>
-            <img src="http://placehold.it/150" alt="recent project thumb" class="project_card-image">
-            <figcaption>
-
-              <h3 class="project_card-title">Sample Project Title 4</h3>
-              <ul class="project-info">
-                <li>Tech: JavaScript, React, CSS</li>
-                <li><a href="#">Github link</a></li>
-                <li><a href="#">Link to website</a></li>
-              </ul>
-            </figcaption>
-          </figure>
-          <div class="project_card-body">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, odio amet blanditiis assumenda quidem vel!</p>
-            <p>Fugit eos mollitia at amet modi, inventore id corrupti, quidem excepturi deleniti cum repellat facere?</p>
-          </div>
-        </div>
-        <!-- /. project-card -->
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
       </div>
-      <!-- /. project-cards -->
+  
+      <section id="tech_skills-filter">
+          <div class="container">
+            <h3>Tech filter</h3>
+            <ul class="tech_skills">
+              <li>All</li>
+              <li>HTML &amp; CSS <span>(Grid/Flexbox, RWD, SCSS)</span></li>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>Node.js</li>
+              <li>Database-driven</li>
+              <li>PHP &amp; mySQL</li>
+            </ul>
+          </div>
+      </section>
 
-    </section>
-    <!-- /. projects -->
+    <section id="projects-interface">
 
+      
+        <!-- Project Display -->
+        <div id="projects">
+            <div class="container">
+              <div class="project-card">
+                <figure>
+                  <img src="http://placehold.it/200" alt="recent project thumb" class="project_card-image">
+                  <figcaption>
+      
+                    <h3 class="project_card-title">Sample Project Title 1</h3>
+                    <ul class="project-info">
+                      <li>Tech: JavaScript, React, CSS</li>
+                      <li><a href="#">Github link</a></li>
+                      <li><a href="#">Link to website</a></li>
+                    </ul>
+                  </figcaption>
+                </figure>
+                <div class="project_card-body">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, odio amet blanditiis assumenda quidem vel!</p>
+                  <p>Fugit eos mollitia at amet modi, inventore id corrupti, quidem excepturi deleniti cum repellat facere?</p>
+                </div>
+              </div>
+              <!-- /. project-card -->
+      
+              <div class="project-card">
+                <figure>
+                  <img src="http://placehold.it/200" alt="recent project thumb" class="project_card-image">
+                  <figcaption>
+                    <h3 class="project_card-title">Sample Project Title 2</h3>
+                    <ul class="project-info">
+                      <li>Tech: Node.js, React</li>
+                      <li><a href="#">Github link</a></li>
+                      <li><a href="#">Link to website</a></li>
+                    </ul>
+                  </figcaption>
+                </figure>
+                <div class="project_card-body">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, odio amet blanditiis assumenda quidem vel!</p>
+                  <p>Fugit eos mollitia at amet modi, inventore id corrupti, quidem excepturi deleniti cum repellat facere?</p>
+                </div>
+              </div>
+              <!-- /. project-card -->
+      
+              <div class="project-card">
+                <figure>
+                  <img src="http://placehold.it/200" alt="recent project thumb" class="project_card-image">
+                  <figcaption>
+                    <h3 class="project_card-title">Sample Project Title 3</h3>
+                    <ul class="project-info">
+                      <li>Tech: HTML, PHP</li>
+                      <li><a href="#">Github link</a></li>
+                      <li><a href="#">Link to website</a></li>
+                    </ul>
+                  </figcaption>
+                </figure>
+                <div class="project_card-body">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, odio amet blanditiis assumenda quidem vel!</p>
+                  <p>Fugit eos mollitia at amet modi, inventore id corrupti, quidem excepturi deleniti cum repellat facere?</p>
+                </div>
+              </div>
+              <!-- /. project-card -->
+      
+              <div class="project-card">
+                <figure>
+                  <img src="http://placehold.it/200" alt="recent project thumb" class="project_card-image">
+                  <figcaption>
+      
+                    <h3 class="project_card-title">Sample Project Title 4</h3>
+                    <ul class="project-info">
+                      <li>Tech: JavaScript, React, CSS</li>
+                      <li><a href="#">Github link</a></li>
+                      <li><a href="#">Link to website</a></li>
+                    </ul>
+                  </figcaption>
+                </figure>
+                <div class="project_card-body">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, odio amet blanditiis assumenda quidem vel!</p>
+                  <p>Fugit eos mollitia at amet modi, inventore id corrupti, quidem excepturi deleniti cum repellat facere?</p>
+                </div>
+              </div>
+              <!-- /. project-card -->
+            </div>
+        </div>
+        <!-- /. projects -->
+  
+  
+        <!-- Selected project -->
+        <div id="selected_project">
+            <div class="container">
+              <h2 class="section-title">Selected project</h2>
+              <figure>
+                <img src="http://placehold.it/200" alt="" class="selected_project-image">
+                <figcaption>
+                  <h3 class="selected_project-title">Selected project title</h3>
+                  <ul class="project-info">
+                    <li>Tech: JavaScript, PHP</li>
+                    <li><a href="#">Github link</a></li>
+                    <li><a href="#">Link to website</a></li>
+                  </ul>
+                </figcaption>
+              </figure>
+      
+              <div class="selected_project-body">
+                <h4>Project details</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex ipsa aspernatur, velit est laudantium rerum.</p>
+                <h4>Story behind project</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex ipsa aspernatur, velit est laudantium rerum.</p>
+                <h4>What I've learned</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex ipsa aspernatur, velit est laudantium rerum.</p>
+              </div>
+            </div>
+        </div>
+        <!-- /. selected-project -->
+      
 
-    <!-- Selected project -->
-    <section id="selected_project">
-      <h2>Selected project</h2>
-      <figure>
-        <img src="http://placehold.it/200" alt="" class="selected_project-image">
-        <figcaption>
-          <h3 class="selected_project-title">Selected project title</h3>
-          <ul class="project-info">
-            <li>Tech: JavaScript, PHP</li>
-            <li><a href="#">Github link</a></li>
-            <li><a href="#">Link to website</a></li>
-          </ul>
-        </figcaption>
-      </figure>
-
-      <div class="selected_project-body">
-        <h4>Project details</h4>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex ipsa aspernatur, velit est laudantium rerum.</p>
-        <h4>Story behind project</h4>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex ipsa aspernatur, velit est laudantium rerum.</p>
-        <h4>What I've learned</h4>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex ipsa aspernatur, velit est laudantium rerum.</p>
+      <!-- Current Project -->
+      <div id="current-project">
+        <div class="container">
+          <h2 class="section-title">Currently working on</h2>
+          <img src="http://placehold.it/350" alt="" class="current_project-image">
+  
+  
+          <header>
+            <h3 class="current_project-title">Current project title</h3>
+            <ul class="project-info">
+              <li>Tech: JavaScript, React, CSS</li>
+              <li><a href="#">Github link</a></li>
+            </ul>
+          </header>
+  
+          <div class="current_project-body">
+            <h3>Current project details</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro ratione labore quibusdam dignissimos non in temporibus ad, officia fuga nobis?</p>
+            <p>Asperiores, amet. Doloremque, nihil. Maiores ratione distinctio consequatur excepturi a, asperiores ullam aperiam culpa fugit temporibus fugiat soluta, velit itaque.</p>
+            <p>Quod perferendis, excepturi quae dolorem reprehenderit eos provident assumenda saepe animi velit quo omnis voluptas sunt mollitia ducimus id architecto.</p>
+          </div>
+        </div>
       </div>
+      <!-- /. current-project -->
     </section>
-    <!-- /. selected-project -->
-
-    <!-- Current Project -->
-    <section id="current-project">
-      <h2>Currently working on</h2>
-      <img src="http://placehold.it/350" alt="" class="current_project-image">
-
-
-      <header>
-        <h3 class="current_project-title">Current project title</h3>
-        <ul class="project-info">
-          <li>Tech: JavaScript, React, CSS</li>
-          <li><a href="#">Github link</a></li>
-        </ul>
-      </header>
-
-      <div class="current_project-body">
-        <h3>Current project details</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro ratione labore quibusdam dignissimos non in temporibus ad, officia fuga nobis?</p>
-        <p>Asperiores, amet. Doloremque, nihil. Maiores ratione distinctio consequatur excepturi a, asperiores ullam aperiam culpa fugit temporibus fugiat soluta, velit itaque.</p>
-        <p>Quod perferendis, excepturi quae dolorem reprehenderit eos provident assumenda saepe animi velit quo omnis voluptas sunt mollitia ducimus id architecto.</p>
-      </div>
-
-    </section>
-    <!-- /. current-project -->
 
   </main>
 
@@ -203,9 +211,29 @@
   <footer role="contentinfo" id="footer">
     <div class="container">
       <div class="social-links">
-        <h2>Social links</h2>
+        <ul>
+          <li>
+            <a href="#"><img src="img/icons/icons8-github-96.png" alt="Github logo"></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/icons/icons8-linkedin-96.png" alt="LinledIn logo"></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/icons/icons8-facebook-96.png" alt="Facebook logo"></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/icons/icons8-twitter-96.png" alt="Twitter logo"></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/icons/icons8-instagram-96.png" alt="Instagram logo"></a>
+          </li>
+        </ul>
       </div>
-      <small>Christopher V Neal &copy; 2020 All Rights Reserved</small>
+
+      <div class="footer-legal">
+        <p class="footer-copyright">Christopher V Neal &copy; 2020 All Rights Reserved</p>
+        <p class="social-icon-disclaimer">Social media icons provided by <a target="_blank" href="https://icons8.com">Icons8</a></p>
+      </div>
     </div>
   </footer>
   <!-- / Footer section -->

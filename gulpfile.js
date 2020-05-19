@@ -98,6 +98,9 @@ gulp.task('watch', gulp.parallel(html, scss, js, images, browser_sync, function(
 
   // watch javascript files for changes
   gulp.watch(dir.js_src, js);
+
+  // watch images folder for changes
+  gulp.watch(dir.images_src, images); 
 }));
 
 gulp.task('default', gulp.series('watch'));

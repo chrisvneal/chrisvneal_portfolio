@@ -20,18 +20,19 @@
     "gulp-cli": "^2.0.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.3.4",
-    "@babel/preset-env": "^7.3.4",
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
     "browser-sync": "^2.26.3",
+    "caniuse-lite": "^1.0.30001061",
     "gulp": "^4.0.0",
     "gulp-autoprefixer": "^6.0.0",
     "gulp-babel": "^8.0.0-beta.2",
     "gulp-changed": "^3.2.0",
-    "gulp-clean-css": "^4.0.0",
+    "gulp-clean-css": "^4.3.0",
     "gulp-imagemin": "^5.0.3",
-    "gulp-sass": "^4.0.2",
+    "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "^2.6.5",
-    "node-sass": "^4.11.0"
+    "node-sass": "^4.14.1"
   },
   "browserslist": [
     "defaults",

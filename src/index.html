@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 
   <!-- HTML5 Shiv & Respond.js (allows IE browsers lower than vers. 9 to recognize HTML5 syntax) -->
@@ -46,16 +47,14 @@
     <!-- INTRO, ABOUT/BIO & SKILLS (BRIEF) SECTION -->
     <section id="intro-skills">
       <div class="container">
-        <h2 class="section-title">Intro & Skills</h2>
 
-        <img src="http://placehold.it/244x244" alt="profile picture">
+        <!-- self- profile picture -->
+        <img src="img/profile_pic.png" alt="profile picture" class="self-profile-image">
 
-        <h3>About</h3>
-
+        <h2>About</h2>
         <p>My name is Chris Neal and I am starting my web development career on an interesting path.</p>
 
-        <h3>Skills</h3>
-
+        <h2>Skills</h2>
         <ul class="skills">
           <li>HTML5</li>
           <li>CSS3</li>
@@ -64,10 +63,8 @@
           <li>PHP/MySQl</li>
         </ul>
 
-        <h3>Interests</h3>
-
+        <h2>Interests</h2>
         <p>I love learning new and emerging technologies.</p>
-
         <p><a href="projects.html">Enjoy my portfolio of web projects</a> and feel free to <a href="contact.html">contact me</a> at any time!</p>
       </div>
       <!-- /.container -->
@@ -81,33 +78,36 @@
 
         <div class="project-card">
           <a href="#">
-            <h3 class="project_card-title">Sample Project Title 2</h3>
+
             <figure>
-              <img src="" alt="recent project thumb" class="project_card-image">
-              <figcaption></figcaption>
+              <img src="http://placehold.it/200" alt="recent project thumb" class="project_card-image">
+              <figcaption>
+                <h3 class="project_card-title">Sample Project Title 1</h3>
+              </figcaption>
             </figure>
           </a>
-            <div class="project_card-body">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, odio amet blanditiis assumenda quidem vel!</p>
-              <p>Fugit eos mollitia at amet modi, inventore id corrupti, quidem excepturi deleniti cum repellat facere?</p>
-            </div>
-          
+          <div class="project_card-body">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, odio amet blanditiis assumenda quidem vel!</p>
+            <p>Fugit eos mollitia at amet modi, inventore id corrupti, quidem excepturi deleniti cum repellat facere?</p>
+          </div>
+
         </div>
 
 
         <div class="project-card">
           <a href="#">
-            <h3 class="project_card-title">Sample Project Title 2</h3>
             <figure>
-              <img src="" alt="recent project thumb" class="project_card-image">
-              <figcaption></figcaption>
+              <img src="http://placehold.it/200" alt="recent project thumb" class="project_card-image">
+              <figcaption>
+                <h3 class="project_card-title">Sample Project Title 2</h3>
+              </figcaption>
             </figure>
           </a>
-            <div class="project_card-body">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, odio amet blanditiis assumenda quidem vel!</p>
-              <p>Fugit eos mollitia at amet modi, inventore id corrupti, quidem excepturi deleniti cum repellat facere?</p>
-            </div>
-          
+          <div class="project_card-body">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, odio amet blanditiis assumenda quidem vel!</p>
+            <p>Fugit eos mollitia at amet modi, inventore id corrupti, quidem excepturi deleniti cum repellat facere?</p>
+          </div>
+
         </div>
 
 
@@ -117,75 +117,100 @@
     </section>
     <!-- / Latest Projects section -->
 
-
     <!-- RECENT BLOG/SOCIAL POSTS SECTION -->
     <section id="recent_posts">
       <div class="container">
-        <header>
-          <h2 class="section-title">Recent Posts</h2>
-        </header>
+
+        <h2 class="section-title">Recent Posts</h2>
 
         <!-- Blog thumbnails -->
-
-        <!-- recent post thumb -->
         <div id="recent_posts_thumbs">
+
+          <!-- recent post thumb -->
           <div class="recent_post_thumb">
             <a href="#">
               <figure>
-                <img src="http://placehold.it/244x238" alt="recent blog" class="post_thumb-image">
-                <figcaption></figcaption>
+                <img src="http://placehold.it/244x238" alt="recent blog" class="project_card-image">
+                <figcaption>
+                  <h3>Post title</h3>
+                  <p>Author</p>
+                  <p>Date posted</p>
+                  <p>Likes <span>20</span> Replies<span>20</span></p>
+                </figcaption>
               </figure>
             </a>
             <div class="post_thumb-body">
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, odio amet blanditiis assumenda quidem vel!</p>
               <p>Fugit eos mollitia at amet modi, inventore id corrupti, quidem excepturi deleniti cum repellat facere?</p>
+              <a href="#">Read more...</a>
             </div>
           </div>
           <!-- /.recent_post_thumb -->
 
           <!-- recent post thumb -->
-          <div id="recent_posts_thumbs">
-            <div class="recent_post_thumb">
-              <a href="#">
-                <figure>
-                  <img src="http://placehold.it/244x238" alt="recent blog" class="project_card-image">
-                  <figcaption></figcaption>
-                </figure>
-              </a>
-              <div class="post_thumb-body">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, odio amet blanditiis assumenda quidem vel!</p>
-                <p>Fugit eos mollitia at amet modi, inventore id corrupti, quidem excepturi deleniti cum repellat facere?</p>
-              </div>
+          <div class="recent_post_thumb">
+            <a href="#">
+              <figure>
+                <img src="http://placehold.it/244x238" alt="recent blog" class="project_card-image">
+                <figcaption>
+                  <h3>Post title</h3>
+                  <p>Author</p>
+                  <p>Date posted</p>
+                  <p>Likes <span>20</span> Replies<span>20</span></p>
+                </figcaption>
+              </figure>
+            </a>
+            <div class="post_thumb-body">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, odio amet blanditiis assumenda quidem vel!</p>
+              <p>Fugit eos mollitia at amet modi, inventore id corrupti, quidem excepturi deleniti cum repellat facere?</p>
+              <a href="#">Read more...</a>
             </div>
-            <!-- /.recent_post_thumb -->
-
-            <a href="blog.html" class="link-viewall">View All Blog Posts</a>
-            <!-- /#recent_posts & social post thumbs -->
-
           </div>
-          <!-- /.container -->
+          <!-- /.recent_post_thumb -->
+          </div>
+
+
+
+          <a href="blog.html" class="link-viewall">View All Blog Posts</a>
+          <!-- /#recent_posts & social post thumbs -->
+
+        </div>
+        <!-- /.container -->
     </section>
+
     <!-- / Recent blog/social posts section -->
   </main>
-
-
 
   <!-- FOOTER SECTION -->
   <footer role="contentinfo" id="footer">
     <div class="container">
       <div class="social-links">
-        <h2>Social links</h2>
+        <ul>
+          <li>
+            <a href="#"><img src="img/icons/icons8-github-96.png" alt="Github logo"></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/icons/icons8-linkedin-96.png" alt="LinkedIn logo"></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/icons/icons8-facebook-96.png" alt="Facebook logo"></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/icons/icons8-twitter-96.png" alt="Twitter logo"></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/icons/icons8-instagram-96.png" alt="Instagram logo"></a>
+          </li>
+        </ul>
       </div>
-      <small>Christopher V Neal &copy; 2020 All Rights Reserved</small>
+
+      <div class="footer-legal">
+        <p class="footer-copyright">Christopher V Neal &copy; 2020 All Rights Reserved</p>
+        <p class="social-icon-disclaimer">Social media icons provided by <a target="_blank" href="https://icons8.com">Icons8</a></p>
+      </div>
     </div>
   </footer>
   <!-- / Footer section -->
-
-
-
-
-
-
 
   <!-- JavaScript & any libraries & modules -->
 

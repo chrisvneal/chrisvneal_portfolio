@@ -1,20 +1,5 @@
 @import 'partials/css_reset';
 
-// ******  Global Styles  *******
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: Arial, sans-serif;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 // testing sections via colors
 #header {
   background: rgb(252, 252, 139);
@@ -32,6 +17,67 @@ img {
   background: #34f5c5;
 }
 
-footer, #tech_skills-filter {
+#tech_skills-filter {
   background: #77ec77;
+}
+
+// ******  Global Styles  *******
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+ul {
+  list-style-type: none;
+}
+
+
+
+
+// section styles
+footer {
+  padding: 15px 0;  
+}
+
+
+/******** Footer styles ************/
+
+
+.social-links ul {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+
+  li {
+    width: 60px;
+    // outline: 1px solid red;
+  }
+}
+
+
+.footer-legal  {
+  font-size: .80rem;
+  text-align: center;
+  color: #919191;
+
+  p {
+    margin-bottom: 10px;
+  }
+
+  
+}
+
+.social-icon-disclaimer {
+  color: #19AE41;
 }

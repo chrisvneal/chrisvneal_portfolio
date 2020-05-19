@@ -31,7 +31,6 @@ body {
   font-family: 'Noto Sans', sans-serif;
 }
 
-
 img {
   max-width: 100%;
   height: auto;
@@ -47,10 +46,6 @@ ul {
   list-style-type: none;
 }
 
-.container {
-  padding: 0 10px;
-}
-
 textarea {
   width: 100%;
   height: 100px;
@@ -58,11 +53,25 @@ textarea {
 
 
 
+// thumb styles
+
+.thumb-title {
+  margin: 10px 0;
+}
+
+.thumb-info li {
+  margin-bottom: 10px;
+}
+
+
 // section styles
+.container {
+  padding: 0 10px;
+}
+
 footer {
   padding: 15px 0;  
 }
-
 
 /******** Footer styles ************/
 

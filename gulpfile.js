@@ -82,7 +82,6 @@ function js() {
 // convert images and copy to img folder 
 function images() {
   return gulp.src(dir.images_src)
-  .pipe(gulp.dest(dir.images_dist))
     .pipe(changed(dir.images_dist))
     .pipe(imagemin())
     .pipe(gulp.dest(dir.images_dist));

@@ -18,7 +18,7 @@ const dir = {
   scss_src: 'src/scss/**/*.scss',
   html_src: 'src/*.html',
   js_src: 'src/js/**/*.js',
-  images_src: 'src/img/**/*.+(png|jpg|gif)',
+  images_src: 'src/img/**/*.+(png|jpg|jpeg|gif|svg)',
 
   // destinations
   dist: 'dist',

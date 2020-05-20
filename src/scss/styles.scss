@@ -1,5 +1,12 @@
 @import 'partials/css_reset';
 
+// mixins
+@mixin margin-fix($num: 10) {
+  /* to compensate for .container 10px margins */
+  margin: 0 calc(#{$num}px * -1); // pull margin of content out
+  padding: 0 $num + px; // push content back in
+}
+
 // testing sections via colors
 #header {
   background: rgb(252, 252, 139);
@@ -25,6 +32,10 @@
 * {
   margin: 0;
   padding: 0;
+}
+
+section {
+  margin-bottom: 30px;
 }
 
 body {
@@ -62,8 +73,12 @@ textarea {
 }
 
 .thumb-info li {
-  margin-bottom: 10px;
-  outline: 1px solid red;
+  margin-bottom: 5px;
+  // outline: 1px solid red;
+}
+
+.thumb-likes-count, .thumb-comment-count {
+  font-weight: bolder;
 }
 
 
@@ -77,8 +92,44 @@ footer {
 }
 
 .recent_post_thumb {
-  margin-bottom: 20px;
+  margin-bottom: 60px;
 }
+
+.thumb-author, .thumb-social {
+  margin-right: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.thumb-info {  
+
+  @include margin-fix();
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  background: #90d383;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 /******** Footer styles ************/

@@ -72,6 +72,10 @@ footer {
   padding: 15px 0;  
 }
 
+.recent_post_thumb {
+  outline: 1px dotted red;
+}
+
 /******** Footer styles ************/
 
 
@@ -84,6 +88,11 @@ footer {
     width: 60px;
     // outline: 1px solid red;
   }
+}
+
+.link-viewall {
+  display: inline-block;
+  margin-top: 1.2rem;
 }
 
 

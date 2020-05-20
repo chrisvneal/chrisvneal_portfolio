@@ -53,6 +53,9 @@ textarea {
 
 
 
+
+
+
 // thumb styles
 .thumb-title {
   margin-bottom: 10px;
@@ -60,6 +63,7 @@ textarea {
 
 .thumb-info li {
   margin-bottom: 10px;
+  outline: 1px solid red;
 }
 
 
@@ -72,8 +76,9 @@ footer {
   padding: 15px 0;  
 }
 
-.recent_post_thumb {
-  outline: 1px dotted red;
+.recent_post_thumb a {
+  outline: 1px solid blue;
+
 }
 
 /******** Footer styles ************/

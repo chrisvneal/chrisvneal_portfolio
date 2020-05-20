@@ -1,5 +1,12 @@
 @import 'partials/css_reset';
 
+// mixins
+@mixin margin-fix($num: 10) {
+  /* to compensate for .container 10px margins */
+  margin: 0 calc(#{$num}px * -1); // pull margin of content out
+  padding: 0 $num + px; // push content back in
+}
+
 // testing sections via colors
 #header {
   background: rgb(252, 252, 139);
@@ -14,7 +21,7 @@
 }
 
 #recent_posts, #current-project {
-  // background: #34f5c5;
+  background: #34f5c5;
 }
 
 #tech_skills-filter {
@@ -77,7 +84,7 @@ footer {
 }
 
 .recent_post_thumb {
-  margin-bottom: 20px;
+  margin-bottom: 60px;
 }
 
 .thumb-author, .thumb-social {
@@ -85,12 +92,36 @@ footer {
 }
 
 
-.thumb-info {
-  // to compensate for .container 10px margins
-  margin: 0 -10px 15px; 
-  padding: 10px;
+
+
+
+
+
+
+
+
+
+
+
+
+.thumb-info {  
+
+  @include margin-fix();
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
   background: #90d383;
 }
+
+
+
+
+
+
+
+
+
+
 
 
 /******** Footer styles ************/

@@ -76,10 +76,10 @@ footer {
   padding: 15px 0;  
 }
 
-.recent_post_thumb a {
-  outline: 1px solid blue;
-
+.recent_post_thumb {
+  margin-bottom: 20px;
 }
+
 
 /******** Footer styles ************/
 
@@ -99,6 +99,11 @@ footer {
   display: inline-block;
   margin-top: 1.2rem;
 }
+
+.link-readmore {
+  font-size: .95rem;
+}
+
 
 
 .footer-legal  {

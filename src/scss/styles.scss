@@ -14,7 +14,7 @@
 }
 
 #recent_posts, #current-project {
-  background: #34f5c5;
+  // background: #34f5c5;
 }
 
 #tech_skills-filter {
@@ -62,8 +62,8 @@ textarea {
 }
 
 .thumb-info li {
-  margin-bottom: 10px;
-  outline: 1px solid red;
+  margin-bottom: 5px;
+  // outline: 1px solid red;
 }
 
 
@@ -76,10 +76,22 @@ footer {
   padding: 15px 0;  
 }
 
-.recent_post_thumb a {
-  outline: 1px solid blue;
-
+.recent_post_thumb {
+  margin-bottom: 20px;
 }
+
+.thumb-author, .thumb-social {
+  margin-right: 1rem;
+}
+
+
+.thumb-info {
+  // to compensate for .container 10px margins
+  margin: 0 -10px 15px; 
+  padding: 10px;
+  background: #90d383;
+}
+
 
 /******** Footer styles ************/
 
@@ -99,6 +111,11 @@ footer {
   display: inline-block;
   margin-top: 1.2rem;
 }
+
+.link-readmore {
+  font-size: .95rem;
+}
+
 
 
 .footer-legal  {

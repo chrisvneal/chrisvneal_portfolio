@@ -18,7 +18,7 @@ const dir = {
   scss_src: 'src/scss/**/*.scss',
   html_src: 'src/*.html',
   js_src: 'src/js/**/*.js',
-  images_src: 'src/img/**/*.+(png|jpg|gif)',
+  images_src: 'src/img/**/*.+(png|jpg|jpeg|gif|svg)',
 
   // destinations
   dist: 'dist',
@@ -82,7 +82,7 @@ function js() {
 // convert images and copy to img folder 
 function images() {
   return gulp.src(dir.images_src)
-    .pipe(changed(dir.images_dist))
+    // .pipe(changed(dir.images_dist))
     .pipe(imagemin())
     .pipe(gulp.dest(dir.images_dist));
 }

@@ -1,11 +1,6 @@
 @import 'partials/css_reset';
 
-// mixins
-@mixin margin-fix($num: 10) {
-  /* to compensate for .container 10px margins */
-  margin: 0 calc(#{$num}px * -1); // pull margin of content out
-  padding: 0 $num + px; // push content back in
-}
+
 
 // testing sections via colors
 #header {
@@ -16,11 +11,7 @@
   background: #ffe1aa;
 }
 
-#recent_projects {
-  background: #ffacac;
-}
-
-#recent_posts, #current-project {
+#current-project {
   background: #34f5c5;
 }
 
@@ -34,8 +25,14 @@
   padding: 0;
 }
 
+
+h2 {
+  margin-bottom: 15px;
+}
+
 section {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  padding: 10px 0;
 }
 
 body {
@@ -67,13 +64,18 @@ textarea {
 }
 
 
+.skills {
+  margin-bottom: 15px;
+}
+
+
 
 
 
 
 // thumb styles
 .thumb-title {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .thumb-info li {
@@ -103,37 +105,19 @@ footer {
   margin-right: 1rem;
 }
 
-
-
-
-
-
-
-
-
-
-
+.recent_post_thumb img, .project-card img {
+  width: 245px;
+  margin-bottom: 15px;
+}
 
 
 
 .thumb-info {  
 
-  @include margin-fix();
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-bottom: 15px;
-  background: #90d383;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  // background: #90d383;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 /******** Footer styles ************/

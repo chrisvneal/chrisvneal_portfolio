@@ -18,6 +18,14 @@ img {
   height: auto;
 }
 
+textarea {
+  width: 100%;
+  height: 100px;
+  padding: 5px;
+  margin: 20px 0;
+}
+
+// list styles
 ul {
   list-style-type: none;
   li {
@@ -25,11 +33,18 @@ ul {
   }
 }
 
-textarea {
-  width: 100%;
-  height: 100px;
-  padding: 5px;
-  margin: 20px 0;
+.devskills-list {
+  margin-bottom: 15px;
+}
+
+// utility styles
+.link-readmore {
+  font-size: .95rem;
+}
+
+.link-viewall {
+  display: inline-block;
+  margin-top: 1.2rem;
 }
 
 
@@ -54,6 +69,7 @@ footer {
 
 /*********** Typography styles ***********/
 
+h1,
 h2,
 h3,
 h4 {
@@ -180,29 +196,11 @@ input[type=submit] {
   border-bottom: 1px solid lightgray;
 }
 
-.pricing li {
-  margin-bottom: 30px;
-}
-
-// list styles
-.devskills-list {
-  margin-bottom: 15px;
-}
-
 .pricing ul {
   list-style: disc;
   list-style-position: inside;
   li {
     line-height: $lineheight-main;
+    margin-bottom: 30px;
   }
-}
-
-// other styles
-.link-readmore {
-  font-size: .95rem;
-}
-
-.link-viewall {
-  display: inline-block;
-  margin-top: 1.2rem;
 }

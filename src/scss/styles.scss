@@ -1,34 +1,14 @@
 @import 'partials/css_reset';
 // Variables
-$line-height: 1.6;
-// ******  Global Styles  *******
+$lineheight-main: 1.6;
+
+/*********** Global styles ***********/
+
 * {
   margin: 0;
   padding: 0;
 }
 
-#header {
-  margin-bottom: 50px;
-}
-
-// layout styles
-section {
-  margin-bottom: 30px;
-}
-
-// typography styles
-h2,
-h3,
-h4 {
-  margin-bottom: 15px;
-}
-
-p {
-  line-height: $line-height;
-  margin-bottom: 10px;
-}
-
-// global styles
 body {
   font-family: 'Noto Sans', sans-serif;
 }
@@ -50,44 +30,64 @@ textarea {
   height: 100px;
   padding: 5px;
   margin: 20px 0;
-  // margin: 10px 0;
 }
 
-.certs-filter {
-  margin-bottom: 20px;
+
+/*********** Layout styles ***********/
+
+#header {
+  margin-bottom: 50px;
 }
 
-// image styles
-.self-profile-image {
-  width: 300px;
+.container {
+  padding: 0 10px;
 }
 
-.contact-profile-img {
-  display: block;
-  border-radius: 50%;
-  width: 250px;
-  height: 250px;
-  margin: 25px auto 40px;
+section {
+  margin-bottom: 30px;
 }
 
-// list styles
-.devskills-list {
+footer {
+  padding: 15px 0;
+}
+
+
+/*********** Typography styles ***********/
+
+h2,
+h3,
+h4 {
   margin-bottom: 15px;
 }
 
-.pricing ul {
-  list-style: disc;
-  list-style-position: inside;
-  li {
-    line-height: $line-height;
-  }
+p {
+  line-height: $lineheight-main;
+  margin-bottom: 10px;
+}
+
+.footer-legal {
+  font-size: .80rem;
+  text-align: center;
+  color: #919191;
 }
 
 
-/****** card & thumb styles *****/
+/********** Card & thumb styles **********/
 
-.project-card {
-  margin-bottom: 50px;
+.project-card,
+.recent_post_thumb {
+  margin-bottom: 60px;
+}
+
+// thumb styles
+.thumb-info {
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+
+.thumb-author,
+.thumb-social {
+  margin-right: 1rem;
 }
 
 .thumb-title {
@@ -103,22 +103,29 @@ textarea {
   font-weight: bolder;
 }
 
-.certs-thumbs {
-  margin-bottom: 20px;
-  figure {
-    margin-bottom: 40px;
-    img {
-      margin-bottom: 10px;
-    }
-  }
+
+/*********** Image styles ***********/
+
+.self-profile-image {
+  width: 300px;
 }
 
-.award-title {
-  margin-bottom: 10px;
-  font-size: 1rem;
+.contact-profile-img {
+  display: block;
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  margin: 25px auto 40px;
 }
 
-// form styles
+.card-image {
+  width: 245px;
+  margin-bottom: 15px;
+}
+
+
+/*********** Form styles ***********/
+
 input[type=submit] {
   display: block;
   width: 100%;
@@ -126,57 +133,8 @@ input[type=submit] {
   font-size: 1.2rem;
 }
 
-// section styles
-.availability,
-.pricing,
-.send-request {
-  margin-bottom: 20px;
-  padding-bottom: 10px;
-}
 
-.availability,
-.pricing {
-  border-bottom: 1px solid lightgray;
-}
-
-
-
-// section styles
-.container {
-  padding: 0 10px;
-}
-
-footer {
-  padding: 15px 0;
-}
-
-.recent_post_thumb {
-  margin-bottom: 60px;
-}
-
-.thumb-author,
-.thumb-social {
-  margin-right: 1rem;
-}
-
-.recent_post_thumb img,
-.project-card img {
-  width: 245px;
-  margin-bottom: 15px;
-}
-
-#contact-socialmedia {
-  margin-bottom: 30px;
-}
-
-.thumb-info {
-  padding: 10px 0;
-  margin-bottom: 10px;
-  // background: #90d383;
-}
-
-
-/******** Footer styles ************/
+/*********** Footer styles ***********/
 
 .social-links {
   display: flex;
@@ -184,28 +142,72 @@ footer {
   margin-bottom: 20px;
   li {
     width: 60px;
-    // outline: 1px solid red;
   }
+}
+
+.social-icons8-disclaimer {
+  color: #19AE41;
+}
+
+.certs-filter {
+  margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// contact page styles
+.contact-socialmedia {
+  margin-bottom: 30px;
+}
+
+.availability,
+.pricing,
+.send-request {
+  margin-bottom: 20px;
+  padding: 20px 0;
+}
+
+.availability,
+.pricing {
+  border-bottom: 1px solid lightgray;
+}
+
+.pricing li {
+  margin-bottom: 30px;
+}
+
+// list styles
+.devskills-list {
+  margin-bottom: 15px;
+}
+
+.pricing ul {
+  list-style: disc;
+  list-style-position: inside;
+  li {
+    line-height: $lineheight-main;
+  }
+}
+
+// other styles
+.link-readmore {
+  font-size: .95rem;
 }
 
 .link-viewall {
   display: inline-block;
   margin-top: 1.2rem;
-}
-
-.link-readmore {
-  font-size: .95rem;
-}
-
-.footer-legal {
-  font-size: .80rem;
-  text-align: center;
-  color: #919191;
-  p {
-    margin-bottom: 10px;
-  }
-}
-
-.social-icon-disclaimer {
-  color: #19AE41;
 }

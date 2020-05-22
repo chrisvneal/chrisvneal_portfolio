@@ -30,6 +30,10 @@ h2, h3, h4 {
   margin-bottom: 15px;
 }
 
+textarea {
+  margin-bottom: 20px;
+}
+
 section {
   margin-bottom: 20px;
   padding: 10px 0;
@@ -119,6 +123,10 @@ footer {
   margin-bottom: 15px;
 }
 
+#contact-socialmedia {
+  margin-bottom: 40px;
+}
+
 
 
 .thumb-info {  
@@ -129,10 +137,12 @@ footer {
 }
 
 
+
+
 /******** Footer styles ************/
 
 
-.social-links ul {
+.social-links {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;

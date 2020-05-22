@@ -1,11 +1,6 @@
 @import 'partials/css_reset';
 
-// mixins
-@mixin margin-fix($num: 10) {
-  /* to compensate for .container 10px margins */
-  margin: 0 calc(#{$num}px * -1); // pull margin of content out
-  padding: 0 $num + px; // push content back in
-}
+
 
 // testing sections via colors
 #header {
@@ -16,11 +11,7 @@
   background: #ffe1aa;
 }
 
-#recent_projects {
-  background: #ffacac;
-}
-
-#recent_posts, #current-project {
+#current-project {
   background: #34f5c5;
 }
 
@@ -34,8 +25,14 @@
   padding: 0;
 }
 
+
+h2, h3, h4 {
+  margin-bottom: 15px;
+}
+
 section {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  padding: 10px 0;
 }
 
 body {
@@ -60,12 +57,56 @@ ul {
 textarea {
   width: 100%;
   height: 100px;
+  padding: 5px;
+  margin: 20px 0;
+  // margin: 10px 0;
 }
+
+
+
 
 .self-profile-image {
   width: 300px;
 }
 
+
+.skills {
+  margin-bottom: 15px;
+}
+
+.contact-profile-img {
+  display: block;
+  border-radius: 50%;
+  width: 280px;
+  height: 280px;
+  margin: 25px auto;
+  // border: 1px solid red;
+}
+
+
+
+
+input[type=submit] {
+  
+  display: block;
+  width: 100%;
+  padding: 20px 0;
+  font-size: 1.2rem;  
+  // border: 1px solid initial;
+}
+
+
+// contacts
+
+.availability, .pricing, .send-request {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  
+}
+
+.availability, .pricing {
+  border-bottom: 1px solid lightgray;
+}
 
 
 
@@ -73,7 +114,7 @@ textarea {
 
 // thumb styles
 .thumb-title {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .thumb-info li {
@@ -103,35 +144,23 @@ footer {
   margin-right: 1rem;
 }
 
+.recent_post_thumb img, .project-card img {
+  width: 245px;
+  margin-bottom: 15px;
+}
 
-
-
-
-
-
-
-
-
-
+#contact-socialmedia {
+  margin-bottom: 30px;
+}
 
 
 
 .thumb-info {  
 
-  @include margin-fix();
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-bottom: 15px;
-  background: #90d383;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  // background: #90d383;
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -139,7 +168,7 @@ footer {
 /******** Footer styles ************/
 
 
-.social-links ul {
+.social-links {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;

@@ -15,6 +15,14 @@
   background: #34f5c5;
 }
 
+.certs-thumbs figure {
+  margin-bottom: 40px;
+
+  img {
+    margin-bottom: 10px;
+  }
+}
+
 #tech_skills-filter {
   background: #77ec77;
 }
@@ -32,7 +40,6 @@ h2, h3, h4 {
 
 section {
   margin-bottom: 20px;
-  padding: 10px 0;
 }
 
 body {
@@ -60,6 +67,10 @@ textarea {
   padding: 5px;
   margin: 20px 0;
   // margin: 10px 0;
+}
+
+.certs-filter, .certs-thumbs {
+  margin-bottom: 20px;
 }
 
 

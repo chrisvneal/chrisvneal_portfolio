@@ -84,6 +84,18 @@ textarea {
 
 
 
+input[type=submit] {
+  
+  display: block;
+  width: 100%;
+  padding: 20px 0;
+  font-size: 1.2rem;  
+  // border: 1px solid initial;
+}
+
+
+
+
 
 
 // thumb styles
@@ -124,7 +136,7 @@ footer {
 }
 
 #contact-socialmedia {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 

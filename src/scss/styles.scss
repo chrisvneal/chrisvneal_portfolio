@@ -1,22 +1,6 @@
 @import 'partials/css_reset';
-
+// Variables
 $line-height: 1.6;
-
-
-
-.certs-thumbs figure {
-  margin-bottom: 40px;
-
-  img {
-    margin-bottom: 10px;
-  }
-}
-
-.award-title {
-  margin-bottom: 10px;
-  font-size: 1rem;
-}
-
 // ******  Global Styles  *******
 * {
   margin: 0;
@@ -27,15 +11,24 @@ $line-height: 1.6;
   margin-bottom: 50px;
 }
 
-
-h2, h3, h4 {
-  margin-bottom: 15px;
-}
-
+// layout styles
 section {
   margin-bottom: 30px;
 }
 
+// typography styles
+h2,
+h3,
+h4 {
+  margin-bottom: 15px;
+}
+
+p {
+  line-height: $line-height;
+  margin-bottom: 10px;
+}
+
+// global styles
 body {
   font-family: 'Noto Sans', sans-serif;
 }
@@ -45,15 +38,8 @@ img {
   height: auto;
 }
 
-p {
-  line-height: $line-height;
-  margin-bottom: 10px;
-}
-
-
 ul {
   list-style-type: none;
-
   li {
     margin-bottom: 10px;
   }
@@ -67,20 +53,13 @@ textarea {
   // margin: 10px 0;
 }
 
-.certs-filter, .certs-thumbs {
+.certs-filter {
   margin-bottom: 20px;
 }
 
-
-
-
+// image styles
 .self-profile-image {
   width: 300px;
-}
-
-
-.skills {
-  margin-bottom: 15px;
 }
 
 .contact-profile-img {
@@ -89,66 +68,77 @@ textarea {
   width: 280px;
   height: 280px;
   margin: 25px auto 40px;
-  // border: 1px solid red;
 }
 
-.project-card {
-  margin-bottom: 50px;
-}
-
-
-
-
-input[type=submit] {
-  
-  display: block;
-  width: 100%;
-  padding: 20px 0;
-  font-size: 1.2rem;  
-  // border: 1px solid initial;
-}
-
-
-// contacts
-
-.availability, .pricing, .send-request {
-  margin-bottom: 20px;
-  padding-bottom: 10px;
-  
-}
-
-.availability, .pricing {
-  border-bottom: 1px solid lightgray;
+// list styles
+.devskills-list {
+  margin-bottom: 15px;
 }
 
 .pricing ul {
   list-style: disc;
   list-style-position: inside;
-
   li {
     line-height: $line-height;
   }
 }
 
 
+/****** card & thumb styles *****/
 
+.project-card {
+  margin-bottom: 50px;
+}
 
-
-// thumb styles
 .thumb-title {
   margin-bottom: 15px;
 }
 
 .thumb-info li {
   margin-bottom: 5px;
-  // outline: 1px solid red;
 }
 
-
-
-.thumb-likes-count, .thumb-comment-count {
+.thumb-likes-count,
+.thumb-comment-count {
   font-weight: bolder;
 }
+
+.certs-thumbs {
+  margin-bottom: 20px;
+  figure {
+    margin-bottom: 40px;
+    img {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.award-title {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+// form styles
+input[type=submit] {
+  display: block;
+  width: 100%;
+  padding: 20px 0;
+  font-size: 1.2rem;
+}
+
+// section styles
+.availability,
+.pricing,
+.send-request {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+.availability,
+.pricing {
+  border-bottom: 1px solid lightgray;
+}
+
 
 
 // section styles
@@ -157,18 +147,20 @@ input[type=submit] {
 }
 
 footer {
-  padding: 15px 0;  
+  padding: 15px 0;
 }
 
 .recent_post_thumb {
   margin-bottom: 60px;
 }
 
-.thumb-author, .thumb-social {
+.thumb-author,
+.thumb-social {
   margin-right: 1rem;
 }
 
-.recent_post_thumb img, .project-card img {
+.recent_post_thumb img,
+.project-card img {
   width: 245px;
   margin-bottom: 15px;
 }
@@ -177,26 +169,19 @@ footer {
   margin-bottom: 30px;
 }
 
-
-
-.thumb-info {  
-
+.thumb-info {
   padding: 10px 0;
   margin-bottom: 10px;
   // background: #90d383;
 }
 
 
-
-
 /******** Footer styles ************/
-
 
 .social-links {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
-
   li {
     width: 60px;
     // outline: 1px solid red;
@@ -212,18 +197,13 @@ footer {
   font-size: .95rem;
 }
 
-
-
-.footer-legal  {
+.footer-legal {
   font-size: .80rem;
   text-align: center;
   color: #919191;
-
   p {
     margin-bottom: 10px;
   }
-
-  
 }
 
 .social-icon-disclaimer {

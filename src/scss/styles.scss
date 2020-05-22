@@ -71,6 +71,11 @@ p {
   color: #919191;
 }
 
+.award-title {
+  font-size: 1rem;
+  margin: 10px 0 15px;
+}
+
 
 /********** Card & thumb styles **********/
 
@@ -106,12 +111,17 @@ p {
 
 /*********** Image styles ***********/
 
-.self-profile-image {
+.self-profile-img,
+.contact-profile-img {
+  display: block;
+}
+
+.self-profile-img {
   width: 300px;
+  margin: 0 auto 30px;
 }
 
 .contact-profile-img {
-  display: block;
   border-radius: 50%;
   width: 250px;
   height: 250px;
@@ -152,21 +162,6 @@ input[type=submit] {
 .certs-filter {
   margin-bottom: 20px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // contact page styles
 .contact-socialmedia {

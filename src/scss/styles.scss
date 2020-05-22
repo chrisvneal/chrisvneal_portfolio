@@ -1,38 +1,12 @@
 @import 'partials/css_reset';
+// Variables
+$lineheight-main: 1.6;
 
+/*********** Global styles ***********/
 
-
-// testing sections via colors
-#header {
-  background: rgb(252, 252, 139);
-}
-
-#intro-skills, #projects {
-  background: #ffe1aa;
-}
-
-#current-project {
-  background: #34f5c5;
-}
-
-#tech_skills-filter {
-  background: #77ec77;
-}
-
-// ******  Global Styles  *******
 * {
   margin: 0;
   padding: 0;
-}
-
-
-h2, h3, h4 {
-  margin-bottom: 15px;
-}
-
-section {
-  margin-bottom: 20px;
-  padding: 10px 0;
 }
 
 body {
@@ -44,139 +18,28 @@ img {
   height: auto;
 }
 
-p {
-  line-height: 1.6;
-  margin-bottom: 10px;
-}
-
-
-ul {
-  list-style-type: none;
-}
-
 textarea {
   width: 100%;
   height: 100px;
   padding: 5px;
   margin: 20px 0;
-  // margin: 10px 0;
 }
 
-
-
-
-.self-profile-image {
-  width: 300px;
-}
-
-
-.skills {
-  margin-bottom: 15px;
-}
-
-.contact-profile-img {
-  display: block;
-  border-radius: 50%;
-  width: 280px;
-  height: 280px;
-  margin: 25px auto;
-  // border: 1px solid red;
-}
-
-
-
-
-input[type=submit] {
-  
-  display: block;
-  width: 100%;
-  padding: 20px 0;
-  font-size: 1.2rem;  
-  // border: 1px solid initial;
-}
-
-
-// contacts
-
-.availability, .pricing, .send-request {
-  margin-bottom: 20px;
-  padding-bottom: 10px;
-  
-}
-
-.availability, .pricing {
-  border-bottom: 1px solid lightgray;
-}
-
-
-
-
-
-// thumb styles
-.thumb-title {
-  margin-bottom: 15px;
-}
-
-.thumb-info li {
-  margin-bottom: 5px;
-  // outline: 1px solid red;
-}
-
-.thumb-likes-count, .thumb-comment-count {
-  font-weight: bolder;
-}
-
-
-// section styles
-.container {
-  padding: 0 10px;
-}
-
-footer {
-  padding: 15px 0;  
-}
-
-.recent_post_thumb {
-  margin-bottom: 60px;
-}
-
-.thumb-author, .thumb-social {
-  margin-right: 1rem;
-}
-
-.recent_post_thumb img, .project-card img {
-  width: 245px;
-  margin-bottom: 15px;
-}
-
-#contact-socialmedia {
-  margin-bottom: 30px;
-}
-
-
-
-.thumb-info {  
-
-  padding: 10px 0;
-  margin-bottom: 10px;
-  // background: #90d383;
-}
-
-
-
-
-/******** Footer styles ************/
-
-
-.social-links {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
-
+// list styles
+ul {
+  list-style-type: none;
   li {
-    width: 60px;
-    // outline: 1px solid red;
+    margin-bottom: 10px;
   }
+}
+
+.devskills-list {
+  margin-bottom: 15px;
+}
+
+// utility styles
+.link-readmore {
+  font-size: .95rem;
 }
 
 .link-viewall {
@@ -184,24 +47,160 @@ footer {
   margin-top: 1.2rem;
 }
 
-.link-readmore {
-  font-size: .95rem;
+
+/*********** Layout styles ***********/
+
+#header {
+  margin-bottom: 50px;
+}
+
+.container {
+  padding: 0 10px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+footer {
+  padding: 15px 0;
 }
 
 
+/*********** Typography styles ***********/
 
-.footer-legal  {
+h1,
+h2,
+h3,
+h4 {
+  margin-bottom: 15px;
+}
+
+p {
+  line-height: $lineheight-main;
+  margin-bottom: 10px;
+}
+
+.footer-legal {
   font-size: .80rem;
   text-align: center;
   color: #919191;
-
-  p {
-    margin-bottom: 10px;
-  }
-
-  
 }
 
-.social-icon-disclaimer {
+.award-title {
+  font-size: 1rem;
+  margin: 10px 0 15px;
+}
+
+
+/********** Card & thumb styles **********/
+
+.project-card,
+.recent_post_thumb {
+  margin-bottom: 60px;
+}
+
+// thumb styles
+.thumb-info {
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+
+.thumb-author,
+.thumb-social {
+  margin-right: 1rem;
+}
+
+.thumb-title {
+  margin-bottom: 15px;
+}
+
+.thumb-info li {
+  margin-bottom: 5px;
+}
+
+.thumb-likes-count,
+.thumb-comment-count {
+  font-weight: bolder;
+}
+
+
+/*********** Image styles ***********/
+
+.self-profile-img,
+.contact-profile-img {
+  display: block;
+}
+
+.self-profile-img {
+  width: 300px;
+  margin: 0 auto 30px;
+}
+
+.contact-profile-img {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  margin: 25px auto 40px;
+}
+
+.card-image {
+  width: 245px;
+  margin-bottom: 15px;
+}
+
+
+/*********** Form styles ***********/
+
+input[type=submit] {
+  display: block;
+  width: 100%;
+  padding: 20px 0;
+  font-size: 1.2rem;
+}
+
+
+/*********** Footer styles ***********/
+
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  li {
+    width: 60px;
+  }
+}
+
+.social-icons8-disclaimer {
   color: #19AE41;
+}
+
+.certs-filter {
+  margin-bottom: 20px;
+}
+
+// contact page styles
+.contact-socialmedia {
+  margin-bottom: 30px;
+}
+
+.availability,
+.pricing,
+.send-request {
+  margin-bottom: 20px;
+  padding: 20px 0;
+}
+
+.availability,
+.pricing {
+  border-bottom: 1px solid lightgray;
+}
+
+.pricing ul {
+  list-style: disc;
+  list-style-position: inside;
+  li {
+    line-height: $lineheight-main;
+    margin-bottom: 30px;
+  }
 }

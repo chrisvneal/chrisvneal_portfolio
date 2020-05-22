@@ -1,5 +1,7 @@
 @import 'partials/css_reset';
 
+$line-height: 1.6;
+
 
 
 .certs-thumbs figure {
@@ -21,13 +23,17 @@
   padding: 0;
 }
 
+#header {
+  margin-bottom: 50px;
+}
+
 
 h2, h3, h4 {
   margin-bottom: 15px;
 }
 
 section {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 body {
@@ -40,7 +46,7 @@ img {
 }
 
 p {
-  line-height: 1.6;
+  line-height: $line-height;
   margin-bottom: 10px;
 }
 
@@ -82,8 +88,12 @@ textarea {
   border-radius: 50%;
   width: 280px;
   height: 280px;
-  margin: 25px auto;
+  margin: 25px auto 40px;
   // border: 1px solid red;
+}
+
+.project-card {
+  margin-bottom: 50px;
 }
 
 
@@ -109,6 +119,15 @@ input[type=submit] {
 
 .availability, .pricing {
   border-bottom: 1px solid lightgray;
+}
+
+.pricing ul {
+  list-style: disc;
+  list-style-position: inside;
+
+  li {
+    line-height: $line-height;
+  }
 }
 
 

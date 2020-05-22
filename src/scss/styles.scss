@@ -2,19 +2,6 @@
 
 
 
-// testing sections via colors
-#header {
-  background: rgb(252, 252, 139);
-}
-
-#intro-skills, #projects {
-  background: #ffe1aa;
-}
-
-#current-project {
-  background: #34f5c5;
-}
-
 .certs-thumbs figure {
   margin-bottom: 40px;
 
@@ -23,8 +10,9 @@
   }
 }
 
-#tech_skills-filter {
-  background: #77ec77;
+.award-title {
+  margin-bottom: 10px;
+  font-size: 1rem;
 }
 
 // ******  Global Styles  *******
@@ -59,6 +47,10 @@ p {
 
 ul {
   list-style-type: none;
+
+  li {
+    margin-bottom: 10px;
+  }
 }
 
 textarea {
@@ -132,6 +124,8 @@ input[type=submit] {
   margin-bottom: 5px;
   // outline: 1px solid red;
 }
+
+
 
 .thumb-likes-count, .thumb-comment-count {
   font-weight: bolder;

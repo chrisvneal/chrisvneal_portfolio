@@ -48,6 +48,8 @@ ul {
 }
 
 
+
+
 /*********** Layout styles ***********/
 
 #header {
@@ -117,6 +119,18 @@ p {
 
 .thumb-info li {
   margin-bottom: 10px;
+}
+
+li.listlink-mobile {
+  border: 1px solid #cecece; 
+  margin-bottom: 5px;
+  display: block;
+  padding: 20px 10px;
+
+  a {
+    text-decoration: none;
+  }
+  
 }
 
 .thumb-likes-count,

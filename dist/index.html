@@ -19,9 +19,7 @@
 </head>
 
 <body>
-  <header role="banner" id="header">
-    <div class="container">
-
+  <header role="banner" id="header" class="container">
       <div class="brand">
         <h1><a href="index.html" id="site-name">chrisvneal.com</a></h1>
 
@@ -37,49 +35,48 @@
           <li><a href="contact.html">Contact &amp; Availability</a></li>
         </ul>
       </nav>
-
-    </div>
   </header>
   <!-- / Main Header -->
 
   <main role="main">
 
     <!-- INTRO, ABOUT/BIO & SKILLS (BRIEF) SECTION -->
-    <section id="intro-skills">
-      <div class="container">
+    <section id="intro" class="container">
+        <div class="intro-about">
+          <!-- self- profile picture -->
+          <img src="img/profile-pic.jpg" alt="profile picture" class="self-profile-img">
+  
+          <h2>Who am I?</h2>
+          <p>My name is Chris Neal and I am starting my web development career on an interesting path.</p>
+        </div>
 
-        <!-- self- profile picture -->
-        <img src="img/profile-pic.jpg" alt="profile picture" class="self-profile-img">
+        <div class="intro-devskills">
+          <h2>Skills</h2>
+          <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>React.js</li>
+            <li>PHP/MySQl</li>
+          </ul>
+        </div>
 
-        <h2>About</h2>
-        <p>My name is Chris Neal and I am starting my web development career on an interesting path.</p>
-
-        <h2>Skills</h2>
-        <ul class="devskills-list">
-          <li>HTML5</li>
-          <li>CSS3</li>
-          <li>JavaScript</li>
-          <li>React.js</li>
-          <li>PHP/MySQl</li>
-        </ul>
-
-        <h2>Interests</h2>
-        <p>I love learning new and emerging technologies.</p>
-        <p><a href="projects.html">Enjoy my portfolio of web projects</a> and feel free to <a href="contact.html">contact me</a> at any time!</p>
-      </div>
+        <div class="intro-interests">
+          <h2>Interests</h2>
+          <p>I love learning new and emerging technologies.</p>
+          <p><a href="projects.html">Enjoy my portfolio of web projects</a> and feel free to <a href="contact.html">contact me</a> at any time!</p>
+        </div>
       <!-- /.container -->
     </section>
     <!-- / Intro, about & bio section -->
 
     <!-- LATEST PROJECTS SECTION -->
-    <section id="recent_projects">
-      <div class="container">
+    <section id="recent-projects" class="container">
         <h2 class="section-title">Recent Projects</h2>
 
-        <div class="recent_projects">
-          <div class="project-card">
+        <div class="recent_projects-thumbs">
+          <div class="recent_project-thumb">
             <a href="#">
-  
               <figure>
                 <img src="http://placehold.it/200" alt="recent project thumb" class="card-image">
                 <figcaption>
@@ -87,15 +84,15 @@
                 </figcaption>
               </figure>
             </a>
-            <div class="project_card-body">
+            <div class="recent_project-thumb-body">
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, odio amet blanditiis assumenda quidem vel!</p>
               <p>Fugit eos mollitia at amet modi, inventore id corrupti, quidem excepturi deleniti cum repellat facere?</p>
             </div>
-  
+
           </div>
-  
-  
-          <div class="project-card">
+
+
+          <div class="recent_project-thumb">
             <a href="#">
               <figure>
                 <img src="http://placehold.it/200" alt="recent project thumb" class="card-image">
@@ -104,24 +101,21 @@
                 </figcaption>
               </figure>
             </a>
-            <div class="project_card-body">
+            <div class="recent_project-thumb-body">
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, odio amet blanditiis assumenda quidem vel!</p>
               <p>Fugit eos mollitia at amet modi, inventore id corrupti, quidem excepturi deleniti cum repellat facere?</p>
             </div>
-  
+
           </div>
         </div>
 
 
-        <a href="projects.html" class="link-viewall">View All Projects</a>
-      </div>
-      <!-- /.container -->
+        <a href="projects.html" class="link-viewall">View all projects</a>
     </section>
     <!-- / Latest Projects section -->
 
     <!-- RECENT BLOG/SOCIAL POSTS SECTION -->
-    <section id="recent_posts">
-      <div class="container">
+    <section id="recent_posts" class="container">
 
         <h2 class="section-title">Recent Posts</h2>
 
@@ -194,44 +188,39 @@
 
 
 
-        <a href="blog.html" class="link-viewall">View All Blog Posts</a>
+        <a href="blog.html" class="link-viewall">View all blog posts</a>
         <!-- /#recent_posts & social post thumbs -->
-
-      </div>
-      <!-- /.container -->
     </section>
 
     <!-- / Recent blog/social posts section -->
   </main>
 
   <!-- FOOTER SECTION -->
-  <footer role="contentinfo" id="footer">
-    <div class="container">
-      <ul class="social-links">
-        <li>
-          <a href="#"><img src="img/icons/icons8-github-96.png" alt="Github logo"></a>
-        </li>
-        <li>
-          <a href="#"><img src="img/icons/icons8-linkedin-96.png" alt="LinledIn logo"></a>
-        </li>
-        <li>
-          <a href="#"><img src="img/icons/icons8-facebook-96.png" alt="Facebook logo"></a>
-        </li>
-        <li>
-          <a href="#"><img src="img/icons/icons8-twitter-96.png" alt="Twitter logo"></a>
-        </li>
-        <li>
-          <a href="#"><img src="img/icons/icons8-instagram-96.png" alt="Instagram logo"></a>
-        </li>
-      </ul>
+  <footer role="contentinfo" id="footer" class="container">
+    <ul class="social-links">
+      <li>
+        <a href="#"><img src="img/icons/icons8-github-96.png" alt="Github logo"></a>
+      </li>
+      <li>
+        <a href="#"><img src="img/icons/icons8-linkedin-96.png" alt="LinledIn logo"></a>
+      </li>
+      <li>
+        <a href="#"><img src="img/icons/icons8-facebook-96.png" alt="Facebook logo"></a>
+      </li>
+      <li>
+        <a href="#"><img src="img/icons/icons8-twitter-96.png" alt="Twitter logo"></a>
+      </li>
+      <li>
+        <a href="#"><img src="img/icons/icons8-instagram-96.png" alt="Instagram logo"></a>
+      </li>
+    </ul>
 
-      <div class="footer-legal">
-        <p class="footer-copyright">Christopher V Neal &copy; 2020 All Rights Reserved</p>
-        <p class="social-icons8-disclaimer">Social media icons provided by <a target="_blank" href="https://icons8.com">Icons8</a></p>
-      </div>
+    <div class="footer-legal">
+      <p class="footer-copyright">Christopher V Neal &copy; 2020 All Rights Reserved</p>
+      <p class="social-icons8-disclaimer">Social media icons provided by <a target="_blank" href="https://icons8.com">Icons8</a></p>
     </div>
-  </footer>
-  <!-- / Footer section -->
+</footer>
+<!-- / Footer section -->
 
   <!-- JavaScript & any libraries & modules -->
 

@@ -1,6 +1,15 @@
 @import 'partials/css_reset';
 // Variables
 $lineheight-main: 1.6;
+@mixin utilitylink-small() {
+  display: block;
+  margin-top: 1.2rem;
+  margin-bottom: 10px;
+  border: 1px solid #cecece;
+  padding: 25px 10px;
+  text-decoration: none;
+}
+
 
 /*********** Global styles ***********/
 
@@ -33,18 +42,19 @@ ul {
   }
 }
 
-.devskills-list {
-  margin-bottom: 15px;
+.intro-devskills ul {
+  margin-bottom: 30px;
 }
 
 // utility styles
+.link-viewall,
+.link-reviewaward,
 .link-readmore {
-  font-size: .95rem;
+  @include utilitylink-small();
 }
 
-.link-viewall {
-  display: inline-block;
-  margin-top: 1.2rem;
+li.listlink-mobile a {
+  @include utilitylink-small();
 }
 
 
@@ -82,7 +92,7 @@ p {
 }
 
 .footer-legal {
-  font-size: .80rem;
+  font-size: .90rem;
   text-align: center;
   color: #919191;
 }
@@ -95,9 +105,13 @@ p {
 
 /********** Card & thumb styles **********/
 
-.project-card,
-.recent_post_thumb {
-  margin-bottom: 60px;
+.recent_post_thumb,
+.recent_project-thumb {
+  margin-bottom: 30px;
+}
+
+.project-card {
+  margin-bottom: 50px;
 }
 
 // thumb styles
@@ -116,7 +130,7 @@ p {
 }
 
 .thumb-info li {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .thumb-likes-count,

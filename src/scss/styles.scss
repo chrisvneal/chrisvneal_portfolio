@@ -96,9 +96,13 @@ p {
 
 /********** Card & thumb styles **********/
 
-.project-card,
-.recent_post_thumb {
-  margin-bottom: 60px;
+
+.recent_post_thumb, .recent_project-card {
+  margin-bottom: 30px;
+}
+
+.project-card {
+  margin-bottom: 50px;
 }
 
 // thumb styles

@@ -38,13 +38,12 @@ ul {
 }
 
 // utility styles
-.link-readmore {
-  font-size: .95rem;
-}
 
-.link-viewall {
+
+.link-viewall, .link-reviewaward, .link-readmore {
   display: inline-block;
   margin-top: 1.2rem;
+  margin-bottom: 20px;
 }
 
 

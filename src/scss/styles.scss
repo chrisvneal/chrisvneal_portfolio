@@ -1,6 +1,15 @@
 @import 'partials/css_reset';
 // Variables
 $lineheight-main: 1.6;
+@mixin utilitylink-small() {
+  display: block;
+  margin-top: 1.2rem;
+  margin-bottom: 10px;
+  border: 1px solid #cecece;
+  padding: 25px 10px;
+  text-decoration: none;
+}
+
 
 /*********** Global styles ***********/
 
@@ -33,20 +42,20 @@ ul {
   }
 }
 
-.devskills-list {
+.intro-devskills ul {
   margin-bottom: 30px;
 }
 
 // utility styles
-
-
-.link-viewall, .link-reviewaward, .link-readmore {
-  display: inline-block;
-  margin-top: 1.2rem;
-  margin-bottom: 20px;
+.link-viewall,
+.link-reviewaward,
+.link-readmore {
+  @include utilitylink-small();
 }
 
-
+li.listlink-mobile a {
+  @include utilitylink-small();
+}
 
 
 /*********** Layout styles ***********/
@@ -96,8 +105,8 @@ p {
 
 /********** Card & thumb styles **********/
 
-
-.recent_post_thumb, .recent_project-thumb {
+.recent_post_thumb,
+.recent_project-thumb {
   margin-bottom: 30px;
 }
 
@@ -122,18 +131,6 @@ p {
 
 .thumb-info li {
   margin-bottom: 10px;
-}
-
-li.listlink-mobile {
-  border: 1px solid #cecece; 
-  margin-bottom: 5px;
-  display: block;
-  padding: 20px 10px;
-
-  a {
-    text-decoration: none;
-  }
-  
 }
 
 .thumb-likes-count,

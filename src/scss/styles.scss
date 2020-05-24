@@ -1,15 +1,7 @@
 @import 'partials/css_reset';
 // Variables
 $lineheight-main: 1.6;
-@mixin utilitylink-small() {
-  display: block;
-  margin-top: 1.2rem;
-  margin-bottom: 10px;
-  border: 1px solid #cecece;
-  padding: 25px 10px;
-  text-decoration: none;
-}
-
+@import './partials/mixins.scss';
 
 /*********** Global styles ***********/
 
@@ -42,8 +34,13 @@ ul {
   }
 }
 
-.intro-devskills ul {
-  margin-bottom: 30px;
+.pricing ul {
+  list-style: disc;
+  list-style-position: inside;
+  li {
+    line-height: $lineheight-main;
+    margin-bottom: 30px;
+  }
 }
 
 // utility styles
@@ -57,6 +54,15 @@ li.listlink-mobile a {
   @include utilitylink-small();
 }
 
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  li {
+    width: 60px;
+  }
+}
+
 
 /*********** Layout styles ***********/
 
@@ -68,7 +74,7 @@ li.listlink-mobile a {
   padding: 0 10px;
 }
 
-section, .thumbs-certs figure {
+section {
   margin-bottom: 30px;
 }
 
@@ -91,46 +97,39 @@ p {
   margin-bottom: 10px;
 }
 
+.award-title {
+  font-size: 1rem;
+  margin: 10px 0 15px;
+}
+
 .footer-legal {
   font-size: .90rem;
   text-align: center;
   color: #919191;
 }
 
-.award-title {
-  font-size: 1rem;
-  margin: 10px 0 15px;
-}
-
 
 /********** Card & thumb styles **********/
 
-.recent_post_thumb,
-.recent_project-thumb {
-  margin-bottom: 30px;
-}
-
+// card styles
 .project-card {
   margin-bottom: 50px;
 }
 
 // thumb styles
+.recent_project-thumb,
+.recent_post-thumb,
+.certs-thumbs figure {
+  margin-bottom: 40px;
+}
+
 .thumb-info {
   padding: 10px 0;
   margin-bottom: 10px;
 }
 
-.thumb-author,
-.thumb-social {
-  margin-right: 1rem;
-}
-
 .thumb-title {
   margin-bottom: 15px;
-}
-
-.thumb-info li {
-  margin-bottom: 10px;
 }
 
 .thumb-likes-count,
@@ -141,26 +140,40 @@ p {
 
 /*********** Image styles ***********/
 
-.self-profile-img,
-.contact-profile-img {
+.self-profileimage,
+.contact-profileimage img {
   display: block;
 }
 
-.self-profile-img {
+.self-profileimage {
   width: 300px;
   margin: 0 auto 30px;
 }
 
-.contact-profile-img {
+.projectcard-image {
+  width: 245px;
+  margin-bottom: 15px;
+}
+
+.contact-profileimage img {
   border-radius: 50%;
   width: 250px;
   height: 250px;
   margin: 25px auto 40px;
 }
 
-.card-image {
-  width: 245px;
-  margin-bottom: 15px;
+
+/*********** Intro section styles ***********/
+
+#intro>div {
+  margin-bottom: 30px;
+}
+
+
+/*********** Certifications styles ***********/
+
+.certs-filter {
+  margin-bottom: 20px;
 }
 
 
@@ -174,47 +187,27 @@ input[type=submit] {
 }
 
 
-/*********** Footer styles ***********/
+/*********** Contact page styles ***********/
 
-.social-links {
-  display: flex;
-  justify-content: space-between;
+#contact-info>div,
+#availability_pricing>div {
   margin-bottom: 20px;
-  li {
-    width: 60px;
-  }
-}
-
-.social-icons8-disclaimer {
-  color: #19AE41;
-}
-
-.certs-filter {
-  margin-bottom: 20px;
-}
-
-// contact page styles
-.contact-socialmedia {
-  margin-bottom: 30px;
-}
-
-.availability,
-.pricing,
-.send-request {
-  margin-bottom: 20px;
-  padding: 20px 0;
 }
 
 .availability,
 .pricing {
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid #d3d3d3;
 }
 
-.pricing ul {
-  list-style: disc;
-  list-style-position: inside;
-  li {
-    line-height: $lineheight-main;
-    margin-bottom: 30px;
-  }
+.availability,
+.pricing,
+.contact-sendrequest {
+  padding: 20px 0;
+}
+
+
+/*********** Footer styles ***********/
+
+.social-icons8-disclaimer {
+  color: #19AE41;
 }

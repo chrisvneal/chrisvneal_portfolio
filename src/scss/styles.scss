@@ -104,6 +104,11 @@ header a {
   text-decoration: none;
 }
 
+a[class^="link-"],
+li[class^="listlink"] {
+  text-align: center;
+}
+
 .site-name {
   font-size: 1.2rem;
 }

@@ -1,8 +1,6 @@
 @import 'partials/css_reset'; // reset css
 @import 'partials/config'; // include scss config/variable file
 
-@import './partials/mixins.scss'; // incl. functions/mixins
-
 /*********** Global styles ***********/
 
 * {
@@ -81,13 +79,21 @@ ul {
 
 
 
-// utility styles
-.link-viewall,
-.link-readmore,
-.link-reviewaward,
-.listlink-mobile {
-  @include utilitylink-small();
+// button styles
+.listlink-mobile a,
+a.listlink-mobile {
+  display: block;
+  margin: 1.2rem 0 10px;
+  border: 1px solid #cecece;
+  padding: 25px 10px;
+  text-align: center;
+  text-decoration: none;
 }
+
+
+
+
+
 
 .social-links {
   display: flex;
@@ -152,10 +158,7 @@ header a {
   text-decoration: none;
 }
 
-a[class^="link-"],
-li[class^="listlink"] {
-  text-align: center;
-}
+
 
 .site-name {
   font-size: 1.2rem;

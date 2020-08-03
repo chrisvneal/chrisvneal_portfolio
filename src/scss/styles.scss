@@ -31,10 +31,6 @@ body {
 
 
 
-img {
-  max-width: 100%;
-  height: auto;
-}
 
 
 
@@ -70,6 +66,17 @@ ul {
   margin-bottom: 30px;
 }
 
+// Other
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+
+  li {
+    width: 60px;
+  }
+}
+
 
 
 
@@ -95,15 +102,7 @@ a.listlink-mobile {
 
 
 
-.social-links {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
 
-  li {
-    width: 60px;
-  }
-}
 
 
 /*********** Layout styles ***********/
@@ -211,7 +210,15 @@ header a {
 }
 
 
+
+
+
+
 /*********** Image styles ***********/
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 .self-profileimage,
 .contact-profileimage img {
@@ -245,11 +252,56 @@ header a {
 
 
 
-/*********** Certifications styles ***********/
 
-.certs-filter {
-  margin-bottom: 20px;
+
+
+/*********** section styles ***********/
+
+#intro>div,
+#contact-info>div,
+#availability_pricing>div {
+  margin-bottom: $section-marginbottom;
 }
+
+.tech_skills-filter,
+.certs-filter {
+  margin-bottom: $section-marginbottom;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -258,17 +310,6 @@ header a {
 
 
 /*********** Contact page styles ***********/
-
-#intro>div,
-#contact-info>div,
-#availability_pricing>div {
-  margin-bottom: $section-marginbottom;
-}
-
-
-
-
-
 .availability,
 .pricing {
   border-bottom: 1px solid #d3d3d3;
@@ -282,20 +323,7 @@ header a {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /*********** Footer styles ***********/
-
 footer {
   padding: 15px 0;
 }

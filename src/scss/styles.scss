@@ -115,6 +115,12 @@ p {
   margin: 10px 0 15px;
 }
 
+
+
+h2 {
+  @include text-shadow(lighten($subheading_color, 15%));
+}
+
 /*********** Layout styles ***********/
 #header {
   margin-bottom: 50px;
@@ -124,13 +130,15 @@ p {
   padding: 0 10px;
 }
 
-section {
+section,
+.certs-filter {
   margin-bottom: $section_marginbottom;
 }
 
 #intro>div {
   margin-bottom: 20px;
 }
+
 
 /********** Card & thumb styles **********/
 // card styles

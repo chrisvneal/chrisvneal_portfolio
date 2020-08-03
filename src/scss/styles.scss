@@ -48,13 +48,14 @@ img {
 }
 
 .self-profileimage,
-.contact-profileimage img {
+.contact-profileimage img,
+.projectcard-image {
   display: block;
 }
 
 .projectcard-image {
-  width: 245px;
-  margin-bottom: 15px;
+  width: 100%;
+  margin: 0 auto 30px;
 }
 
 /*********** List styles ***********/
@@ -117,8 +118,13 @@ p {
 
 
 
-h2 {
+.section-title {
   @include text-shadow(lighten($subheading_color, 15%));
+  margin-bottom: 30px;
+}
+
+.section-title+p {
+  margin-top: -10px;
 }
 
 /*********** Layout styles ***********/
@@ -131,12 +137,10 @@ h2 {
 }
 
 section,
-.certs-filter {
+#intro>div,
+.certs-filter,
+#current-project {
   margin-bottom: $section_marginbottom;
-}
-
-#intro>div {
-  margin-bottom: 20px;
 }
 
 
@@ -155,6 +159,16 @@ section,
 
 .thumb-title {
   margin-bottom: 15px;
+}
+
+.thumb-dateposted {
+  font-size: 0.90rem;
+  font-style: italic;
+  margin: -2px 0 15px;
+}
+
+.thumb-social {
+  margin-right: 10px;
 }
 
 .project_thumb-info,

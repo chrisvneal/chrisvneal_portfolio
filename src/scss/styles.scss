@@ -1,6 +1,19 @@
 @import 'partials/css_reset';
 // Variables
 $lineheight-main: 1.6;
+
+// colors
+$maintext-color: #293241;
+$colortheme-main_dark: #3d5a80;
+$colortheme-main_mid: #98c1d9;
+$colortheme-light: #e0fbfc;
+$colortheme-main_offset: #ee6c4d;
+
+$border-highlight: #ffe66d;
+
+
+
+
 @import './partials/mixins.scss';
 
 /*********** Global styles ***********/

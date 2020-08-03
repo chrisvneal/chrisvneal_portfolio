@@ -48,13 +48,14 @@ img {
 }
 
 .self-profileimage,
-.contact-profileimage img {
+.contact-profileimage img,
+.projectcard-image {
   display: block;
 }
 
 .projectcard-image {
   width: 245px;
-  margin-bottom: 15px;
+  margin: 0 auto 30px;
 }
 
 /*********** List styles ***********/
@@ -117,8 +118,13 @@ p {
 
 
 
-h2 {
+.section-title {
   @include text-shadow(lighten($subheading_color, 15%));
+  margin-bottom: 30px;
+}
+
+.section-title+p {
+  margin-top: -10px;
 }
 
 /*********** Layout styles ***********/

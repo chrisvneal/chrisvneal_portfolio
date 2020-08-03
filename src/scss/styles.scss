@@ -130,13 +130,15 @@ h2 {
   padding: 0 10px;
 }
 
-section {
+section,
+.certs-filter {
   margin-bottom: $section_marginbottom;
 }
 
 #intro>div {
   margin-bottom: 20px;
 }
+
 
 /********** Card & thumb styles **********/
 // card styles

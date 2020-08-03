@@ -16,10 +16,44 @@ body {
   color: $maintext_color;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 img {
   max-width: 100%;
   height: auto;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 textarea {
   width: 100%;
@@ -29,23 +63,23 @@ textarea {
 }
 
 // list styles
-ul {
-  list-style-type: none;
-
-  li {
-    margin-bottom: 10px;
-  }
+li {
+  margin-bottom: 10px;
 }
 
-.pricing ul {
-  list-style: disc;
-  list-style-position: inside;
-
-  li {
-    line-height: $lineheight-main;
-    margin-bottom: 30px;
-  }
+.pricing li {
+  line-height: $lineheight-main;
+  margin-bottom: 30px;
 }
+
+
+
+
+
+
+
+
+
 
 // utility styles
 .link-viewall,

@@ -2,7 +2,6 @@
 @import 'partials/config'; // include scss config/variable file
 
 /*********** Global styles ***********/
-
 * {
   margin: 0;
   padding: 0;
@@ -14,79 +13,7 @@ body {
   color: $maintext_color;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// list styles
-
-ul {
-  list-style-type: none;
-
-  li {
-    margin-bottom: 10px;
-  }
-}
-
-.pricing li {
-  line-height: $lineheight-main;
-  margin-bottom: 30px;
-}
-
-// Other
-.social-links {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
-
-  li {
-    width: 60px;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-// button styles
+// button & link styles
 .listlink-mobile a,
 a.listlink-mobile {
   display: block;
@@ -97,178 +24,13 @@ a.listlink-mobile {
   text-decoration: none;
 }
 
-
-
-
-
-
-
-
-
-/*********** Layout styles ***********/
-
-#header {
-  margin-bottom: 50px;
-}
-
-.container {
-  padding: 0 10px;
-}
-
-section {
-  margin-bottom: 30px;
-}
-
-/*********** Form styles ***********/
-
-input[type=submit] {
-  display: block;
-  width: 100%;
-  padding: 20px 0;
-  font-size: 1.2rem;
-}
-
-textarea {
-  width: 100%;
-  height: 100px;
-  padding: 5px;
-  margin: 20px 0;
-}
-
-
-
-
-/*********** Typography styles ***********/
-
-h1,
-h2,
-h3,
-h4 {
-  margin-bottom: 15px;
-  color: $heading_color;
-}
-
-p {
-  line-height: $lineheight-main;
-  margin-bottom: 10px;
-}
-
 header a,
+.recent_project-thumb a,
 .thumb-title a {
   text-decoration: none;
 }
 
-
-
-.site-name {
-  font-size: 1.2rem;
-}
-
-.award-title {
-  font-size: 1rem;
-  margin: 10px 0 15px;
-}
-
-.tech-used {
-  color: $subheading_color;
-}
-
-
-
-.intro-devskills li,
-.tech_skills li,
-.certs-list li {
-  color: $colortheme-main_offset;
-}
-
-
-/********** Card & thumb styles **********/
-
-// card styles
-.project-card {
-  margin-bottom: 50px;
-}
-
-// thumb styles
-.recent_project-thumb,
-.recent_post-thumb,
-.certs-thumbs figure {
-  margin-bottom: 40px;
-}
-
-.thumb-title {
-  margin-bottom: 15px;
-}
-
-.thumb-info {
-  padding: 10px 0;
-  margin-bottom: 10px;
-  outline: 2px dotted red;
-}
-
-
-
-.thumb-likes-count,
-.thumb-comment-count {
-  font-weight: bolder;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*********** image styles ***********/
+/*********** Image styles ***********/
 img {
   max-width: 100%;
 }
@@ -295,18 +57,124 @@ img {
   margin-bottom: 15px;
 }
 
+/*********** List styles ***********/
+ul {
+  list-style-type: none;
 
+  li {
+    margin-bottom: 10px;
+  }
+}
 
+.pricing li {
+  line-height: $lineheight-main;
+  margin-bottom: 30px;
+}
 
+.intro-devskills li,
+.tech_skills li,
+.certs-list li {
+  color: $colortheme-main_offset;
+}
 
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
 
+  li {
+    width: 60px;
+  }
+}
 
+/*********** Typography styles ***********/
+h1,
+h2,
+h3,
+h4 {
+  margin-bottom: 15px;
+  color: $heading_color;
+}
 
+p {
+  line-height: $lineheight-main;
+  margin-bottom: 10px;
+}
 
+.site-name {
+  font-size: 1.2rem;
+}
 
+.subhead {
+  color: $subheading_color;
+  font-size: 1rem;
+}
 
+.award-title {
+  font-size: 1rem;
+  margin: 10px 0 15px;
+}
 
+/*********** Layout styles ***********/
+#header {
+  margin-bottom: 50px;
+}
 
+.container {
+  padding: 0 10px;
+}
+
+section {
+  margin-bottom: $section_marginbottom;
+}
+
+#intro>div {
+  margin-bottom: 20px;
+}
+
+/********** Card & thumb styles **********/
+// card styles
+.project-card {
+  margin-bottom: 50px;
+}
+
+// thumb styles
+.recent_project-thumb,
+.recent_post-thumb,
+.certs-thumbs figure {
+  margin-bottom: 40px;
+}
+
+.thumb-title {
+  margin-bottom: 15px;
+}
+
+.project_thumb-info,
+.recent_posts-thumb-info {
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+
+.thumb-likes-count,
+.thumb-comment-count {
+  font-weight: bolder;
+}
+
+/*********** Form styles ***********/
+input[type=submit] {
+  display: block;
+  width: 100%;
+  padding: 20px 0;
+  font-size: 1.2rem;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  padding: 5px;
+  margin: 20px 0;
+  border-radius: 0;
+}
 
 
 
@@ -321,8 +189,6 @@ img {
 .contact-sendrequest {
   padding: 20px 0;
 }
-
-
 
 /*********** Footer styles ***********/
 footer {

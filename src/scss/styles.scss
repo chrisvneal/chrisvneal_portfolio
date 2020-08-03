@@ -195,14 +195,17 @@ header a {
   margin-bottom: 40px;
 }
 
-.thumb-info {
-  padding: 10px 0;
-  margin-bottom: 10px;
-}
-
 .thumb-title {
   margin-bottom: 15px;
 }
+
+.thumb-info {
+  padding: 10px 0;
+  margin-bottom: 10px;
+  outline: 1px dotted crimson;
+}
+
+
 
 .thumb-likes-count,
 .thumb-comment-count {
@@ -214,25 +217,64 @@ header a {
 
 
 
-/*********** Image styles ***********/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*********** image styles ***********/
 img {
   max-width: 100%;
-  height: auto;
-}
-
-.self-profileimage,
-.contact-profileimage img {
-  display: block;
 }
 
 .self-profileimage {
   width: 300px;
   margin: 0 auto 30px;
-}
-
-.projectcard-image {
-  width: 245px;
-  margin-bottom: 15px;
 }
 
 .contact-profileimage img {
@@ -242,57 +284,15 @@ img {
   margin: 25px auto 40px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*********** section styles ***********/
-
-#intro>div,
-#contact-info>div,
-#availability_pricing>div {
-  margin-bottom: $section-marginbottom;
+.self-profileimage,
+.contact-profileimage img {
+  display: block;
 }
 
-.tech_skills-filter,
-.certs-filter {
-  margin-bottom: $section-marginbottom;
+.projectcard-image {
+  width: 245px;
+  margin-bottom: 15px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

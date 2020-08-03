@@ -11,3 +11,8 @@ $colortheme-main_offset: #ee6c4d;
 
 // other colors
 $border-highlight: #ffe66d;
+
+// Mixins
+@mixin text-shadow($shadow) {
+    text-shadow: -3px 5px 3px $shadow;
+}

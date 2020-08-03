@@ -1,14 +1,20 @@
 @import 'partials/css_reset';
+
+
+
+
+@import 'partials/config';
 // Variables
 $lineheight-main: 1.6;
 
-// colors
-$maintext-color: #293241;
-$colortheme-main_dark: #3d5a80;
-$colortheme-main_mid: #98c1d9;
+// text colors
+$maintext_color: #293241;
+$heading_color: #3d5a80;
+$subheading_color: darken(#98c1d9, 10%);
 $colortheme-light: #e0fbfc;
 $colortheme-main_offset: #ee6c4d;
 
+// other colors
 $border-highlight: #ffe66d;
 
 
@@ -26,7 +32,7 @@ $border-highlight: #ffe66d;
 
 body {
   font-family: 'Noto Sans', sans-serif;
-  color: $maintext-color;
+  color: $maintext_color;
 }
 
 img {
@@ -105,7 +111,7 @@ h2,
 h3,
 h4 {
   margin-bottom: 15px;
-  color: $colortheme-main_dark;
+  color: $heading_color;
 }
 
 p {
@@ -131,10 +137,20 @@ li[class^="listlink"] {
   margin: 10px 0 15px;
 }
 
+.tech-used {
+  color: $subheading_color;
+}
+
 .footer-legal {
   font-size: .90rem;
   text-align: center;
   color: #919191;
+}
+
+.intro-devskills li,
+.tech_skills li,
+.certs-list li {
+  color: $colortheme-main_offset;
 }
 
 

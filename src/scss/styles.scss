@@ -153,7 +153,8 @@ p {
   margin-bottom: 10px;
 }
 
-header a {
+header a,
+.thumb-title a {
   text-decoration: none;
 }
 
@@ -202,7 +203,7 @@ header a {
 .thumb-info {
   padding: 10px 0;
   margin-bottom: 10px;
-  outline: 1px dotted crimson;
+  outline: 2px dotted red;
 }
 
 

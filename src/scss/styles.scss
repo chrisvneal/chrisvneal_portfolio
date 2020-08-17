@@ -103,7 +103,15 @@ nav {
 }
 
 .site-name {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
+  text-transform: lowercase;
+  font-family: 'permanent marker';
+  font-weight: normal;
+}
+
+.middle-v {
+  text-transform: uppercase;
+  font-size: 2rem;
 }
 
 .subhead {
@@ -142,6 +150,7 @@ nav {
   position: relative;
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
   padding: 10px 10px 0;
 }
 
@@ -159,6 +168,7 @@ section,
 
 .fa-bars {
   font-size: 25px;
+  cursor: pointer;
 }
 
 #header {
@@ -177,7 +187,6 @@ section,
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, .7);
-  /* Black background with opacity */
   z-index: 2;
 }
 

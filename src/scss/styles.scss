@@ -168,6 +168,7 @@ section,
 
 .fa-bars {
   font-size: 25px;
+  cursor: pointer;
 }
 
 #header {
@@ -186,7 +187,6 @@ section,
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, .7);
-  /* Black background with opacity */
   z-index: 2;
 }
 

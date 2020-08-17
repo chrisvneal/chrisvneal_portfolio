@@ -35,11 +35,6 @@ img {
   max-width: 100%;
 }
 
-.self-profileimage {
-  width: 300px;
-  margin: 0 auto 30px;
-}
-
 .contact-profileimage img {
   border-radius: 50%;
   width: 200px;
@@ -47,7 +42,6 @@ img {
   margin: 25px auto 40px;
 }
 
-.self-profileimage,
 .contact-profileimage img,
 .projectcard-image {
   display: block;

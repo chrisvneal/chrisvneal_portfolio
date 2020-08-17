@@ -103,9 +103,7 @@ p {
 }
 
 .brand {
-  // text-align: center;
-  background: red;
-  // padding: 20px 0;
+  position: relative;
 }
 
 nav {
@@ -119,6 +117,13 @@ nav {
 .subhead {
   color: $subheading_color;
   font-size: 1rem;
+}
+
+.fa-bars {
+  font-size: 25px;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .award-title {
@@ -140,6 +145,7 @@ nav {
 /*********** Layout styles ***********/
 #header {
   margin-bottom: 20px;
+  padding: 10px;
 }
 
 .container {

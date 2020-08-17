@@ -104,6 +104,9 @@ p {
 
 .brand {
   position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5px;
 }
 
 nav {
@@ -121,9 +124,9 @@ nav {
 
 .fa-bars {
   font-size: 25px;
-  position: absolute;
-  top: 0;
-  right: 0;
+  // position: absolute;
+  // top: 0;
+  // right: 0;
 }
 
 .award-title {
@@ -145,7 +148,6 @@ nav {
 /*********** Layout styles ***********/
 #header {
   margin-bottom: 20px;
-  padding: 10px;
 }
 
 .container {
@@ -159,6 +161,10 @@ section,
   margin-bottom: $section_marginbottom;
 }
 
+
+.intro-about {
+  background: red;
+}
 
 /********** Card & thumb styles **********/
 // card styles

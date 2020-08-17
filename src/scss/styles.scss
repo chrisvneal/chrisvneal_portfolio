@@ -102,6 +102,16 @@ p {
   margin-bottom: 10px;
 }
 
+.brand {
+  // text-align: center;
+  background: red;
+  // padding: 20px 0;
+}
+
+nav {
+  display: none;
+}
+
 .site-name {
   font-size: 1.2rem;
 }
@@ -129,7 +139,7 @@ p {
 
 /*********** Layout styles ***********/
 #header {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .container {

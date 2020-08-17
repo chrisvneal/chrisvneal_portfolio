@@ -96,12 +96,7 @@ p {
   margin-bottom: 10px;
 }
 
-.nav-header {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 5px 0;
-}
+
 
 nav {
   display: none;
@@ -134,13 +129,20 @@ nav {
   margin-top: -10px;
 }
 
+
+
 /*********** Layout styles ***********/
-#header {
-  margin-bottom: 20px;
-}
+
 
 .container {
   padding: 0 10px;
+}
+
+.nav-header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px 0;
 }
 
 section,
@@ -150,14 +152,20 @@ section,
   margin-bottom: $section_marginbottom;
 }
 
+.nav-header a,
 .fa-bars {
-  font-size: 15px;
+  color: #fff;
 }
 
-.intro-about {
+.fa-bars {
+  font-size: 25px;
+}
+
+#header {
   background: url(../img/header_bg.jpg) no-repeat center center/cover;
   height: 100vh;
   position: relative;
+  margin-bottom: 20px;
 }
 
 #overlay {

@@ -10,6 +10,7 @@
   <!-- CSS -->
   <script src="https://kit.fontawesome.com/397acc2e55.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 
   <!-- HTML5 Shiv & Respond.js (allows IE browsers lower than vers. 9 to recognize HTML5 syntax) -->
@@ -20,36 +21,38 @@
 </head>
 
 <body>
-  <header role="banner" id="header" class="container">
-    <div class="brand">
-      <h1 class="site-name"><a href="index.html">chrisvneal.com</a></h1>
+  <header role="banner" id="header">
 
-      <p class="author-title">Front-End Web Developer</p>
+    <div id="overlay">
+      <div class="nav-header">
+        <h1 class="site-name"><a href="index.html">Chris<span class="middle-v">V</span>Neal</a></h1>
+        <i class="fas fa-bars menu-bars"></i>
+      </div>
+
+      <nav role="navigation" class="navigation">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="resume_certs.html">Resume &amp; Certs</a></li>
+          <li><a href="contact.html">Contact &amp; Availability</a></li>
+        </ul>
+      </nav>
+
+
     </div>
+    <!-- /#overlay -->
 
-    <nav role="navigation">
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="resume_certs.html">Resume &amp; Certs</a></li>
-        <li><a href="contact.html">Contact &amp; Availability</a></li>
-      </ul>
-    </nav>
   </header>
-  <!-- / Main Header -->
+  <!-- / #header (main site header) -->
+
+
 
   <main role="main">
 
     <!-- INTRO, ABOUT/BIO & SKILLS (BRIEF) SECTION -->
     <section id="intro" class="container">
-      <div class="intro-about">
-        <!-- self- profile picture -->
-        <img src="img/profile-pic.jpg" alt="profile picture" class="self-profileimage">
 
-        <h2 class="section-title">Who am I?</h2>
-        <p>My name is Chris Neal and I am starting my web development career on an interesting path.</p>
-      </div>
 
       <div class="intro-devskills">
         <h2 class="section-title">Skills</h2>
@@ -82,7 +85,7 @@
             <figure>
               <img src="http://placehold.it/200" alt="recent project thumb" class="projectcard-image">
               <figcaption>
-                <h3 class="thumb-title">Sample Project Title 1 <i class="fas fa-flask"></i> </h3>
+                <h3 class="thumb-title">Sample Project Title 1</h3>
               </figcaption>
             </figure>
           </a>
@@ -234,6 +237,7 @@
   <!-- / Footer section -->
 
   <!-- JavaScript & any libraries & modules -->
+  <script src="/js/main.js"> </script>
 
 </body>
 

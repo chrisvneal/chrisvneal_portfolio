@@ -99,7 +99,25 @@ p {
 
 
 nav {
-  display: none;
+  // outline: 1px dashed white;
+  padding-left: 30px;
+  background: rgba(255, 255, 255, 0.2);
+
+  li {
+
+    margin-bottom: 0;
+    cursor: pointer;
+  }
+
+  a {
+    color: white;
+    font-family: 'permanent marker', sans-serif;
+    font-weight: normal;
+    font-size: 2.3rem;
+    display: block;
+    padding: 35px 0;
+    // cursor: pointer;
+  }
 }
 
 .site-name {
@@ -188,12 +206,6 @@ section,
   bottom: 0;
   background-color: rgba(0, 0, 0, .7);
   z-index: 2;
-}
-
-.navigation {
-  display: none;
-  border: 1px dashed limegreen;
-
 }
 
 

@@ -52,9 +52,11 @@ function html() {
 // convert scss to css (dist)
 function scss() {
   return gulp.src(dir.scss_src)
-    
+
     .pipe(sourcemaps.init())
-    .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
+    .pipe(sass({
+      outputStyle: 'expanded'
+    }).on('error', sass.logError))
     .pipe(autoprefix({
       cascade: false
     }))
@@ -70,9 +72,6 @@ function scss() {
 function js() {
   return gulp.src(dir.js_src)
     .pipe(changed(dir.js_dist))
-    .pipe(babel({
-      presets: ['@babel/env']
-    }))
     .pipe(gulp.dest(dir.js_dist))
     .pipe(browserSync.reload({
       stream: true
@@ -88,7 +87,7 @@ function images() {
 }
 
 // watch sass, javascript, and html changes
-gulp.task('watch', gulp.parallel(html, scss, js, images, browser_sync, function() {
+gulp.task('watch', gulp.parallel(html, scss, js, images, browser_sync, function () {
 
   // watch scss files for changes
   gulp.watch(dir.scss_src, scss);
@@ -100,7 +99,7 @@ gulp.task('watch', gulp.parallel(html, scss, js, images, browser_sync, function(
   gulp.watch(dir.js_src, js);
 
   // watch images folder for changes
-  gulp.watch(dir.images_src, images); 
+  gulp.watch(dir.images_src, images);
 }));
 
 gulp.task('default', gulp.series('watch'));
